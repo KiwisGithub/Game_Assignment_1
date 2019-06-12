@@ -13,6 +13,7 @@ namespace _2019_Level2_Dodge
         /// </summary>
         /// hi test
         /// test 2 hi
+        /// test3
         [STAThread]
         static void Main()
         {
