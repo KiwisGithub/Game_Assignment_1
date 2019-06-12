@@ -12,6 +12,7 @@ namespace _2019_Level2_Dodge
         /// The main entry point for the application.
         /// </summary>
         /// hi test
+        /// test 2 hi
         [STAThread]
         static void Main()
         {
