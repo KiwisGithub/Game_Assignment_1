@@ -25,6 +25,7 @@ namespace _2019_Level2_Dodge
             planetImage = Image.FromFile("planet1.png");
             planetRec = new Rectangle(x, y, width, height);
 
+            //testing hi
             //yeet
         }
 
