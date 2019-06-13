@@ -23,6 +23,7 @@ namespace _2019_Level2_Dodge
             width = 20;
             height = 20;
             planetImage = Image.FromFile("planet1.png");
+            //weeb
   
         }
 
