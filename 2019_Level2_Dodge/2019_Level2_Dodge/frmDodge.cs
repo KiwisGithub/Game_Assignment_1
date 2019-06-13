@@ -27,7 +27,7 @@ namespace _2019_Level2_Dodge
             InitializeComponent();
             for (int i = 0; i < 7; i++)
             {
-                int x = 10 + (i * 75);
+                int x = 10 + (i * 7);
                 planet[i] = new Planet(x);
             }
 
