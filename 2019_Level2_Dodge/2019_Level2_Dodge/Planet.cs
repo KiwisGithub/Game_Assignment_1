@@ -40,7 +40,7 @@ namespace _2019_Level2_Dodge
 
             planetRec.Location = new Point(x, y);
 
-            if (planetRec.Location.Y > 400)
+            if (planetRec.Y > 400)
             {
                 y = 20;
                 planetRec.Location = new Point(x, y);

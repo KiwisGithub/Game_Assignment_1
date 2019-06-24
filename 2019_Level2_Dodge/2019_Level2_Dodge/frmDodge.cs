@@ -27,7 +27,7 @@ namespace _2019_Level2_Dodge
             InitializeComponent();
             for (int i = 0; i < 7; i++)
             {
-                int x = 10 + (i * 7);
+                int x = 10 + (i * 70);
                 planet[i] = new Planet(x);
             }
 
@@ -42,8 +42,8 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_Paint(object sender, PaintEventArgs e)
         {
-                //get the graphics used to paint on the panel control
-                g = e.Graphics;
+            //get the graphics used to paint on the panel control
+            g = e.Graphics;
             //call the Planet class's DrawPlanet method to draw the image planet1 
             for (int i = 0; i < 7; i++)
             {
@@ -73,8 +73,8 @@ namespace _2019_Level2_Dodge
         {
             if (e.KeyData == Keys.Left) { left = true; }
             if (e.KeyData == Keys.Right) { right = true; }
-
         }
+
 
         private void tmrShip_Tick(object sender, EventArgs e)
         {

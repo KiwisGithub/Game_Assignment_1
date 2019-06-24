@@ -34,6 +34,10 @@ namespace _2019_Level2_Dodge
             g.DrawImage(spaceship, spaceRec);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="move"></param>
         public void moveSpaceship(string move)
         {
             spaceRec.Location = new Point(x, y);
@@ -51,7 +55,7 @@ namespace _2019_Level2_Dodge
                     x += 5;
                     spaceRec.Location = new Point(x, y);
                 }
-
+            }
 
                 if (move == "left")
                 {
@@ -74,4 +78,4 @@ namespace _2019_Level2_Dodge
         }
     }
 }
-    }
+    

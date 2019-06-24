@@ -18,3 +18,13 @@ H:\C#\2019_Level2_Dodge\2019_Level2_Dodge\Dodge2\2019_Level2_Dodge\2019_Level2_D
 H:\C#\2019_Level2_Dodge\2019_Level2_Dodge\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csproj.CoreCompileInputs.cache
 H:\C#\2019_Level2_Dodge\2019_Level2_Dodge\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.exe
 H:\C#\2019_Level2_Dodge\2019_Level2_Dodge\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.pdb
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\bin\Debug\2019_Level2_Dodge.exe.config
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\bin\Debug\2019_Level2_Dodge.exe
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\bin\Debug\2019_Level2_Dodge.pdb
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csprojAssemblyReference.cache
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\_2019_Level2_Dodge.frmDodge.resources
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\_2019_Level2_Dodge.Properties.Resources.resources
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csproj.GenerateResource.cache
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csproj.CoreCompileInputs.cache
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.exe
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.pdb
