@@ -23,7 +23,7 @@ namespace _2019_Level2_Dodge
             y = 360;
             width = 40;
             height = 40;
-            spaceship = Image.FromFile("alien1.png");
+            spaceship = Image.FromFile("spaceship1.png");
             spaceRec = new Rectangle(x, y, width, height);
 
         }

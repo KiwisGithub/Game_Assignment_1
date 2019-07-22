@@ -62,6 +62,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrPlanet_Tick(object sender, EventArgs e)
         {
+            score = 0;
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
