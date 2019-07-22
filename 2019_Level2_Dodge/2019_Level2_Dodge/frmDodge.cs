@@ -65,6 +65,9 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
+                score += planet[i].score;// get score from Planet class (in movePlanet method)
+                lblScore.Text = score.ToString();// display score
+
             }
             pnlGame.Invalidate();//makes the paint event fire to redraw the panel
         }
@@ -75,6 +78,15 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.Right) { right = true; }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void tmrShip_Tick(object sender, EventArgs e)
         {

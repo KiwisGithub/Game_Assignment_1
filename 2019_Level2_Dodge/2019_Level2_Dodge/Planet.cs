@@ -42,6 +42,7 @@ namespace _2019_Level2_Dodge
 
             if (planetRec.Y > 400)
             {
+                score += 1;// add 1 to score when planet reaches bottom of panel
                 y = 20;
                 planetRec.Location = new Point(x, y);
             }
