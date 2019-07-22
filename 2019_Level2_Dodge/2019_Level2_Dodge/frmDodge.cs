@@ -34,9 +34,21 @@ namespace _2019_Level2_Dodge
 
         }
 
+        private void checkLives()
+        {
+            if (lives == 0)
+            {
+                tmrPlanet.Enabled = false;
+                tmrShip.Enabled = false;
+                MessageBox.Show("Game Over");
+
+            }
+        }
+
+
         private void frmDodge_Load(object sender, EventArgs e)
         {
-
+            lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
 
         }
 
@@ -66,6 +78,16 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
+                if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
+                {
+                    //reset planet[i] back to top of panel
+                    planet[i].y = 30; // set  y value of planetRec
+                    lives -= 1;// lose a life
+                    txtLives.Text = lives.ToString();// display number of lives
+                    checkLives();
+                }
+
+
                 score += planet[i].score;// get score from Planet class (in movePlanet method)
                 lblScore.Text = score.ToString();// display score
 
