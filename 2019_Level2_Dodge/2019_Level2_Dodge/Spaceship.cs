@@ -34,6 +34,8 @@ namespace _2019_Level2_Dodge
             g.DrawImage(spaceship, spaceRec);
         }
 
+
+
         /// <summary>
         /// 
         /// </summary>

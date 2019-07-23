@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Drawing;
+
+namespace _2019_Level2_Dodge
+{
+    class SpaceshipMouse
+    {
+        // declare fields to use in the class
+
+        public int x, y, width, height;//variables for the rectangle
+        public Image spaceshipMouse;//variable for the planet's image
+
+        public Rectangle spaceMouseRec;//variable for a rectangle to place our image in
+
+        //Create a constructor (initialises the values of the fields)
+        public SpaceshipMouse()
+        {
+            x = 10;
+            y = 360;
+            width = 40;
+            height = 40;
+            spaceshipMouse = Image.FromFile("alien1.png");
+            spaceMouseRec = new Rectangle(x, y, width, height);
+        }
+
+
+
+        //methods
+        public void drawSpaceshipMouse(Graphics g)
+        {
+            g.DrawImage(spaceshipMouse, spaceMouseRec);
+        }
+
+
+        public void moveSpaceshipMouse(int mouseX, int mouseY)
+        {
+            spaceMouseRec.X = mouseX;
+            spaceMouseRec.Y = mouseY;
+
+        }
+
+    }
+}

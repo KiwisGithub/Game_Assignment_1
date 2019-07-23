@@ -18,6 +18,7 @@ namespace _2019_Level2_Dodge
         Random yspeed = new Random();
 
         Spaceship spaceship = new Spaceship();
+        SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
 
         bool left, right;
         int score, lives;
@@ -33,6 +34,11 @@ namespace _2019_Level2_Dodge
 
 
         }
+
+            
+           
+
+
 
         private void checkLives()
         {
@@ -70,9 +76,18 @@ namespace _2019_Level2_Dodge
                 planet[i].drawPlanet(g);
             }
             spaceship.drawSpaceship(g);
+            spaceshipMouse.drawSpaceshipMouse(g);
 
 
         }
+
+
+        private void pnlGame_MouseMove(object sender, MouseEventArgs e)
+        {
+            spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
+        }
+
+
 
         private void tmrPlanet_Tick(object sender, EventArgs e)
         {
@@ -129,6 +144,18 @@ namespace _2019_Level2_Dodge
             tmrShip.Enabled = false;
             tmrPlanet.Enabled = false;
             //test2
+        }
+
+        private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
+        {
+                        Invalidate();
+
+
+        }
+
+        private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
         }
 
         private void tmrShip_Tick(object sender, EventArgs e)
