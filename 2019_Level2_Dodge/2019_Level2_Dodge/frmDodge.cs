@@ -48,7 +48,9 @@ namespace _2019_Level2_Dodge
 
         private void frmDodge_Load(object sender, EventArgs e)
         {
-            lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
+            // lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
+            MessageBox.Show("Use the left and right arrow keys to move the spaceship. \n Don't get hit by the planets! \n Every planet that gets past scores a point. \n If a planet hits a spaceship a life is lost! \n \n Enter your Name press tab and enter the number of lives \n Click Start to begin", "Game Instructions");
+            txtName.Focus();
 
         }
 
