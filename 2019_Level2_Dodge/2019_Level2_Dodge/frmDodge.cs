@@ -111,6 +111,23 @@ namespace _2019_Level2_Dodge
 
         }
 
+
+        private void startToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            score = 0;
+            lblScore.Text = score.ToString();
+            lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
+            tmrPlanet.Enabled = true;
+            tmrShip.Enabled = true;
+
+        }
+
+        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tmrShip.Enabled = false;
+            tmrPlanet.Enabled = false;
+        }
+
         private void tmrShip_Tick(object sender, EventArgs e)
         {
             if (right) // if right arrow key pressed
