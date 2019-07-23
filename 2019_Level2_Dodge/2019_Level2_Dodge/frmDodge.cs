@@ -126,6 +126,7 @@ namespace _2019_Level2_Dodge
         {
             tmrShip.Enabled = false;
             tmrPlanet.Enabled = false;
+            //test
         }
 
         private void tmrShip_Tick(object sender, EventArgs e)
