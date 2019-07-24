@@ -160,6 +160,7 @@
             // tmrSpaceshipMouse
             // 
             this.tmrSpaceshipMouse.Enabled = true;
+            this.tmrSpaceshipMouse.Interval = 1;
             this.tmrSpaceshipMouse.Tick += new System.EventHandler(this.tmrSpaceshipMouse_Tick);
             // 
             // frmDodge
