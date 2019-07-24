@@ -148,7 +148,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
-                Cursor.Hide();
+            Cursor.Hide();
             Invalidate();
 
 
