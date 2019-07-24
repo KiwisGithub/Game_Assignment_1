@@ -186,6 +186,7 @@
             this.Load += new System.EventHandler(this.frmDodge_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDodge_MouseDown);
             this.mnuStart.ResumeLayout(false);
             this.mnuStart.PerformLayout();
             this.ResumeLayout(false);

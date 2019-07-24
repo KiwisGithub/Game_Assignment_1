@@ -17,10 +17,14 @@ namespace _2019_Level2_Dodge
         Planet[] planet = new Planet[7];
         Random yspeed = new Random();
 
+        //declare a list  missiles from the Missile class
+        List<Missile> missiles = new List<Missile>();
+
+
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
 
-        bool left, right;
+        bool left, right, up, down;
         int score, lives;
         string move;
         public frmDodge()
@@ -77,6 +81,11 @@ namespace _2019_Level2_Dodge
             }
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
+            foreach (Missile m in missiles)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
 
 
         }
@@ -116,6 +125,8 @@ namespace _2019_Level2_Dodge
         {
             if (e.KeyData == Keys.Left) { left = true; }
             if (e.KeyData == Keys.Right) { right = true; }
+            if (e.KeyData == Keys.Up) { up = true; }
+            if (e.KeyData == Keys.Down) { down = true; }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -159,6 +170,15 @@ namespace _2019_Level2_Dodge
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
         }
 
+        private void frmDodge_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+            }
+
+        }
+
         private void tmrShip_Tick(object sender, EventArgs e)
         {
             if (right) // if right arrow key pressed
@@ -171,6 +191,16 @@ namespace _2019_Level2_Dodge
                 move = "left";
                 spaceship.moveSpaceship(move);
             }
+            if (up) // if left arrow key pressed
+            {
+                move = "up";
+                spaceship.moveSpaceship(move);
+            }
+            if (down) // if left arrow key pressed
+            {
+                move = "down";
+                spaceship.moveSpaceship(move);
+            }
 
         }
 
@@ -178,6 +208,8 @@ namespace _2019_Level2_Dodge
         {
             if (e.KeyData == Keys.Left) { left = false; }
             if (e.KeyData == Keys.Right) { right = false; }
+            if (e.KeyData == Keys.Up) { up = false; }
+            if (e.KeyData == Keys.Down) { down = false; }
 
         }
     }
