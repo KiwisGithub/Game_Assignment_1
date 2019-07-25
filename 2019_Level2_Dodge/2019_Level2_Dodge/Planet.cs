@@ -20,9 +20,9 @@ namespace _2019_Level2_Dodge
         {
             x = spacing;
             y = 10;
-            width = 20;
-            height = 20;
-            planetImage = Image.FromFile("planet1.png");
+            width = 70;
+            height = 70;
+            planetImage = Image.FromFile("spaceship2.png");
             //no u
   
         }
