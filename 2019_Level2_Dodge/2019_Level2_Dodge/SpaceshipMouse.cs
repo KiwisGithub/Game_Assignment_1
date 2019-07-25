@@ -24,8 +24,8 @@ namespace _2019_Level2_Dodge
         {
             x = 10;
             y = 360;
-            width = 40;
-            height = 40;
+            width = 20;
+            height = 20;
             rotationAngle = 0;
             spaceshipMouse = Image.FromFile("crosshair1.png");
             spaceMouseRec = new Rectangle(x, y, width, height);

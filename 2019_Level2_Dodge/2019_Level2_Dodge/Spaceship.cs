@@ -31,8 +31,8 @@ namespace _2019_Level2_Dodge
         {
             x = 10;
             y = 360;
-            width = 40;
-            height = 40;
+            width = 80;
+            height = 80;
             spaceship = Image.FromFile("spaceship1.png");
             spaceRec = new Rectangle(x, y, width, height);
 
@@ -74,10 +74,10 @@ namespace _2019_Level2_Dodge
 
             if (move == "right")
             {
-                if (spaceRec.Location.X > 1405) // is spaceship within 50 of right side
+                if (spaceRec.Location.X > 1435) // is spaceship within 50 of right side
                 {
 
-                    x = 1405;
+                    x = 1435;
                     spaceRec.Location = new Point(x, y);
                 }
                 else
@@ -119,10 +119,10 @@ namespace _2019_Level2_Dodge
 
             if (move == "down")
             {
-                if (spaceRec.Location.Y > 450) // is spaceship within 50 of right side
+                if (spaceRec.Location.Y > 704) // is spaceship within 50 of right side
                 {
 
-                    y = 450;
+                    y = 734;
                     spaceRec.Location = new Point(x, y);
                 }
                 else
