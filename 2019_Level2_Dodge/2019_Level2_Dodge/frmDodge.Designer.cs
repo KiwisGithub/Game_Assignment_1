@@ -50,9 +50,9 @@
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.Silver;
-            this.pnlGame.Location = new System.Drawing.Point(12, 49);
+            this.pnlGame.Location = new System.Drawing.Point(0, 49);
             this.pnlGame.Name = "pnlGame";
-            this.pnlGame.Size = new System.Drawing.Size(500, 400);
+            this.pnlGame.Size = new System.Drawing.Size(1495, 794);
             this.pnlGame.TabIndex = 0;
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
@@ -65,13 +65,13 @@
             // tmrShip
             // 
             this.tmrShip.Enabled = true;
-            this.tmrShip.Interval = 50;
+            this.tmrShip.Interval = 20;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(396, 28);
+            this.label1.Location = new System.Drawing.Point(1417, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 1;
@@ -81,7 +81,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 28);
+            this.label2.Location = new System.Drawing.Point(88, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 2;
@@ -90,7 +90,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(160, 25);
+            this.txtName.Location = new System.Drawing.Point(132, 25);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 3;
@@ -99,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 32);
+            this.label3.Location = new System.Drawing.Point(259, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 4;
@@ -108,7 +108,7 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(344, 33);
+            this.lblScore.Location = new System.Drawing.Point(303, 28);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(13, 13);
             this.lblScore.TabIndex = 5;
@@ -117,7 +117,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 32);
+            this.label5.Location = new System.Drawing.Point(12, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 6;
@@ -126,7 +126,7 @@
             // txtLives
             // 
             this.txtLives.AutoSize = true;
-            this.txtLives.Location = new System.Drawing.Point(53, 33);
+            this.txtLives.Location = new System.Drawing.Point(53, 28);
             this.txtLives.Name = "txtLives";
             this.txtLives.Size = new System.Drawing.Size(13, 13);
             this.txtLives.TabIndex = 7;
@@ -134,12 +134,13 @@
             // 
             // mnuStart
             // 
+            this.mnuStart.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mnuStart.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem,
             this.stopToolStripMenuItem});
             this.mnuStart.Location = new System.Drawing.Point(0, 0);
             this.mnuStart.Name = "mnuStart";
-            this.mnuStart.Size = new System.Drawing.Size(634, 24);
+            this.mnuStart.Size = new System.Drawing.Size(1495, 24);
             this.mnuStart.TabIndex = 8;
             this.mnuStart.Text = "menuStrip1";
             // 
@@ -167,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(1495, 843);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.label5);

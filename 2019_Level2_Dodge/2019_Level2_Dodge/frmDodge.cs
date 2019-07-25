@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
@@ -30,6 +31,9 @@ namespace _2019_Level2_Dodge
         public frmDodge()
         {
             InitializeComponent();
+
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
+
             for (int i = 0; i < 7; i++)
             {
                 int x = 10 + (i * 70);
@@ -38,11 +42,6 @@ namespace _2019_Level2_Dodge
 
 
         }
-
-            
-           
-
-
 
         private void checkLives()
         {

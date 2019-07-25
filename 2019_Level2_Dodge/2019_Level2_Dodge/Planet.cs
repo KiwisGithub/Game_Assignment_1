@@ -30,7 +30,7 @@ namespace _2019_Level2_Dodge
         // Methods for the Planet class
         public void drawPlanet(Graphics g)
         {
-            planetRec = new Rectangle(x, y, width, height);
+            planetRec = new Rectangle(y, x, width, height);
             g.DrawImage(planetImage, planetRec);
         }
 
@@ -44,7 +44,7 @@ namespace _2019_Level2_Dodge
             {
                 score += 1;// add 1 to score when planet reaches bottom of panel
                 y = 20;
-                planetRec.Location = new Point(x, y);
+                planetRec.Location = new Point(y, x);
             }
 
         }

@@ -74,10 +74,10 @@ namespace _2019_Level2_Dodge
 
             if (move == "right")
             {
-                if (spaceRec.Location.X > 450) // is spaceship within 50 of right side
+                if (spaceRec.Location.X > 1405) // is spaceship within 50 of right side
                 {
 
-                    x = 450;
+                    x = 1405;
                     spaceRec.Location = new Point(x, y);
                 }
                 else
