@@ -28,6 +28,9 @@ namespace _2019_Level2_Dodge
         bool left, right, up, down;
         int score, lives;
         string move;
+
+
+
         public frmDodge()
         {
             InitializeComponent();
@@ -166,6 +169,9 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_MouseDown(object sender, MouseEventArgs e)
         {
+
+        
+
             if (e.Button == MouseButtons.Left)
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
@@ -175,7 +181,15 @@ namespace _2019_Level2_Dodge
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
-        }
+            var mouseCurrentX = e.X;
+            var mouseCurrentY = e.Y;
+           // public int rotationAngle;
+        //Console.WriteLine(mouseCurrentX);
+
+
+
+
+    }
 
         private void frmDodge_MouseDown(object sender, MouseEventArgs e)
         {
