@@ -29,7 +29,7 @@ namespace _2019_Level2_Dodge
         //Create a constructor (initialises the values of the fields)
         public Spaceship()
         {
-            x = 10;
+            x = 1400;
             y = 360;
             width = 80;
             height = 80;
