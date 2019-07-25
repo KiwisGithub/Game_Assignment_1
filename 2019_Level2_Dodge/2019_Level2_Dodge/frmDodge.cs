@@ -164,6 +164,14 @@ namespace _2019_Level2_Dodge
 
         }
 
+        private void pnlGame_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+            }
+        }
+
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
