@@ -122,10 +122,10 @@ namespace _2019_Level2_Dodge
 
         private void frmDodge_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Left) { left = true; }
-            if (e.KeyData == Keys.Right) { right = true; }
-            if (e.KeyData == Keys.Up) { up = true; }
-            if (e.KeyData == Keys.Down) { down = true; }
+            if (e.KeyData == Keys.A) { left = true; }
+            if (e.KeyData == Keys.D) { right = true; }
+            if (e.KeyData == Keys.W) { up = true; }
+            if (e.KeyData == Keys.S) { down = true; }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -213,10 +213,10 @@ namespace _2019_Level2_Dodge
 
         private void frmDodge_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Left) { left = false; }
-            if (e.KeyData == Keys.Right) { right = false; }
-            if (e.KeyData == Keys.Up) { up = false; }
-            if (e.KeyData == Keys.Down) { down = false; }
+            if (e.KeyData == Keys.A) { left = false; }
+            if (e.KeyData == Keys.D) { right = false; }
+            if (e.KeyData == Keys.W) { up = false; }
+            if (e.KeyData == Keys.S) { down = false; }
 
         }
     }
