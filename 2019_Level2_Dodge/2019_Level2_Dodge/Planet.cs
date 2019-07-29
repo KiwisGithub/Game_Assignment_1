@@ -19,7 +19,7 @@ namespace _2019_Level2_Dodge
         public Planet(int spacing)
         {
             x = spacing;
-            y = 10;
+            y = 1495;
             width = 70;
             height = 70;
             planetImage = Image.FromFile("spaceship2.png");
@@ -36,14 +36,14 @@ namespace _2019_Level2_Dodge
 
         public void movePlanet()
         {
-            y += 5;
+            y -= 5;
 
             planetRec.Location = new Point(x, y);
 
-            if (planetRec.Y > 400)
+            if (planetRec.Y < 5)
             {
                 score += 1;// add 1 to score when planet reaches bottom of panel
-                y = 20;
+                y = 1495;
                 planetRec.Location = new Point(y, x);
             }
 

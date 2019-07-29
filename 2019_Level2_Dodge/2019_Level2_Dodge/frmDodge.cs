@@ -75,7 +75,7 @@ namespace _2019_Level2_Dodge
             {
 
                 // generate a random number from 5 to 20 and put it in rndmspeed
-                int rndmspeed = yspeed.Next(5, 20);
+                int rndmspeed = yspeed.Next(-20, -5);
                 planet[i].y += rndmspeed;
 
                 //call the Planet class's drawPlanet method to draw the images
@@ -169,13 +169,12 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_MouseDown(object sender, MouseEventArgs e)
         {
+                    if (e.Button == MouseButtons.Left)
+                   {
+                        missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+                       System.Threading.Thread.Sleep(50);
+                   }
 
-        
-
-            if (e.Button == MouseButtons.Left)
-            {
-                missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
-            }
         }
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
