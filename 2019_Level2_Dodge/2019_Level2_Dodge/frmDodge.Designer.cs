@@ -44,6 +44,7 @@
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSpaceshipMouse = new System.Windows.Forms.Timer(this.components);
+            this.tmrMissile = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             this.pnlGame.TabIndex = 0;
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             this.pnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseDown);
+            this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
             // 
             // tmrPlanet
@@ -165,6 +167,11 @@
             this.tmrSpaceshipMouse.Interval = 1;
             this.tmrSpaceshipMouse.Tick += new System.EventHandler(this.tmrSpaceshipMouse_Tick);
             // 
+            // tmrMissile
+            // 
+            this.tmrMissile.Enabled = true;
+            this.tmrMissile.Tick += new System.EventHandler(this.tmrMissile_Tick);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
         private System.Windows.Forms.Timer tmrSpaceshipMouse;
+        private System.Windows.Forms.Timer tmrMissile;
     }
 }
 

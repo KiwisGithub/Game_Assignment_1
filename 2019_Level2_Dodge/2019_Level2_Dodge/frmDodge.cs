@@ -161,7 +161,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
-            Cursor.Hide();
+            //Cursor.Hide();
             Invalidate();
 
 
@@ -175,6 +175,17 @@ namespace _2019_Level2_Dodge
                        System.Threading.Thread.Sleep(50);
                    }
 
+        }
+
+        private void pnlGame_MouseHover(object sender, EventArgs e)
+        {
+            Cursor.Hide();
+        }
+
+        private void tmrMissile_Tick(object sender, EventArgs e)
+        {
+            missiles.Add(new Missile(spaceship.spaceRec, 270));
+            //System.Threading.Thread.Sleep(5000);
         }
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)

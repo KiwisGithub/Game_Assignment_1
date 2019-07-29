@@ -22,10 +22,10 @@ namespace _2019_Level2_Dodge
             y = 1495;
             width = 70;
             height = 70;
-            planetImage = Image.FromFile("spaceship2.png");
-            //no u
+            planetImage = Image.FromFile("spaceship4.png");
   
         }
+
 
         // Methods for the Planet class
         public void drawPlanet(Graphics g)

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Missile.cs" />
+    <Compile Include="Missile2.cs" />
     <Compile Include="SpaceshipMouse.cs" />
     <Compile Include="frmDodge.cs">
       <SubType>Form</SubType>
