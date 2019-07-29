@@ -49,7 +49,7 @@
             // 
             // pnlGame
             // 
-            this.pnlGame.BackColor = System.Drawing.Color.Silver;
+            this.pnlGame.BackColor = System.Drawing.Color.Black;
             this.pnlGame.Location = new System.Drawing.Point(0, 49);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(1495, 794);

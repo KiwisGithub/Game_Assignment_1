@@ -24,7 +24,6 @@ namespace _2019_Level2_Dodge
         public Missile(Rectangle spaceRec, int missileRotate)
         {
             width = 10;
-            //test
             height = 20;
             missile = Image.FromFile("bullet.png");
             missileRec = new Rectangle(x, y, width, height);
