@@ -18,6 +18,7 @@ namespace _2019_Level2_Dodge
         Planet[] planet = new Planet[7];
         Random yspeed = new Random();
 
+        float timer = 0f;
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
 
@@ -184,8 +185,12 @@ namespace _2019_Level2_Dodge
 
         private void tmrMissile_Tick(object sender, EventArgs e)
         {
-            missiles.Add(new Missile(spaceship.spaceRec, 270));
-            //System.Threading.Thread.Sleep(5000);
+            foreach (Planet p in planet)
+            {
+                //missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles.Add(new Missile(p.planetRec, 270));
+                //System.Threading.Thread.Sleep(5000);
+            }
         }
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
