@@ -40,7 +40,7 @@ namespace _2019_Level2_Dodge
 
         public void drawMissile(Graphics g)
         {
-            if (missileRec.Y > 0)
+            if ((missileRec.Y > 0) && (missileRec.Y < 1400))
             {
                 //centre missile 
                 centreMissile = new Point(x, y);

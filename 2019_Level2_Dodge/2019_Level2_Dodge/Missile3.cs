@@ -23,7 +23,7 @@ namespace _2019_Level2_Dodge
         public Missile3(Rectangle spaceRec, int missileRotate)
         {
             width = 10;
-            height = 20;
+            height = 160;
             missile = Image.FromFile("bullet3.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
@@ -39,7 +39,7 @@ namespace _2019_Level2_Dodge
 
         public void drawMissile(Graphics g)
         {
-            if (missileRec.Y > 0)
+            if ((missileRec.Y > 0) && (missileRec.Y < 1400))
             {
                 //centre missile 
                 centreMissile = new Point(x, y);

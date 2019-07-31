@@ -19,11 +19,10 @@ namespace _2019_Level2_Dodge
         public Enemy(int spacing)
         {
             x = spacing;
-            y = 1495;
+            y = 1600;
             width = 70;
             height = 70;
             planetImage = Image.FromFile("spaceship4.png");
-  
         }
 
 
