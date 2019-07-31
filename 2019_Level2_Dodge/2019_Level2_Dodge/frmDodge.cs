@@ -22,6 +22,8 @@ namespace _2019_Level2_Dodge
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
 
+        
+
 
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
@@ -187,6 +189,7 @@ namespace _2019_Level2_Dodge
         {
             foreach (Planet p in planet)
             {
+
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
                 missiles.Add(new Missile(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);

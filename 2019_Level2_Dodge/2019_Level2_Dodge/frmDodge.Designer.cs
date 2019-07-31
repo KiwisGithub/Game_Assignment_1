@@ -170,6 +170,7 @@
             // tmrMissile
             // 
             this.tmrMissile.Enabled = true;
+            this.tmrMissile.Interval = 1500;
             this.tmrMissile.Tick += new System.EventHandler(this.tmrMissile_Tick);
             // 
             // frmDodge
