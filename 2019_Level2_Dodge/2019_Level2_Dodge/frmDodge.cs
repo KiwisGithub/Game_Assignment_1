@@ -168,7 +168,7 @@ namespace _2019_Level2_Dodge
             Invalidate();
 
 
-        }
+        } 
 
         private void pnlGame_MouseDown(object sender, MouseEventArgs e)
         {
@@ -196,15 +196,16 @@ namespace _2019_Level2_Dodge
             }
         }
 
+        private void pnlGame_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor.Show();
+        }
+
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
             var mouseCurrentX = e.X;
             var mouseCurrentY = e.Y;
-           // public int rotationAngle;
-        //Console.WriteLine(mouseCurrentX);
-
-
 
 
     }
