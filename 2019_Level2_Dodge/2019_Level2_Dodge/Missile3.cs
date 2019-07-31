@@ -39,16 +39,20 @@ namespace _2019_Level2_Dodge
 
         public void drawMissile(Graphics g)
         {
-            //centre missile 
-            centreMissile = new Point(x, y);
-            //instantiate a Matrix object called matrixMissile
-            matrixMissile = new Matrix();
-            //rotate the matrix (in this case missileRec) about its centre
-            matrixMissile.RotateAt(missileRotated, centreMissile);
-            //Set the current draw location to the rotated matrix point i.e. where missileRec is now
-            g.Transform = matrixMissile;
-            //Draw the missile
-            g.DrawImage(missile, missileRec);
+            if (missileRec.Y > 0)
+            {
+                //centre missile 
+                centreMissile = new Point(x, y);
+                //instantiate a Matrix object called matrixMissile
+                matrixMissile = new Matrix();
+                //rotate the matrix (in this case missileRec) about its centre
+                matrixMissile.RotateAt(missileRotated, centreMissile);
+                //Set the current draw location to the rotated matrix point i.e. where missileRec is now
+                g.Transform = matrixMissile;
+                //Draw the missile
+                g.DrawImage(missile, missileRec);
+            }
+            
 
         }
         public void moveMissile(Graphics g)

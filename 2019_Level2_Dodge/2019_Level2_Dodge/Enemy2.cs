@@ -19,9 +19,9 @@ namespace _2019_Level2_Dodge
         public Enemy2(int spacing)
         {
             x = spacing;
-            y = 1495;
-            width = 70;
-            height = 70;
+            y = 1900;
+            width = 80;
+            height = 80;
             planetImage = Image.FromFile("spaceship2.png");
 
         }
@@ -45,7 +45,7 @@ namespace _2019_Level2_Dodge
             if (planetRec.Y < -10)
             {
                 score += 1;// add 1 to score when planet reaches bottom of panel
-                y = 1495;
+                y = 1900;
                 planetRec.Location = new Point(y, x);
             }
 
