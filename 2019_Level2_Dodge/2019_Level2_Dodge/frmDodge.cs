@@ -21,8 +21,9 @@ namespace _2019_Level2_Dodge
         float timer = 0f;
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
+        List<Missile2> missiles2 = new List<Missile2>();
 
-        
+
 
 
         Spaceship spaceship = new Spaceship();
@@ -87,6 +88,12 @@ namespace _2019_Level2_Dodge
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
             foreach (Missile m in missiles)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+
+            foreach (Missile2 m in missiles2)
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
@@ -175,7 +182,7 @@ namespace _2019_Level2_Dodge
                     if (e.Button == MouseButtons.Left)
                    {
                         missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
-                       System.Threading.Thread.Sleep(50);
+                       //System.Threading.Thread.Sleep(50);
                    }
 
         }
@@ -191,7 +198,7 @@ namespace _2019_Level2_Dodge
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles.Add(new Missile(p.planetRec, 270));
+                missiles2.Add(new Missile2(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
         }

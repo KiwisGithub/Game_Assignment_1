@@ -24,7 +24,7 @@ namespace _2019_Level2_Dodge
         {
             width = 10;
             height = 20;
-            missile = Image.FromFile("missile_small.png");
+            missile = Image.FromFile("bullet2.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
             xSpeed = 30 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
