@@ -15,7 +15,8 @@ namespace _2019_Level2_Dodge
     {
         Graphics g; //declare a graphics object called g
                     // declare space for an array of 7 objects called planet 
-        Planet[] planet = new Planet[7];
+        Enemy[] planet = new Enemy[7];
+        Enemy2[] planet2 = new Enemy2[7];
         Random yspeed = new Random();
 
         float timer = 0f;
@@ -45,7 +46,8 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 int x = 10 + (i * 70);
-                planet[i] = new Planet(x);
+                planet[i] = new Enemy(x);
+                planet2[i] = new Enemy2(x);
             }
 
 
@@ -82,9 +84,14 @@ namespace _2019_Level2_Dodge
                 // generate a random number from 5 to 20 and put it in rndmspeed
                 int rndmspeed = yspeed.Next(-20, -5);
                 planet[i].y += rndmspeed;
+                planet2[i].y += rndmspeed;
 
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
+                planet2[i].drawPlanet(g);
+
+
+    
             }
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
@@ -123,6 +130,7 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
+                planet2[i].movePlanet();
                 if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
                 {
                     //reset planet[i] back to top of panel
@@ -201,7 +209,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrMissile_Tick(object sender, EventArgs e)
         {
-            foreach (Planet p in planet)
+            foreach (Enemy p in planet)
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
@@ -217,7 +225,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrMissile2_Tick(object sender, EventArgs e)
         {
-            foreach (Planet p in planet)
+            foreach (Enemy2 p in planet2)
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));

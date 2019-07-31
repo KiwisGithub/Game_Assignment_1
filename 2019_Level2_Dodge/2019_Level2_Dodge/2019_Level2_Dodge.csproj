@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enemy2.cs" />
     <Compile Include="Missile.cs" />
     <Compile Include="Missile2.cs" />
     <Compile Include="Missile3.cs" />
@@ -55,7 +56,7 @@
     <Compile Include="frmDodge.Designer.cs">
       <DependentUpon>frmDodge.cs</DependentUpon>
     </Compile>
-    <Compile Include="Planet.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spaceship.cs" />
