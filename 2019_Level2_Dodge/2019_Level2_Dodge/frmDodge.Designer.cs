@@ -45,6 +45,7 @@
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSpaceshipMouse = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile = new System.Windows.Forms.Timer(this.components);
+            this.tmrMissile2 = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,6 +175,11 @@
             this.tmrMissile.Interval = 1500;
             this.tmrMissile.Tick += new System.EventHandler(this.tmrMissile_Tick);
             // 
+            // tmrMissile2
+            // 
+            this.tmrMissile2.Enabled = true;
+            this.tmrMissile2.Tick += new System.EventHandler(this.tmrMissile2_Tick);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +228,7 @@
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
         private System.Windows.Forms.Timer tmrSpaceshipMouse;
         private System.Windows.Forms.Timer tmrMissile;
+        private System.Windows.Forms.Timer tmrMissile2;
     }
 }
 

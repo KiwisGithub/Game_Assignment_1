@@ -22,6 +22,7 @@ namespace _2019_Level2_Dodge
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
         List<Missile2> missiles2 = new List<Missile2>();
+        List<Missile3> missiles3 = new List<Missile3>();
 
 
 
@@ -94,6 +95,12 @@ namespace _2019_Level2_Dodge
             }
 
             foreach (Missile2 m in missiles2)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+
+            foreach (Missile3 m in missiles3)
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
@@ -206,6 +213,17 @@ namespace _2019_Level2_Dodge
         private void pnlGame_MouseLeave(object sender, EventArgs e)
         {
             Cursor.Show();
+        }
+
+        private void tmrMissile2_Tick(object sender, EventArgs e)
+        {
+            foreach (Planet p in planet)
+            {
+
+                //missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles3.Add(new Missile3(p.planetRec, 270));
+                //System.Threading.Thread.Sleep(5000);
+            }
         }
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
