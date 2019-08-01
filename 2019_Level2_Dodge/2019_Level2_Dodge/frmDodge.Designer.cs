@@ -53,6 +53,7 @@
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.Black;
+            this.pnlGame.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.pnlGame.Location = new System.Drawing.Point(0, 49);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(1495, 794);
