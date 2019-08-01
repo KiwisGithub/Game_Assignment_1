@@ -125,14 +125,15 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(25, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Lives:";
+            this.label5.Text = "HP:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtLives
             // 
             this.txtLives.AutoSize = true;
-            this.txtLives.Location = new System.Drawing.Point(53, 28);
+            this.txtLives.Location = new System.Drawing.Point(43, 28);
             this.txtLives.Name = "txtLives";
             this.txtLives.Size = new System.Drawing.Size(13, 13);
             this.txtLives.TabIndex = 7;

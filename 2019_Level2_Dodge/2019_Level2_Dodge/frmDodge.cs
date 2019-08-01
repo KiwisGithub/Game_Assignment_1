@@ -102,6 +102,7 @@ namespace _2019_Level2_Dodge
             spaceshipMouse.drawSpaceshipMouse(g);
             foreach (Missile m in missiles)
             {
+               
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
@@ -198,7 +199,7 @@ namespace _2019_Level2_Dodge
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
             //Cursor.Hide();
-            Invalidate();
+           // Invalidate();
 
 
         } 
@@ -227,6 +228,15 @@ namespace _2019_Level2_Dodge
                 missiles2.Add(new Missile2(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
+
+            foreach (Missile2 m2 in missiles2)
+            {
+                if ((m2.x < 0))
+                {
+                    missiles2.Remove(m2);
+                    break;
+                }
+            }
         }
 
         private void pnlGame_MouseLeave(object sender, EventArgs e)
@@ -243,6 +253,16 @@ namespace _2019_Level2_Dodge
                 missiles3.Add(new Missile3(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
+
+            foreach (Missile3 m3 in missiles3)
+            {
+                if ((m3.x < 0))
+                {
+                    missiles3.Remove(m3);
+                    break;
+                }
+            }
+
         }
 
         private void tmrMissile3_Tick(object sender, EventArgs e)
@@ -254,6 +274,19 @@ namespace _2019_Level2_Dodge
                 missiles4.Add(new Missile4(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
+            foreach (Missile4 m4 in missiles4)
+            {
+                if ((m4.x < 0) )
+                {
+                    missiles4.Remove(m4);
+                    break;
+                }
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)

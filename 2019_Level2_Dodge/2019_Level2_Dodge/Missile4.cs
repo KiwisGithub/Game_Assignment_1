@@ -12,6 +12,7 @@ namespace _2019_Level2_Dodge
     {
         public int x, y, width, height;
         public int missileRotated;
+        public bool drawTheMissile = true;
         public double xSpeed, ySpeed;
         public Image missile;//variable for the missile's image
         public Rectangle missileRec;//variable for a rectangle to place our image in
