@@ -208,7 +208,7 @@
             this.KeyPreview = true;
             this.Name = "frmDodge";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Planet Doge";
+            this.Text = "Planet Doge | Game";
             this.Load += new System.EventHandler(this.frmDodge_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyUp);

@@ -28,3 +28,4 @@ C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_
 C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csproj.CoreCompileInputs.cache
 C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.exe
 C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.pdb
+C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\_2019_Level2_Dodge.frmMenu.resources
