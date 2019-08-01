@@ -20,7 +20,7 @@ namespace _2019_Level2_Dodge
         Enemy3[] planet3 = new Enemy3[7];
         Random yspeed = new Random();
 
-        float timer = 0f;
+        //float timer = 0f;
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
         List<Missile2> missiles2 = new List<Missile2>();
