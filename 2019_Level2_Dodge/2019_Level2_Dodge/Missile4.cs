@@ -8,7 +8,7 @@ using System.Drawing.Drawing2D;
 
 namespace _2019_Level2_Dodge
 {
-    class Missile3
+    class Missile4
     {
         public int x, y, width, height;
         public int missileRotated;
@@ -20,11 +20,11 @@ namespace _2019_Level2_Dodge
         // in the following constructor we pass in the values of spaceRec and the rotation angle of the spaceship
         // this gives us the position of the spaceship which we can then use to place the
         // missile where the spaceship is located and at the correct angle
-        public Missile3(Rectangle spaceRec, int missileRotate)
+        public Missile4(Rectangle spaceRec, int missileRotate)
         {
             width = 10;
-            height = 900;
-            missile = Image.FromFile("bullet3.png");
+            height = 30;
+            missile = Image.FromFile("bullet2.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
             xSpeed = 30 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
@@ -52,7 +52,6 @@ namespace _2019_Level2_Dodge
                 //Draw the missile
                 g.DrawImage(missile, missileRec);
             }
-            
 
         }
         public void moveMissile(Graphics g)

@@ -17,6 +17,7 @@ namespace _2019_Level2_Dodge
                     // declare space for an array of 7 objects called planet 
         Enemy[] planet = new Enemy[7];
         Enemy2[] planet2 = new Enemy2[7];
+        Enemy3[] planet3 = new Enemy3[7];
         Random yspeed = new Random();
 
         float timer = 0f;
@@ -24,6 +25,7 @@ namespace _2019_Level2_Dodge
         List<Missile> missiles = new List<Missile>();
         List<Missile2> missiles2 = new List<Missile2>();
         List<Missile3> missiles3 = new List<Missile3>();
+        List<Missile4> missiles4 = new List<Missile4>();
 
 
 
@@ -48,6 +50,7 @@ namespace _2019_Level2_Dodge
                 int x = 10 + (i * 70);
                 planet[i] = new Enemy(x);
                 planet2[i] = new Enemy2(x);
+                planet3[i] = new Enemy3(x);
             }
 
 
@@ -85,13 +88,15 @@ namespace _2019_Level2_Dodge
                 int rndmspeed = yspeed.Next(-20, -5);
                 planet[i].y += rndmspeed;
                 planet2[i].y += rndmspeed;
+                planet3[i].y += rndmspeed;
 
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
                 planet2[i].drawPlanet(g);
+                planet3[i].drawPlanet(g);
 
 
-    
+
             }
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
@@ -108,6 +113,12 @@ namespace _2019_Level2_Dodge
             }
 
             foreach (Missile3 m in missiles3)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+
+            foreach (Missile4 m in missiles4)
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
@@ -230,6 +241,17 @@ namespace _2019_Level2_Dodge
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
                 missiles3.Add(new Missile3(p.planetRec, 270));
+                //System.Threading.Thread.Sleep(5000);
+            }
+        }
+
+        private void tmrMissile3_Tick(object sender, EventArgs e)
+        {
+            foreach (Enemy3 p in planet3)
+            {
+
+                //missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles4.Add(new Missile4(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
         }

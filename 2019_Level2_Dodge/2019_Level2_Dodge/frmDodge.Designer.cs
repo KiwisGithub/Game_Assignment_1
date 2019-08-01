@@ -46,6 +46,7 @@
             this.tmrSpaceshipMouse = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile2 = new System.Windows.Forms.Timer(this.components);
+            this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,7 +179,14 @@
             // tmrMissile2
             // 
             this.tmrMissile2.Enabled = true;
+            this.tmrMissile2.Interval = 10000;
             this.tmrMissile2.Tick += new System.EventHandler(this.tmrMissile2_Tick);
+            // 
+            // tmrMissile3
+            // 
+            this.tmrMissile3.Enabled = true;
+            this.tmrMissile3.Interval = 3000;
+            this.tmrMissile3.Tick += new System.EventHandler(this.tmrMissile3_Tick);
             // 
             // frmDodge
             // 
@@ -229,6 +237,7 @@
         private System.Windows.Forms.Timer tmrSpaceshipMouse;
         private System.Windows.Forms.Timer tmrMissile;
         private System.Windows.Forms.Timer tmrMissile2;
+        private System.Windows.Forms.Timer tmrMissile3;
     }
 }
 
