@@ -194,7 +194,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1495, 843);
+            this.ControlBox = false;
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.label5);
@@ -205,6 +207,7 @@
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.mnuStart);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "frmDodge";
