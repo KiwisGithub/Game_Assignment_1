@@ -51,10 +51,15 @@ MessageBoxIcon.Question);
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             //Application.Exit();
-            DialogResult result1 = MessageBox.Show("ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴍᴇ :(",
+            DialogResult result1 = MessageBox.Show("Bruh?",
     "Are you sure you want to Exit?",
     MessageBoxButtons.YesNo,
-    MessageBoxIcon.Warning);
+    MessageBoxIcon.Warning,
+    MessageBoxDefaultButton.Button2);
+            if (result1 == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
