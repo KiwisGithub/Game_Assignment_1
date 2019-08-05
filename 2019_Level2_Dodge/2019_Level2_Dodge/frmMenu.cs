@@ -40,20 +40,20 @@ MessageBoxIcon.Question);
         }
 
         frmDodge playForm = new frmDodge();
-        //frmMenu homeForm = new frmMenu();
+        //var frmMenu homeForm = new frmMenu();
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             playForm.Show();
             //Application.Exit();
-            this.Close();
+            //this.Close();
 
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             //Application.Exit();
-            DialogResult result1 = MessageBox.Show("Bruh?",
-    "Are you sure you want to Exit?",
+            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit?",
+    "Bruh?",
     MessageBoxButtons.YesNo,
     MessageBoxIcon.Warning,
     MessageBoxDefaultButton.Button2);
@@ -61,6 +61,28 @@ MessageBoxIcon.Question);
             {
                 Application.Exit();
             }
+        }
+
+        private void pictureBox6_MouseHover(object sender, EventArgs e)
+        {
+            //this.SuspendLayout();
+            //pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.X + 1);
+            
+        }
+
+        private void pictureBox6_MouseLeave(object sender, EventArgs e)
+        {
+            //pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.X - 1);
+        }
+
+        private void txtname(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLives_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNamebox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLives = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -45,12 +45,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNamebox
             // 
-            this.textBox1.Location = new System.Drawing.Point(670, 426);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtNamebox.Location = new System.Drawing.Point(670, 426);
+            this.txtNamebox.Name = "txtNamebox";
+            this.txtNamebox.Size = new System.Drawing.Size(147, 20);
+            this.txtNamebox.TabIndex = 0;
+            this.txtNamebox.Text = "Gerald";
+            this.txtNamebox.TextChanged += new System.EventHandler(this.txtname);
             // 
             // pictureBox1
             // 
@@ -81,12 +83,14 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // txtLives
             // 
-            this.textBox2.Location = new System.Drawing.Point(670, 503);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtLives.Location = new System.Drawing.Point(670, 503);
+            this.txtLives.Name = "txtLives";
+            this.txtLives.Size = new System.Drawing.Size(147, 20);
+            this.txtLives.TabIndex = 5;
+            this.txtLives.Text = "10";
+            this.txtLives.TextChanged += new System.EventHandler(this.txtLives_TextChanged);
             // 
             // pictureBox4
             // 
@@ -120,6 +124,8 @@
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBox6.MouseLeave += new System.EventHandler(this.pictureBox6_MouseLeave);
+            this.pictureBox6.MouseHover += new System.EventHandler(this.pictureBox6_MouseHover);
             // 
             // frmMenu
             // 
@@ -132,11 +138,11 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLives);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNamebox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";
@@ -155,11 +161,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNamebox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLives;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
