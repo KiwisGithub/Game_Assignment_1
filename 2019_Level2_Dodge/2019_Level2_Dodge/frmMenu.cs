@@ -14,8 +14,8 @@ namespace _2019_Level2_Dodge
     public partial class frmMenu : Form
     {
 
-        public static string SetValueFortxtNamebox = "";
-        public static string SetValueFornumHP = "";
+        public static string SetValueFortxtNamebox = "No Name Given";
+        public static string SetValueFornumHP = "No HP Given";
 
         public frmMenu()
         {
@@ -48,6 +48,11 @@ namespace _2019_Level2_Dodge
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             //playForm.Show();
+
+            SetValueFortxtNamebox = txtNamebox.Text;
+            SetValueFornumHP = numHP.Text;
+
+
             frmDodge playForm = new frmDodge();
             //Application.Exit();
             this.Close();
@@ -84,7 +89,7 @@ namespace _2019_Level2_Dodge
 
         private void txtname(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txtLives_TextChanged(object sender, EventArgs e)
