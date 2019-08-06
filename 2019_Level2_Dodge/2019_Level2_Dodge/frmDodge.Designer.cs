@@ -35,7 +35,6 @@
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,6 +46,8 @@
             this.tmrMissile = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile2 = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblNametag = new System.Windows.Forms.Label();
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,14 +95,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(132, 25);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 3;
-            this.txtName.Visible = false;
             // 
             // label3
             // 
@@ -190,6 +183,24 @@
             this.tmrMissile3.Interval = 3000;
             this.tmrMissile3.Tick += new System.EventHandler(this.tmrMissile3_Tick);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(741, 415);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "5";
+            // 
+            // lblNametag
+            // 
+            this.lblNametag.AutoSize = true;
+            this.lblNametag.Location = new System.Drawing.Point(132, 28);
+            this.lblNametag.Name = "lblNametag";
+            this.lblNametag.Size = new System.Drawing.Size(35, 13);
+            this.lblNametag.TabIndex = 9;
+            this.lblNametag.Text = "Name";
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,7 +208,8 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblNametag);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblScore);
@@ -230,7 +242,6 @@
         private System.Windows.Forms.Timer tmrPlanet;
         private System.Windows.Forms.Timer tmrShip;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblScore;
@@ -243,6 +254,8 @@
         private System.Windows.Forms.Timer tmrMissile;
         private System.Windows.Forms.Timer tmrMissile2;
         private System.Windows.Forms.Timer tmrMissile3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblNametag;
     }
 }
 

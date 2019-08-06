@@ -130,5 +130,65 @@
   <ItemGroup>
     <None Include="bin\Debug\exit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\alien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet3old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\crosshair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\doge-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\exit hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HP-1.png %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Kiwi-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\missile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\missile_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\New Piskel-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\planet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
