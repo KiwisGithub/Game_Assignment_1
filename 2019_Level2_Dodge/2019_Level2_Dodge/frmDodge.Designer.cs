@@ -41,14 +41,13 @@
             this.mnuStart = new System.Windows.Forms.MenuStrip();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSpaceshipMouse = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile2 = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.lblNametag = new System.Windows.Forms.Label();
             this.pnlGame = new System.Windows.Forms.Panel();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,6 +146,13 @@
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // tmrSpaceshipMouse
             // 
             this.tmrSpaceshipMouse.Enabled = true;
@@ -171,15 +177,6 @@
             this.tmrMissile3.Interval = 3000;
             this.tmrMissile3.Tick += new System.EventHandler(this.tmrMissile3_Tick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(741, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "5";
-            // 
             // lblNametag
             // 
             this.lblNametag.AutoSize = true;
@@ -203,13 +200,6 @@
             this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,7 +208,6 @@
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
             this.Controls.Add(this.lblNametag);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblScore);
@@ -263,7 +252,6 @@
         private System.Windows.Forms.Timer tmrMissile;
         private System.Windows.Forms.Timer tmrMissile2;
         private System.Windows.Forms.Timer tmrMissile3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblNametag;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }

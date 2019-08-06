@@ -16,7 +16,9 @@ namespace _2019_Level2_Dodge
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu());
+            new frmMenu().Show();
+            //Application.Run(new frmMenu());
+            Application.Run();
         }
     }
 }
