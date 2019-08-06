@@ -291,6 +291,11 @@ namespace _2019_Level2_Dodge
 
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);

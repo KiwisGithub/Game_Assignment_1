@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodge));
-            this.pnlGame = new System.Windows.Forms.Panel();
             this.tmrPlanet = new System.Windows.Forms.Timer(this.components);
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -48,22 +47,10 @@
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.lblNametag = new System.Windows.Forms.Label();
+            this.pnlGame = new System.Windows.Forms.Panel();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlGame
-            // 
-            this.pnlGame.BackColor = System.Drawing.Color.Black;
-            this.pnlGame.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
-            this.pnlGame.Location = new System.Drawing.Point(0, 49);
-            this.pnlGame.Name = "pnlGame";
-            this.pnlGame.Size = new System.Drawing.Size(1495, 794);
-            this.pnlGame.TabIndex = 0;
-            this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
-            this.pnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseDown);
-            this.pnlGame.MouseLeave += new System.EventHandler(this.pnlGame_MouseLeave);
-            this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
-            this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
             // 
             // tmrPlanet
             // 
@@ -138,7 +125,8 @@
             this.mnuStart.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mnuStart.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem,
-            this.stopToolStripMenuItem});
+            this.stopToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.mnuStart.Location = new System.Drawing.Point(0, 0);
             this.mnuStart.Name = "mnuStart";
             this.mnuStart.Size = new System.Drawing.Size(1495, 24);
@@ -201,6 +189,27 @@
             this.lblNametag.TabIndex = 9;
             this.lblNametag.Text = "Name";
             // 
+            // pnlGame
+            // 
+            this.pnlGame.BackColor = System.Drawing.Color.Black;
+            this.pnlGame.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pnlGame.Location = new System.Drawing.Point(0, 49);
+            this.pnlGame.Name = "pnlGame";
+            this.pnlGame.Size = new System.Drawing.Size(1495, 794);
+            this.pnlGame.TabIndex = 0;
+            this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
+            this.pnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseDown);
+            this.pnlGame.MouseLeave += new System.EventHandler(this.pnlGame_MouseLeave);
+            this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
+            this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +265,7 @@
         private System.Windows.Forms.Timer tmrMissile3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblNametag;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
