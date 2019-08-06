@@ -13,6 +13,10 @@ namespace _2019_Level2_Dodge
 {
     public partial class frmMenu : Form
     {
+
+        public static string SetValueForText1 = "";
+        public static string SetValueForText2 = "";
+
         public frmMenu()
         {
             InitializeComponent();
