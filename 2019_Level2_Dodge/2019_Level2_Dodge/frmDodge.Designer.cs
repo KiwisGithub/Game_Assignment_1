@@ -85,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(259, 28);
+            this.label3.Location = new System.Drawing.Point(192, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 4;
@@ -94,7 +94,7 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(303, 28);
+            this.lblScore.Location = new System.Drawing.Point(231, 29);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(13, 13);
             this.lblScore.TabIndex = 5;
@@ -180,7 +180,7 @@
             // lblNametag
             // 
             this.lblNametag.AutoSize = true;
-            this.lblNametag.Location = new System.Drawing.Point(132, 28);
+            this.lblNametag.Location = new System.Drawing.Point(126, 29);
             this.lblNametag.Name = "lblNametag";
             this.lblNametag.Size = new System.Drawing.Size(35, 13);
             this.lblNametag.TabIndex = 9;
@@ -225,6 +225,7 @@
             this.Text = "Planet Doge | Game";
             this.Load += new System.EventHandler(this.frmDodge_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmDodge_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyUp);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDodge_MouseDown);
             this.mnuStart.ResumeLayout(false);

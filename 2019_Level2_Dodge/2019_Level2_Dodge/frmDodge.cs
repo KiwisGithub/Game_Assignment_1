@@ -170,6 +170,7 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.D) { right = true; }
             if (e.KeyData == Keys.W) { up = true; }
             if (e.KeyData == Keys.S) { down = true; }
+           // if (e.KeyData == Keys.Escape) { escape = true; }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -298,6 +299,10 @@ namespace _2019_Level2_Dodge
             Application.Exit();
         }
 
+        private void frmDodge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
@@ -347,6 +352,7 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.D) { right = false; }
             if (e.KeyData == Keys.W) { up = false; }
             if (e.KeyData == Keys.S) { down = false; }
+           // if (e.KeyData == Keys.Escape) { escape = false; }
 
         }
     }
