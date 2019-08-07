@@ -48,7 +48,7 @@ namespace _2019_Level2_Dodge
 
             for (int i = 0; i < 7; i++)
             {
-                int x = 10 + (i * 70);
+                int x = 10 + (i * 140);
                 planet[i] = new Enemy(x);
                 planet2[i] = new Enemy2(x);
                 planet3[i] = new Enemy3(x);
@@ -147,14 +147,14 @@ namespace _2019_Level2_Dodge
             {
                 planet[i].movePlanet();
                 planet2[i].movePlanet();
-                if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
-                {
+                //if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
+                //{
                     //reset planet[i] back to top of panel
-                    planet[i].y = 30; // set  y value of planetRec
-                    lives -= 1;// lose a life
-                    txtLives.Text = lives.ToString();// display number of lives
-                    checkLives();
-                }
+                    //planet[i].y = 1495; // set  y value of planetRec
+                   // lives -= 1;// lose a life
+                  //  txtLives.Text = lives.ToString();// display number of lives
+                 //   checkLives();
+              //  }
 
 
                 score += planet[i].score;// get score from Planet class (in movePlanet method)
@@ -216,6 +216,10 @@ namespace _2019_Level2_Dodge
         {
             Cursor.Hide();
         }
+        private void pnlGame_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor.Show();
+        }
 
         private void tmrMissile_Tick(object sender, EventArgs e)
         {
@@ -223,7 +227,7 @@ namespace _2019_Level2_Dodge
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles2.Add(new Missile2(p.planetRec, 270));
+               // missiles2.Add(new Missile2(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
 
@@ -234,13 +238,15 @@ namespace _2019_Level2_Dodge
                     missiles2.Remove(m2);
                     break;
                 }
+                if ((m2.x > 1000))
+                {
+                    missiles2.Remove(m2);
+                    break;
+                }
             }
         }
 
-        private void pnlGame_MouseLeave(object sender, EventArgs e)
-        {
-            Cursor.Show();
-        }
+
 
         private void tmrMissile2_Tick(object sender, EventArgs e)
         {
@@ -248,7 +254,7 @@ namespace _2019_Level2_Dodge
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles3.Add(new Missile3(p.planetRec, 270));
+                //missiles3.Add(new Missile3(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
 
@@ -269,7 +275,7 @@ namespace _2019_Level2_Dodge
             {
 
                 //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles4.Add(new Missile4(p.planetRec, 270));
+                //missiles4.Add(new Missile4(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
             foreach (Missile4 m4 in missiles4)
