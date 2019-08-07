@@ -36,7 +36,7 @@ namespace _2019_Level2_Dodge
             spaceship = Image.FromFile("spaceship1.png");
             spaceRec = new Rectangle(x, y, width, height);
 
-            rotationAngle = 65;
+            rotationAngle = 90;
             spaceshipMouse = Image.FromFile("alien1.png");
             spaceMouseRec = new Rectangle(x, y, width, height);
 

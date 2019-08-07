@@ -23,6 +23,7 @@ namespace _2019_Level2_Dodge
             width = 70;
             height = 70;
             planetImage = Image.FromFile("spaceship4.png");
+
         }
 
 

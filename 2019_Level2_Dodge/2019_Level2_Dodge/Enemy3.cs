@@ -19,9 +19,9 @@ namespace _2019_Level2_Dodge
         public Enemy3(int spacing)
         {
             x = spacing;
-            y = 3000;
-            width = 80;
-            height = 80;
+            y = 4000;
+            width = 100;
+            height = 100;
             planetImage = Image.FromFile("spaceship3.png");
 
         }
@@ -38,7 +38,7 @@ namespace _2019_Level2_Dodge
 
         public void movePlanet()
         {
-            y -= 5;
+            y -= 1;
 
             planetRec.Location = new Point(x, y);
 

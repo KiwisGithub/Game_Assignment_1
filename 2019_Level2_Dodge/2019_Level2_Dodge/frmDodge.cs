@@ -37,7 +37,9 @@ namespace _2019_Level2_Dodge
         int score, lives;
         string move;
 
-
+        double x, y;
+        double phi = 0;
+        int radius = 200;
 
 
         public frmDodge()
@@ -197,7 +199,7 @@ namespace _2019_Level2_Dodge
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
             //Cursor.Hide();
-           // Invalidate();
+            Invalidate();
 
 
         } 
@@ -318,6 +320,21 @@ namespace _2019_Level2_Dodge
         private void lblNametag_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tmrMouse_Tick(object sender, EventArgs e)
+        {
+            Invalidate();
+        }
+
+        private void tmrCircle_Tick(object sender, EventArgs e)
+        {
+            int centre_x = 200, centre_y = 200;
+            phi += 0.01;
+
+            x = radius * Math.Cos(phi) + centre_x;
+            y = radius * Math.Sin(phi) + centre_y;
+            Invalidate();
         }
 
         private void frmDodge_MouseDown(object sender, MouseEventArgs e)
