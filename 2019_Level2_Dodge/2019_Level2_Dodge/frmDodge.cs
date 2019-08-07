@@ -164,14 +164,7 @@ namespace _2019_Level2_Dodge
             pnlGame.Invalidate();//makes the paint event fire to redraw the panel
         }
 
-        private void frmDodge_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyData == Keys.A) { left = true; }
-            if (e.KeyData == Keys.D) { right = true; }
-            if (e.KeyData == Keys.W) { up = true; }
-            if (e.KeyData == Keys.S) { down = true; }
-           // if (e.KeyData == Keys.Escape) { escape = true; }
-        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -296,7 +289,18 @@ namespace _2019_Level2_Dodge
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
+     "Bruh?",
+     MessageBoxButtons.YesNo,
+     MessageBoxIcon.Warning,
+     MessageBoxDefaultButton.Button2);
+            if (result1 == DialogResult.Yes)
+            {
+                frmMenu mnuForm = new frmMenu();
+                //Application.Exit();
+                this.Close();
+                mnuForm.Show();
+            }
         }
 
         private void frmDodge_KeyPress(object sender, KeyPressEventArgs e)
@@ -343,6 +347,49 @@ namespace _2019_Level2_Dodge
                 move = "down";
                 spaceship.moveSpaceship(move);
             }
+
+
+        }
+
+        private void frmDodge_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.A) { left = true; }
+            if (e.KeyData == Keys.D) { right = true; }
+            if (e.KeyData == Keys.W) { up = true; }
+            if (e.KeyData == Keys.S) { down = true; }
+            if (e.KeyData == Keys.Escape)
+            {
+
+                tmrShip.Enabled = false;
+                tmrPlanet.Enabled = false;
+                tmrMissile.Enabled = false;
+                tmrMissile2.Enabled = false;
+                tmrMissile3.Enabled = false;
+
+
+                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
+                 "Bruh?",
+                  MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Warning,
+                 MessageBoxDefaultButton.Button2);
+                if (result1 == DialogResult.Yes)
+                    {
+                        frmMenu mnuForm = new frmMenu();
+                        //Application.Exit();
+                        this.Close();
+                        mnuForm.Show();
+                 }
+
+                else
+                {
+                    tmrShip.Enabled = true;
+                    tmrPlanet.Enabled = true;
+                    tmrMissile.Enabled = true;
+                    tmrMissile2.Enabled = true;
+                    tmrMissile3.Enabled = true;
+                }
+            }
+
 
         }
 
