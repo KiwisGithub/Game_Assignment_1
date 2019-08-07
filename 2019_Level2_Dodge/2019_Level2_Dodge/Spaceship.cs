@@ -62,11 +62,6 @@ namespace _2019_Level2_Dodge
         }
 
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="move"></param>
         public void moveSpaceship(string move)
         {
 

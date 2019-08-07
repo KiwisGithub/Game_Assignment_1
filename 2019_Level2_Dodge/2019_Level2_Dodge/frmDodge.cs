@@ -91,13 +91,13 @@ namespace _2019_Level2_Dodge
                 // generate a random number from 5 to 20 and put it in rndmspeed
                 int rndmspeed = yspeed.Next(-20, -5);
                 planet[i].y += rndmspeed;
-                planet2[i].y += rndmspeed;
-                planet3[i].y += rndmspeed;
+               // planet2[i].y += rndmspeed;
+              //  planet3[i].y += rndmspeed;
 
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
-                planet2[i].drawPlanet(g);
-                planet3[i].drawPlanet(g);
+               // planet2[i].drawPlanet(g);
+              //  planet3[i].drawPlanet(g);
 
 
 
@@ -146,7 +146,7 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
-                planet2[i].movePlanet();
+               // planet2[i].movePlanet();
                 //if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
                 //{
                     //reset planet[i] back to top of panel
@@ -226,8 +226,8 @@ namespace _2019_Level2_Dodge
             foreach (Enemy p in planet)
             {
 
-                //missiles.Add(new Missile(spaceship.spaceRec, 270));
-               // missiles2.Add(new Missile2(p.planetRec, 270));
+               // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles2.Add(new Missile2(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
 
@@ -253,8 +253,8 @@ namespace _2019_Level2_Dodge
             foreach (Enemy2 p in planet2)
             {
 
-                //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                //missiles3.Add(new Missile3(p.planetRec, 270));
+              //  missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles3.Add(new Missile3(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
 
@@ -274,8 +274,8 @@ namespace _2019_Level2_Dodge
             foreach (Enemy3 p in planet3)
             {
 
-                //missiles.Add(new Missile(spaceship.spaceRec, 270));
-                //missiles4.Add(new Missile4(p.planetRec, 270));
+               // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                missiles4.Add(new Missile4(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
             foreach (Missile4 m4 in missiles4)

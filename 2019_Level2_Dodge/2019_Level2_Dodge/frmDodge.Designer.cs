@@ -42,7 +42,6 @@
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmrSpaceshipMouse = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile2 = new System.Windows.Forms.Timer(this.components);
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
@@ -54,12 +53,13 @@
             // tmrPlanet
             // 
             this.tmrPlanet.Enabled = true;
+            this.tmrPlanet.Interval = 60;
             this.tmrPlanet.Tick += new System.EventHandler(this.tmrPlanet_Tick);
             // 
             // tmrShip
             // 
             this.tmrShip.Enabled = true;
-            this.tmrShip.Interval = 20;
+            this.tmrShip.Interval = 5;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
             // label1
@@ -153,12 +153,6 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // tmrSpaceshipMouse
-            // 
-            this.tmrSpaceshipMouse.Enabled = true;
-            this.tmrSpaceshipMouse.Interval = 1;
-            this.tmrSpaceshipMouse.Tick += new System.EventHandler(this.tmrSpaceshipMouse_Tick);
-            // 
             // tmrMissile
             // 
             this.tmrMissile.Enabled = true;
@@ -249,7 +243,6 @@
         private System.Windows.Forms.MenuStrip mnuStart;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
-        private System.Windows.Forms.Timer tmrSpaceshipMouse;
         private System.Windows.Forms.Timer tmrMissile;
         private System.Windows.Forms.Timer tmrMissile2;
         private System.Windows.Forms.Timer tmrMissile3;
