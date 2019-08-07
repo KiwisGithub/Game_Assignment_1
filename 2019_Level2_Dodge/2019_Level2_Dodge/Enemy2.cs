@@ -22,7 +22,7 @@ namespace _2019_Level2_Dodge
             y = 3000;
             width = 80;
             height = 80;
-            planetImage = Image.FromFile("spaceship2smol.png");
+            planetImage = Image.FromFile("spaceship2.png");
 
         }
 

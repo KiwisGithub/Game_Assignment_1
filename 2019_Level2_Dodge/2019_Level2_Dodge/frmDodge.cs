@@ -91,13 +91,13 @@ namespace _2019_Level2_Dodge
                 // generate a random number from 5 to 20 and put it in rndmspeed
                 int rndmspeed = yspeed.Next(-20, -5);
                 planet[i].y += rndmspeed;
-               // planet2[i].y += rndmspeed;
-              //  planet3[i].y += rndmspeed;
+                planet2[i].y += rndmspeed;
+                planet3[i].y += rndmspeed;
 
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
-               // planet2[i].drawPlanet(g);
-              //  planet3[i].drawPlanet(g);
+                planet2[i].drawPlanet(g);
+                planet3[i].drawPlanet(g);
 
 
 
