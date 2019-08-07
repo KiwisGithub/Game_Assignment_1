@@ -273,9 +273,19 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Kiwi_1_png {
+        internal static System.Drawing.Bitmap Kiwi {
             get {
-                object obj = ResourceManager.GetObject("Kiwi_1_png", resourceCulture);
+                object obj = ResourceManager.GetObject("Kiwi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kiwi2 {
+            get {
+                object obj = ResourceManager.GetObject("Kiwi2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

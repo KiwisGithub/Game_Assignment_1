@@ -156,7 +156,7 @@
             // tmrMissile
             // 
             this.tmrMissile.Enabled = true;
-            this.tmrMissile.Interval = 1500;
+            this.tmrMissile.Interval = 1000;
             this.tmrMissile.Tick += new System.EventHandler(this.tmrMissile_Tick);
             // 
             // tmrMissile2
@@ -179,6 +179,7 @@
             this.lblNametag.Size = new System.Drawing.Size(35, 13);
             this.lblNametag.TabIndex = 9;
             this.lblNametag.Text = "Name";
+            this.lblNametag.Click += new System.EventHandler(this.lblNametag_Click);
             // 
             // pnlGame
             // 

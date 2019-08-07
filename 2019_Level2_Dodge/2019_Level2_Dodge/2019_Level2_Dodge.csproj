@@ -190,5 +190,11 @@
   <ItemGroup>
     <None Include="bin\Debug\spaceship4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

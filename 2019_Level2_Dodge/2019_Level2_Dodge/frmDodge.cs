@@ -238,11 +238,7 @@ namespace _2019_Level2_Dodge
                     missiles2.Remove(m2);
                     break;
                 }
-                if ((m2.x > 1000))
-                {
-                    missiles2.Remove(m2);
-                    break;
-                }
+
             }
         }
 
@@ -318,6 +314,11 @@ namespace _2019_Level2_Dodge
 
 
     }
+
+        private void lblNametag_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void frmDodge_MouseDown(object sender, MouseEventArgs e)
         {
