@@ -295,17 +295,14 @@ namespace _2019_Level2_Dodge
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
+            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?",
      "Bruh?",
      MessageBoxButtons.YesNo,
      MessageBoxIcon.Warning,
      MessageBoxDefaultButton.Button2);
             if (result1 == DialogResult.Yes)
             {
-                frmMenu mnuForm = new frmMenu();
-                //Application.Exit();
-                this.Close();
-                mnuForm.Show();
+                Application.Exit();
             }
         }
 
