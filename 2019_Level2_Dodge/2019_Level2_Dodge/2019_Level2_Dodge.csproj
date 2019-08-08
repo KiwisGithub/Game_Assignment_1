@@ -196,5 +196,8 @@
   <ItemGroup>
     <None Include="Resources\Kiwi2.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyber-Dream-Loop.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
