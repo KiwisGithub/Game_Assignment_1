@@ -199,5 +199,32 @@
   <ItemGroup>
     <None Include="Resources\Cyber-Dream-Loop.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\68747470733a2f2f692e696d6775722e636f6aad2f6630475762336e2e706e67_0aJ_icon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mainmenu.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mainmenu2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship2smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship3smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4smoler.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

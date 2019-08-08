@@ -253,7 +253,127 @@
   <data name="Kiwi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kiwi2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alien11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\alien1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bruh22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bruh2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bruh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bruh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bullet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bullet2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bullet3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet3old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bullet3old.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bullet4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crosshair11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\crosshair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doge_1_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\doge-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\exit hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="halp2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\halp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\hp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hp22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\hp2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HP_1_png__8_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HP-1.png (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kiwi_1_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Kiwi-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mainmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cyber-Dream-Loop.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mainmenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\mainmenu.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mainmenu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\mainmenu2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\missile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="missile_small1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\missile_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="name22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\name2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="name32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\name3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="name42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\name4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="name5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Piskel_1_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\New Piskel-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\planet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship2smol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship2smol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship3smol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship3smol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship4smol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship4smol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship4smoler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship4smoler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceship4___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\spaceship4 - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_68747470733a2f2f692e696d6775722e636f6aad2f6630475762336e2e706e67_0aJ_icon__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\68747470733a2f2f692e696d6775722e636f6aad2f6630475762336e2e706e67_0aJ_icon (1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
