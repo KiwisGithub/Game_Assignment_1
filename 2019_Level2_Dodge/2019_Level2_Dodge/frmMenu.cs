@@ -110,5 +110,28 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            DialogResult result1 = MessageBox.Show("This really is an epic gamer moment.",
+           "Bruh",
+           MessageBoxButtons.YesNo,
+           MessageBoxIcon.Asterisk);
+
+            if (result1 == DialogResult.Yes)
+            {
+                DialogResult result2 = MessageBox.Show("Ur cool :)",
+                "Dmank",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                DialogResult result2 = MessageBox.Show("reeee u r lying hecc u",
+               "i will end u >:(",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Warning);
+            }
+        }
     }
 }
