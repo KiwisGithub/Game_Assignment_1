@@ -322,6 +322,11 @@ namespace _2019_Level2_Dodge
             Invalidate();
         }
 
+        private void PnlGame_MouseClick(object sender, MouseEventArgs e)
+        {
+            //Cursor.Hide();
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -362,6 +367,15 @@ namespace _2019_Level2_Dodge
             {
                 move = "down";
                 spaceship.moveSpaceship(move);
+            }
+
+            if (spaceship.spaceRec.IntersectsWith(missiles2[g].missileRec)
+                || spaceship.spaceRec.IntersectsWith(missiles3[g].missileRec)
+                || spaceship.spaceRec.IntersectsWith(missiles4[g].missileRec))
+            {
+                lives -= 1;// lose a life
+                txtLives.Text = lives.ToString();// display number of lives
+                checkLives();
             }
 
 

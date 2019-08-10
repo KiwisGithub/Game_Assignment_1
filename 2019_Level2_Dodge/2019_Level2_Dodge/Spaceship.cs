@@ -114,7 +114,6 @@ namespace _2019_Level2_Dodge
             {
                 if (spaceRec.Location.Y < 10) // is spaceship within 50 of right side
                 {
-
                     y = 10;
                     spaceRec.Location = new Point(x, y);
                 }
