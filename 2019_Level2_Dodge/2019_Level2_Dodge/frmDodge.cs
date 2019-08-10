@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -108,7 +103,7 @@ namespace _2019_Level2_Dodge
             spaceshipMouse.drawSpaceshipMouse(g);
             foreach (Missile m in missiles)
             {
-               
+
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
@@ -148,15 +143,15 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
-               // planet2[i].movePlanet();
+                // planet2[i].movePlanet();
                 //if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
                 //{
-                    //reset planet[i] back to top of panel
-                    //planet[i].y = 1495; // set  y value of planetRec
-                   // lives -= 1;// lose a life
-                  //  txtLives.Text = lives.ToString();// display number of lives
-                 //   checkLives();
-              //  }
+                //reset planet[i] back to top of panel
+                //planet[i].y = 1495; // set  y value of planetRec
+                // lives -= 1;// lose a life
+                //  txtLives.Text = lives.ToString();// display number of lives
+                //   checkLives();
+                //  }
 
 
                 score += planet[i].score;// get score from Planet class (in movePlanet method)
@@ -202,15 +197,15 @@ namespace _2019_Level2_Dodge
             Invalidate();
 
 
-        } 
+        }
 
         private void pnlGame_MouseDown(object sender, MouseEventArgs e)
         {
-                    if (e.Button == MouseButtons.Left)
-                   {
-                        missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
-                       //System.Threading.Thread.Sleep(50);
-                   }
+            if (e.Button == MouseButtons.Left)
+            {
+                missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+                //System.Threading.Thread.Sleep(50);
+            }
 
         }
 
@@ -228,7 +223,7 @@ namespace _2019_Level2_Dodge
             foreach (Enemy p in planet)
             {
 
-               // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                // missiles.Add(new Missile(spaceship.spaceRec, 270));
                 missiles2.Add(new Missile2(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
@@ -251,7 +246,7 @@ namespace _2019_Level2_Dodge
             foreach (Enemy2 p in planet2)
             {
 
-              //  missiles.Add(new Missile(spaceship.spaceRec, 270));
+                //  missiles.Add(new Missile(spaceship.spaceRec, 270));
                 missiles3.Add(new Missile3(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
@@ -272,13 +267,13 @@ namespace _2019_Level2_Dodge
             foreach (Enemy3 p in planet3)
             {
 
-               // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                // missiles.Add(new Missile(spaceship.spaceRec, 270));
                 missiles4.Add(new Missile4(p.planetRec, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
             foreach (Missile4 m4 in missiles4)
             {
-                if ((m4.x < 0) )
+                if ((m4.x < 0))
                 {
                     missiles4.Remove(m4);
                     break;
@@ -315,7 +310,7 @@ namespace _2019_Level2_Dodge
             var mouseCurrentY = e.Y;
 
 
-    }
+        }
 
         private void lblNametag_Click(object sender, EventArgs e)
         {
@@ -394,12 +389,12 @@ namespace _2019_Level2_Dodge
                  MessageBoxIcon.Warning,
                  MessageBoxDefaultButton.Button2);
                 if (result1 == DialogResult.Yes)
-                    {
-                        frmMenu mnuForm = new frmMenu();
-                        //Application.Exit();
-                        this.Close();
-                        mnuForm.Show();
-                 }
+                {
+                    frmMenu mnuForm = new frmMenu();
+                    //Application.Exit();
+                    this.Close();
+                    mnuForm.Show();
+                }
 
                 else
                 {
@@ -420,7 +415,7 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.D) { right = false; }
             if (e.KeyData == Keys.W) { up = false; }
             if (e.KeyData == Keys.S) { down = false; }
-           // if (e.KeyData == Keys.Escape) { escape = false; }
+            // if (e.KeyData == Keys.Escape) { escape = false; }
 
         }
     }

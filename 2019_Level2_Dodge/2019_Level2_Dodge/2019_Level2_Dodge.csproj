@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animation.cs" />
     <Compile Include="Enemy2.cs" />
     <Compile Include="Enemy3.cs" />
     <Compile Include="frmMenu.cs">

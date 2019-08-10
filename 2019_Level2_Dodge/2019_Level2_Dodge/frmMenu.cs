@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
@@ -31,9 +23,9 @@ namespace _2019_Level2_Dodge
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("mainmenu2.wav");
+            //System.Media.SoundPlayer sp = new System.Media.SoundPlayer("mainmenu2.wav");
 
-            sp.PlayLooping();
+            //sp.PlayLooping();
 
             //sp.Play();
         }
@@ -48,7 +40,7 @@ namespace _2019_Level2_Dodge
         }
 
         //frmDodge playForm = new frmDodge();
-         //frmMenu homeForm = new frmMenu();
+        //frmMenu homeForm = new frmMenu();
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             //playForm.Show();
@@ -83,7 +75,7 @@ namespace _2019_Level2_Dodge
         {
             //this.SuspendLayout();
             //pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.X + 1);
-            
+
         }
 
         private void pictureBox6_MouseLeave(object sender, EventArgs e)
@@ -93,7 +85,7 @@ namespace _2019_Level2_Dodge
 
         private void txtname(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtLives_TextChanged(object sender, EventArgs e)
@@ -117,25 +109,7 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            DialogResult result1 = MessageBox.Show("This really is an epic gamer moment.",
-           "Bruh",
-           MessageBoxButtons.YesNo,
-           MessageBoxIcon.Asterisk);
-
-            if (result1 == DialogResult.Yes)
-            {
-                DialogResult result2 = MessageBox.Show("Ur cool :)",
-                "Dmank",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Asterisk);
-            }
-            else
-            {
-                DialogResult result2 = MessageBox.Show("reeee u r lying hecc u",
-               "i will end u >:(",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Warning);
-            }
+            System.Diagnostics.Process.Start("https://github.com/KiwisGithub/Game_Assignment_1/wiki");
         }
     }
 }

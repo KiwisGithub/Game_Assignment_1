@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace _2019_Level2_Dodge
 {
@@ -19,7 +14,7 @@ namespace _2019_Level2_Dodge
         public Enemy2(int spacing)
         {
             x = spacing;
-            y = 3000;
+            y = 2500;
             width = 80;
             height = 80;
             planetImage = Image.FromFile("spaceship2.png");

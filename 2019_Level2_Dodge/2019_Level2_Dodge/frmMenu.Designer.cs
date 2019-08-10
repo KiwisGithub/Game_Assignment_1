@@ -150,6 +150,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.Kiwi2;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Location = new System.Drawing.Point(-2, 778);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(78, 65);

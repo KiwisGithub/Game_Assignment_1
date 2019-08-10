@@ -1,10 +1,11 @@
-﻿using System;
+﻿using System.Drawing;
+using System.Drawing.Drawing2D;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Drawing;
 using System.Threading.Tasks;
-using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 
 namespace _2019_Level2_Dodge
@@ -14,13 +15,14 @@ namespace _2019_Level2_Dodge
         // declare fields to use in the class
 
         public int x, y, width, height;//variables for the rectangle
-        public Image spaceship;//variable for the planet's image
+        //public Image spaceship;//variable for the planet's image
+        Image[] images = new Image[7];//set space for an array called images of 7 images
         public int rotationAngle;
         public Matrix matrix;
         Point centre;
 
+        Animation animate;//create an object called animate
 
-  
         public Image spaceshipMouse;//variable for the planet's image
         public Rectangle spaceMouseRec;//variable for a rectangle to place our image in
 
@@ -33,7 +35,16 @@ namespace _2019_Level2_Dodge
             y = 360;
             width = 80;
             height = 80;
-            spaceship = Image.FromFile("spaceship1.png");
+            //spaceship = Image.FromFile("spaceship1.png");
+
+            for (int i = 1; i <= 6; i++)
+            {
+                images[i] = Image.FromFile(Application.StartupPath + @"\Ship" + i.ToString() + ".gif");
+            }
+            //pass the images array to the Animation class's constructor
+            animate = new Animation(images);
+            // planetImage = Image.FromFile("planet1.png");
+
             spaceRec = new Rectangle(x, y, width, height);
 
             rotationAngle = 90;
@@ -57,7 +68,7 @@ namespace _2019_Level2_Dodge
             g.Transform = matrix;
             //draw the spaceship
 
-            g.DrawImage(spaceship, spaceRec);
+            g.DrawImage(animate.GetNextImage(), spaceRec);
 
         }
 
@@ -84,20 +95,20 @@ namespace _2019_Level2_Dodge
                 }
             }
 
-                if (move == "left")
+            if (move == "left")
+            {
+                if (spaceRec.Location.X < 10) // is spaceship within 50 of right side
                 {
-                    if (spaceRec.Location.X < 10) // is spaceship within 50 of right side
-                    {
 
-                        x = 10;
-                        spaceRec.Location = new Point(x, y);
-                    }
-                    else
-                    {
-                        x -= 5;
-                        spaceRec.Location = new Point(x, y);
-                    }
+                    x = 10;
+                    spaceRec.Location = new Point(x, y);
                 }
+                else
+                {
+                    x -= 5;
+                    spaceRec.Location = new Point(x, y);
+                }
+            }
 
             if (move == "up")
             {
@@ -133,4 +144,4 @@ namespace _2019_Level2_Dodge
         }
     }
 }
-    
+
