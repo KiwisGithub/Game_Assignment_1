@@ -32,10 +32,16 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            DialogResult result1 = MessageBox.Show("You are beyond help.",
-            "Help",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Question);
+
+            frmHelp helpForm = new frmHelp();
+            //Application.Exit();
+            this.Close();
+            helpForm.Show();
+
+           // DialogResult result1 = MessageBox.Show("You are beyond help.",
+           // "Help",
+           // MessageBoxButtons.OK,
+          //  MessageBoxIcon.Question);
             //MessageBox.Show("Use the left and right arrow keys to move the spaceship. \n Don't get hit by the planets! \n Every planet that gets past scores a point. \n If a planet hits a spaceship a life is lost! \n \n Enter your Name press tab and enter the number of lives \n Click Start to begin", "Game Instructions");
         }
 

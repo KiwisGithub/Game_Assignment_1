@@ -41,3 +41,4 @@ C:\Users\Ty\Source\Repos\Game_Assignment_1\2019_Level2_Dodge\2019_Level2_Dodge\o
 C:\Users\Ty\Source\Repos\Game_Assignment_1\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.pdb
 C:\Users\Ty\Source\Repos\Game_Assignment_1\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\2019_Level2_Dodge.csprojAssemblyReference.cache
 C:\Users\tyakkaya\source\repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\_2019_Level2_Dodge.frmDeath.resources
+C:\Users\tyakkaya\Source\Repos\KiwisGithub\Dodge2\2019_Level2_Dodge\2019_Level2_Dodge\obj\Debug\_2019_Level2_Dodge.frmHelp.resources
