@@ -7,7 +7,7 @@ namespace _2019_Level2_Dodge
     {
 
         public static string SetValueFortxtNamebox = "No Name Given";
-        public static string SetValueFornumHP = "No HP Given";
+        public static int SetValueFornumHP = 10;
 
         public frmMenu()
         {
@@ -46,7 +46,7 @@ namespace _2019_Level2_Dodge
             //playForm.Show();
 
             SetValueFortxtNamebox = txtNamebox.Text;
-            SetValueFornumHP = numHP.Text;
+            SetValueFornumHP = (int)numHP.Value;
 
 
             frmDodge playForm = new frmDodge();
@@ -110,6 +110,11 @@ namespace _2019_Level2_Dodge
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/KiwisGithub/Game_Assignment_1/wiki");
+        }
+
+        private void numHP_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

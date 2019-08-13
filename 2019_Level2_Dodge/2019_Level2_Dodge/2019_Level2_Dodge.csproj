@@ -48,6 +48,12 @@
     <Compile Include="Animation.cs" />
     <Compile Include="Enemy2.cs" />
     <Compile Include="Enemy3.cs" />
+    <Compile Include="frmDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeath.Designer.cs">
+      <DependentUpon>frmDeath.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spaceship.cs" />
+    <EmbeddedResource Include="frmDeath.resx">
+      <DependentUpon>frmDeath.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodge.resx">
       <DependentUpon>frmDodge.cs</DependentUpon>
     </EmbeddedResource>

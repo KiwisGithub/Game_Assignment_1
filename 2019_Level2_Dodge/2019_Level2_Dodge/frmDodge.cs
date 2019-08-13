@@ -73,7 +73,8 @@ namespace _2019_Level2_Dodge
             //txtName.Focus();
             // mnuForm.Show();
             lblNametag.Text = frmMenu.SetValueFortxtNamebox;
-            txtLives.Text = frmMenu.SetValueFornumHP;
+            lives = frmMenu.SetValueFornumHP;
+            txtLives.Text = frmMenu.SetValueFornumHP.ToString();
 
         }
 
@@ -369,15 +370,21 @@ namespace _2019_Level2_Dodge
                 spaceship.moveSpaceship(move);
             }
 
-            if (spaceship.spaceRec.IntersectsWith(missiles2[g].missileRec)
-                || spaceship.spaceRec.IntersectsWith(missiles3[g].missileRec)
-                || spaceship.spaceRec.IntersectsWith(missiles4[g].missileRec))
-            {
-                lives -= 1;// lose a life
-                txtLives.Text = lives.ToString();// display number of lives
-                checkLives();
-            }
+            foreach (Missile2 m2 in missiles2) {
 
+
+               if (spaceship.spaceRec.IntersectsWith(m2.missileRec))                      
+                {
+                    missiles2.Remove(m2);
+
+                    lives -= 1;// lose a life
+                    txtLives.Text = lives.ToString();// display number of lives
+                    checkLives();
+                    break;
+
+                }
+
+            }
 
         }
 

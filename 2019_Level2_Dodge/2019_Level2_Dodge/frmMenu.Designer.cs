@@ -145,6 +145,7 @@
             0,
             0,
             0});
+            this.numHP.ValueChanged += new System.EventHandler(this.numHP_ValueChanged);
             // 
             // pictureBox7
             // 
