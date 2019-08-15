@@ -329,6 +329,16 @@ namespace _2019_Level2_Dodge
 
         private void PnlGame_MouseClick(object sender, MouseEventArgs e)
         {
+            Cursor.Hide();
+        }
+
+        private void lblScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlGame_MouseEnter(object sender, EventArgs e)
+        {
             //Cursor.Hide();
         }
 
@@ -380,6 +390,38 @@ namespace _2019_Level2_Dodge
                if (spaceship.spaceRec.IntersectsWith(m2.missileRec))                      
                 {
                     missiles2.Remove(m2);
+
+                    lives -= 1;// lose a life
+                    txtLives.Text = lives.ToString();// display number of lives
+                    checkLives();
+                    break;
+
+                }
+
+            }
+            foreach (Missile3 m3 in missiles3)
+            {
+
+
+                if (spaceship.spaceRec.IntersectsWith(m3.missileRec))
+                {
+                    missiles3.Remove(m3);
+
+                    lives -= 1;// lose a life
+                    txtLives.Text = lives.ToString();// display number of lives
+                    checkLives();
+                    break;
+
+                }
+
+            }
+            foreach (Missile4 m4 in missiles4)
+            {
+
+
+                if (spaceship.spaceRec.IntersectsWith(m4.missileRec))
+                {
+                    missiles4.Remove(m4);
 
                     lives -= 1;// lose a life
                     txtLives.Text = lives.ToString();// display number of lives
