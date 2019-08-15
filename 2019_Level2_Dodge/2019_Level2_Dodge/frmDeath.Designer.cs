@@ -54,10 +54,11 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::_2019_Level2_Dodge.Properties.Resources.exit;
             this.pictureBox2.Location = new System.Drawing.Point(1033, 729);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(124, 54);
+            this.pictureBox2.Size = new System.Drawing.Size(124, 51);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -66,6 +67,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::_2019_Level2_Dodge.Properties.Resources.start;
             this.pictureBox4.Location = new System.Drawing.Point(407, 729);
             this.pictureBox4.Name = "pictureBox4";
@@ -78,6 +80,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::_2019_Level2_Dodge.Properties.Resources.halp;
             this.pictureBox6.Location = new System.Drawing.Point(725, 729);
             this.pictureBox6.Name = "pictureBox6";
