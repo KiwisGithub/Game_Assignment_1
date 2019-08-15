@@ -176,6 +176,7 @@
             this.lblScore.Size = new System.Drawing.Size(107, 34);
             this.lblScore.TabIndex = 19;
             this.lblScore.Text = "0000";
+            this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
             // 
             // frmDeath
             // 

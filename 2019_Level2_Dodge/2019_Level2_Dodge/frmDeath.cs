@@ -12,11 +12,21 @@ namespace _2019_Level2_Dodge
 {
     public partial class frmDeath : Form
     {
+
+        public static int highScore = 0;
+        public static int yourScore = 0;
         public frmDeath()
         {
             InitializeComponent();
             lblHighscore.ForeColor = Color.FromArgb(90, 153, 171);
             lblScore.ForeColor = Color.FromArgb(90, 153, 171);
+            lblScore.Text = frmDodge.finalScore.ToString();
+            yourScore = frmDodge.finalScore;
+            if (yourScore > highScore)
+            {
+                highScore = yourScore;
+            }
+            lblHighscore.Text = highScore.ToString();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -55,6 +65,11 @@ namespace _2019_Level2_Dodge
             //Application.Exit();
             this.Close();
             playForm.Show();
+        }
+
+        private void lblScore_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,6 +36,7 @@ namespace _2019_Level2_Dodge
         double phi = 0;
         int radius = 200;
 
+        public static int finalScore = 420;
 
         public frmDodge()
         {
@@ -58,6 +59,7 @@ namespace _2019_Level2_Dodge
         {
             if (lives == 0)
             {
+                finalScore = (int)score;
                 tmrPlanet.Enabled = false;
                 tmrShip.Enabled = false;
                 //MessageBox.Show("Game Over");
