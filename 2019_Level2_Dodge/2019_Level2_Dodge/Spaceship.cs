@@ -33,8 +33,8 @@ namespace _2019_Level2_Dodge
         {
             x = 20;
             y = 360;
-            width = 80;
-            height = 100;
+            width = 60;
+            height = 80;
             //spaceship = Image.FromFile("spaceship1.png");
 
             for (int i = 1; i <= 6; i++)

@@ -245,5 +245,14 @@
   <ItemGroup>
     <None Include="bin\Debug\spaceship4smoler.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\equals.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

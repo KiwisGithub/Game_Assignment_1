@@ -60,7 +60,11 @@ namespace _2019_Level2_Dodge
             {
                 tmrPlanet.Enabled = false;
                 tmrShip.Enabled = false;
-                MessageBox.Show("Game Over");
+                //MessageBox.Show("Game Over");
+                frmDeath deathForm = new frmDeath();
+                //Application.Exit();
+                this.Close();
+                deathForm.Show();
 
             }
         }

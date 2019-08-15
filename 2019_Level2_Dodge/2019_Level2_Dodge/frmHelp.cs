@@ -171,6 +171,11 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.S) { down = false; }
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             //get the graphics used to paint on the panel control
@@ -217,6 +222,20 @@ namespace _2019_Level2_Dodge
                 int x = 10 + (i * 140);
                 planet[i] = new Enemy(x);
             }
+
+            label8.ForeColor = Color.FromArgb(90, 153, 171);
+            label7.ForeColor = Color.FromArgb(90, 153, 171);
+            label6.ForeColor = Color.FromArgb(90, 153, 171);
+            label5.ForeColor = Color.FromArgb(90, 153, 171);
+            label4.ForeColor = Color.FromArgb(90, 153, 171);
+            label3.ForeColor = Color.FromArgb(90, 153, 171);
+            label2.ForeColor = Color.FromArgb(90, 153, 171);
+            label1.ForeColor = Color.FromArgb(90, 153, 171);//(R, G, B) (0, 0, 0 = black)
+
+            //(62,108,123) darker main
+            //(90, 153, 171) light main
+            //(32,42,45) background
+
         }
 
         private void frmHelp_Load(object sender, EventArgs e)
