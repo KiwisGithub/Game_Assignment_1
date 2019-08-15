@@ -77,9 +77,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 28);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(214, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -87,18 +90,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(192, 28);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Location = new System.Drawing.Point(83, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Score:";
             // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(231, 29);
+            this.lblScore.BackColor = System.Drawing.Color.Transparent;
+            this.lblScore.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblScore.Location = new System.Drawing.Point(152, 28);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(13, 13);
+            this.lblScore.Size = new System.Drawing.Size(17, 17);
             this.lblScore.TabIndex = 5;
             this.lblScore.Text = "0";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
@@ -106,9 +115,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.Location = new System.Drawing.Point(12, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 13);
+            this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "HP:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -116,9 +128,12 @@
             // txtLives
             // 
             this.txtLives.AutoSize = true;
+            this.txtLives.BackColor = System.Drawing.Color.Transparent;
+            this.txtLives.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLives.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtLives.Location = new System.Drawing.Point(43, 28);
             this.txtLives.Name = "txtLives";
-            this.txtLives.Size = new System.Drawing.Size(13, 13);
+            this.txtLives.Size = new System.Drawing.Size(17, 17);
             this.txtLives.TabIndex = 7;
             this.txtLives.Text = "5";
             // 
@@ -177,9 +192,12 @@
             // lblNametag
             // 
             this.lblNametag.AutoSize = true;
-            this.lblNametag.Location = new System.Drawing.Point(126, 29);
+            this.lblNametag.BackColor = System.Drawing.Color.Transparent;
+            this.lblNametag.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNametag.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblNametag.Location = new System.Drawing.Point(275, 29);
             this.lblNametag.Name = "lblNametag";
-            this.lblNametag.Size = new System.Drawing.Size(35, 13);
+            this.lblNametag.Size = new System.Drawing.Size(44, 17);
             this.lblNametag.TabIndex = 9;
             this.lblNametag.Text = "Name";
             this.lblNametag.Click += new System.EventHandler(this.lblNametag_Click);
@@ -216,6 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh21;
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
             this.Controls.Add(this.lblNametag);

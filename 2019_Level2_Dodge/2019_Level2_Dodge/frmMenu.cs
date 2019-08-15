@@ -24,9 +24,9 @@ namespace _2019_Level2_Dodge
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            //System.Media.SoundPlayer sp = new System.Media.SoundPlayer("mainmenu2.wav");
+            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("minecraftmenu.wav");
 
-            //sp.PlayLooping();
+            sp.PlayLooping();
 
             //sp.Play();
         }

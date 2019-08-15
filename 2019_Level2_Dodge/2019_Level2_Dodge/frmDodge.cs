@@ -42,6 +42,10 @@ namespace _2019_Level2_Dodge
         {
             InitializeComponent();
 
+            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("minecraftepic.wav");
+
+            sp.PlayLooping();
+
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
 
             for (int i = 0; i < 7; i++)
