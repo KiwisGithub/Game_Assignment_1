@@ -122,5 +122,15 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

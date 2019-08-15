@@ -38,6 +38,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.numHP = new System.Windows.Forms.NumericUpDown();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -46,11 +48,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNamebox
             // 
-            this.txtNamebox.Location = new System.Drawing.Point(670, 426);
+            this.txtNamebox.Location = new System.Drawing.Point(714, 432);
             this.txtNamebox.Name = "txtNamebox";
             this.txtNamebox.Size = new System.Drawing.Size(147, 20);
             this.txtNamebox.TabIndex = 0;
@@ -70,19 +74,20 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::_2019_Level2_Dodge.Properties.Resources.hp2;
-            this.pictureBox2.Location = new System.Drawing.Point(595, 487);
+            this.pictureBox2.Location = new System.Drawing.Point(618, 496);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::_2019_Level2_Dodge.Properties.Resources.name4;
-            this.pictureBox3.Location = new System.Drawing.Point(525, 410);
+            this.pictureBox3.Location = new System.Drawing.Point(549, 417);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(139, 54);
+            this.pictureBox3.Size = new System.Drawing.Size(125, 54);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
@@ -126,7 +131,7 @@
             // 
             // numHP
             // 
-            this.numHP.Location = new System.Drawing.Point(670, 504);
+            this.numHP.Location = new System.Drawing.Point(714, 510);
             this.numHP.Maximum = new decimal(new int[] {
             20,
             0,
@@ -159,6 +164,29 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pictureBox8.Image = global::_2019_Level2_Dodge.Properties.Resources.equals;
+            this.pictureBox8.Location = new System.Drawing.Point(582, 416);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(145, 57);
+            this.pictureBox8.TabIndex = 18;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
+            this.pictureBox9.Image = global::_2019_Level2_Dodge.Properties.Resources.equals;
+            this.pictureBox9.Location = new System.Drawing.Point(582, 493);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(145, 57);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +204,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtNamebox);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";
@@ -190,6 +220,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +238,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.NumericUpDown numHP;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

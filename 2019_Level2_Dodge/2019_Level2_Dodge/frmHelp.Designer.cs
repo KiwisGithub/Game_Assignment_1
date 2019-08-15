@@ -206,6 +206,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHelp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planet Doge | Help";
             this.Load += new System.EventHandler(this.frmHelp_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmHelp_KeyDown);
