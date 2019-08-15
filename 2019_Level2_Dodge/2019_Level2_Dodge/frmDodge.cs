@@ -344,6 +344,11 @@ namespace _2019_Level2_Dodge
             //Cursor.Hide();
         }
 
+        private void frmDodge_MouseLeave(object sender, EventArgs e)
+        {
+                           
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -444,7 +449,7 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.S) { down = true; }
             if (e.KeyData == Keys.Escape)
             {
-
+                Cursor.Show();
                 tmrShip.Enabled = false;
                 tmrPlanet.Enabled = false;
                 tmrMissile.Enabled = false;

@@ -211,6 +211,7 @@
             this.Load += new System.EventHandler(this.frmHelp_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmHelp_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmHelp_KeyUp);
+            this.MouseHover += new System.EventHandler(this.frmHelp_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 

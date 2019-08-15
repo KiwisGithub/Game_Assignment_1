@@ -117,7 +117,7 @@ namespace _2019_Level2_Dodge
 
         private void panel1_MouseEnter(object sender, EventArgs e)
         {
-            //Cursor.Hide();
+            Cursor.Hide();
         }
 
         private void panel1_MouseLeave(object sender, EventArgs e)
@@ -172,6 +172,11 @@ namespace _2019_Level2_Dodge
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmHelp_MouseHover(object sender, EventArgs e)
         {
 
         }

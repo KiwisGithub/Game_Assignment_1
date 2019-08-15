@@ -71,5 +71,10 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void frmDeath_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,9 +54,10 @@
             // 
             // txtNamebox
             // 
+            this.txtNamebox.Font = new System.Drawing.Font("OCR A Extended", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamebox.Location = new System.Drawing.Point(714, 432);
             this.txtNamebox.Name = "txtNamebox";
-            this.txtNamebox.Size = new System.Drawing.Size(147, 20);
+            this.txtNamebox.Size = new System.Drawing.Size(147, 19);
             this.txtNamebox.TabIndex = 0;
             this.txtNamebox.Text = "Gerald";
             this.txtNamebox.TextChanged += new System.EventHandler(this.txtname);
@@ -131,6 +132,7 @@
             // 
             // numHP
             // 
+            this.numHP.Font = new System.Drawing.Font("OCR A Extended", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numHP.Location = new System.Drawing.Point(714, 510);
             this.numHP.Maximum = new decimal(new int[] {
             20,
@@ -143,7 +145,7 @@
             0,
             0});
             this.numHP.Name = "numHP";
-            this.numHP.Size = new System.Drawing.Size(147, 20);
+            this.numHP.Size = new System.Drawing.Size(147, 19);
             this.numHP.TabIndex = 9;
             this.numHP.Value = new decimal(new int[] {
             10,

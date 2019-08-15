@@ -11,6 +11,7 @@ namespace _2019_Level2_Dodge
 
         public frmMenu()
         {
+            Cursor.Show();
             InitializeComponent();
             //https://www.c-sharpcorner.com/UploadFile/834980/how-to-pass-data-from-one-form-to-other-form-in-windows-form/
             //https://www.homeandlearn.co.uk/csharp/csharp_s13p1.html
