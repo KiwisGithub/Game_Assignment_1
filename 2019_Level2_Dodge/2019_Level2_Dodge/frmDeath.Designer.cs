@@ -202,6 +202,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planet Doge | Death";
             this.Load += new System.EventHandler(this.frmDeath_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDeath_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

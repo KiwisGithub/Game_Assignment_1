@@ -67,11 +67,11 @@ namespace _2019_Level2_Dodge
                 tmrPlanet.Enabled = false;
                 tmrShip.Enabled = false;
                 //MessageBox.Show("Game Over");
+                Cursor.Show();
                 frmDeath deathForm = new frmDeath();
                 //Application.Exit();
                 this.Close();
                 deathForm.Show();
-
             }
         }
 
@@ -231,6 +231,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrMissile_Tick(object sender, EventArgs e)
         {
+
             foreach (Enemy p in planet)
             {
 
@@ -299,6 +300,7 @@ namespace _2019_Level2_Dodge
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Cursor.Show();
             DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?",
      "Bruh?",
      MessageBoxButtons.YesNo,
@@ -460,6 +462,7 @@ namespace _2019_Level2_Dodge
                 tmrMissile2.Enabled = false;
                 tmrMissile3.Enabled = false;
 
+                Cursor.Show();
 
                 DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
                  "Bruh?",

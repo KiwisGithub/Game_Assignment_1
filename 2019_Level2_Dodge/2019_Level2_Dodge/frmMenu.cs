@@ -133,5 +133,39 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void frmMenu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+
+                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?",
+                 "Bruh?",
+                  MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Warning,
+                 MessageBoxDefaultButton.Button2);
+                if (result1 == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+
+            if (e.KeyData == Keys.Enter)
+            {
+                SetValueFortxtNamebox = txtNamebox.Text;
+                SetValueFornumHP = (int)numHP.Value;
+   
+                frmDodge playForm = new frmDodge();
+                //Application.Exit();
+                this.Close();
+                playForm.Show();
+
+            }
+
+        }
+
+        private void frmMenu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
     }
 }

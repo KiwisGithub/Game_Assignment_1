@@ -76,5 +76,27 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void frmDeath_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+
+                Cursor.Show();
+
+                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
+                 "Bruh?",
+                  MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Warning,
+                 MessageBoxDefaultButton.Button2);
+                if (result1 == DialogResult.Yes)
+                {
+                    frmMenu mnuForm = new frmMenu();
+                    //Application.Exit();
+                    this.Close();
+                    mnuForm.Show();
+                }
+            }
+        }
     }
 }
