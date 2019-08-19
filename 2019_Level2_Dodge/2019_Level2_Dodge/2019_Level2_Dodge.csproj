@@ -254,5 +254,8 @@
   <ItemGroup>
     <None Include="bin\Debug\equals.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sparkles straight chillin clone-3.png.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

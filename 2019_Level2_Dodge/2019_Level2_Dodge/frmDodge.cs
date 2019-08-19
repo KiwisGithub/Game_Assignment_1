@@ -42,7 +42,7 @@ namespace _2019_Level2_Dodge
         {
             InitializeComponent();
 
-            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("minecraftepic.wav");
+            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("megala.wav");
 
             sp.PlayLooping();
 

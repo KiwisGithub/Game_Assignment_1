@@ -39,6 +39,10 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblHighscore = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
+            this.picSpark = new System.Windows.Forms.PictureBox();
+            this.lblSpark = new System.Windows.Forms.Label();
+            this.lblDoge = new System.Windows.Forms.Label();
+            this.picDoge = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -48,6 +52,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpark)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoge)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -181,12 +187,63 @@
             this.lblScore.Text = "0000";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
             // 
+            // picSpark
+            // 
+            this.picSpark.BackColor = System.Drawing.Color.Transparent;
+            this.picSpark.Image = global::_2019_Level2_Dodge.Properties.Resources.Sparkles_straight_chillin_clone_3_png;
+            this.picSpark.Location = new System.Drawing.Point(1163, 593);
+            this.picSpark.Name = "picSpark";
+            this.picSpark.Size = new System.Drawing.Size(377, 316);
+            this.picSpark.TabIndex = 20;
+            this.picSpark.TabStop = false;
+            this.picSpark.Click += new System.EventHandler(this.picSpark_Click);
+            // 
+            // lblSpark
+            // 
+            this.lblSpark.AutoSize = true;
+            this.lblSpark.BackColor = System.Drawing.Color.Transparent;
+            this.lblSpark.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpark.ForeColor = System.Drawing.Color.White;
+            this.lblSpark.Location = new System.Drawing.Point(1172, 619);
+            this.lblSpark.Name = "lblSpark";
+            this.lblSpark.Size = new System.Drawing.Size(63, 26);
+            this.lblSpark.TabIndex = 21;
+            this.lblSpark.Text = "label1";
+            this.lblSpark.Click += new System.EventHandler(this.lblSpark_Click);
+            // 
+            // lblDoge
+            // 
+            this.lblDoge.AutoSize = true;
+            this.lblDoge.BackColor = System.Drawing.Color.Transparent;
+            this.lblDoge.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoge.ForeColor = System.Drawing.Color.White;
+            this.lblDoge.Location = new System.Drawing.Point(87, 631);
+            this.lblDoge.Name = "lblDoge";
+            this.lblDoge.Size = new System.Drawing.Size(88, 38);
+            this.lblDoge.TabIndex = 23;
+            this.lblDoge.Text = "label1";
+            this.lblDoge.Click += new System.EventHandler(this.lblDoge_Click);
+            // 
+            // picDoge
+            // 
+            this.picDoge.BackColor = System.Drawing.Color.Transparent;
+            this.picDoge.Image = global::_2019_Level2_Dodge.Properties.Resources.doge_1_png;
+            this.picDoge.Location = new System.Drawing.Point(-40, 672);
+            this.picDoge.Name = "picDoge";
+            this.picDoge.Size = new System.Drawing.Size(202, 196);
+            this.picDoge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDoge.TabIndex = 22;
+            this.picDoge.TabStop = false;
+            // 
             // frmDeath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.ClientSize = new System.Drawing.Size(1495, 843);
+            this.Controls.Add(this.lblDoge);
+            this.Controls.Add(this.picDoge);
+            this.Controls.Add(this.lblSpark);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblHighscore);
             this.Controls.Add(this.pictureBox3);
@@ -198,6 +255,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.picSpark);
             this.Name = "frmDeath";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planet Doge | Death";
@@ -212,6 +270,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpark)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +289,9 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblHighscore;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.PictureBox picSpark;
+        private System.Windows.Forms.Label lblSpark;
+        private System.Windows.Forms.Label lblDoge;
+        private System.Windows.Forms.PictureBox picDoge;
     }
 }
