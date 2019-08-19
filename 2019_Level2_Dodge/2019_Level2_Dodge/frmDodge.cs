@@ -237,10 +237,12 @@ namespace _2019_Level2_Dodge
 
             foreach (Enemy p in planet)
             {
-
-                // missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles2.Add(new Missile2(p.planetRec, 270));
-                //System.Threading.Thread.Sleep(5000);
+                if (p.planetRec.X < 1495)
+                {
+                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                    missiles2.Add(new Missile2(p.planetRec, 270));
+                    //System.Threading.Thread.Sleep(5000);
+                }
             }
 
             foreach (Missile2 m2 in missiles2)
@@ -250,8 +252,14 @@ namespace _2019_Level2_Dodge
                     missiles2.Remove(m2);
                     break;
                 }
+                if ((m2.x < 1495))
+                {
+                    missiles2.Remove(m2);
+                    break;
+                }
 
             }
+
         }
 
 
@@ -260,15 +268,23 @@ namespace _2019_Level2_Dodge
         {
             foreach (Enemy2 p in planet2)
             {
-
-                //  missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles3.Add(new Missile3(p.planetRec, 270));
-                //System.Threading.Thread.Sleep(5000);
+                if (p.planetRec.X < 1495)
+                {
+                    //  missiles.Add(new Missile(spaceship.spaceRec, 270));
+                    missiles3.Add(new Missile3(p.planetRec, 270));
+                    //System.Threading.Thread.Sleep(5000);
+                }
             }
 
             foreach (Missile3 m3 in missiles3)
             {
                 if ((m3.x < 0))
+                {
+                    missiles3.Remove(m3);
+                    break;
+                }
+
+                if ((m3.x < 1495))
                 {
                     missiles3.Remove(m3);
                     break;
@@ -281,14 +297,21 @@ namespace _2019_Level2_Dodge
         {
             foreach (Enemy3 p in planet3)
             {
-
-                // missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles4.Add(new Missile4(p.planetRec, 270));
-                //System.Threading.Thread.Sleep(5000);
+                if (p.planetRec.X < 1495)
+                {
+                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                    missiles4.Add(new Missile4(p.planetRec, 270));
+                    //System.Threading.Thread.Sleep(5000);
+                }
             }
             foreach (Missile4 m4 in missiles4)
             {
                 if ((m4.x < 0))
+                {
+                    missiles4.Remove(m4);
+                    break;
+                }
+                if ((m4.x < 1495))
                 {
                     missiles4.Remove(m4);
                     break;
