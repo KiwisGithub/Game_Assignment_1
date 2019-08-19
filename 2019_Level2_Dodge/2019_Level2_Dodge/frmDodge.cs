@@ -40,6 +40,8 @@ namespace _2019_Level2_Dodge
 
         public frmDodge()
         {
+
+
             InitializeComponent();
 
             System.Media.SoundPlayer sp = new System.Media.SoundPlayer("megala.wav");
@@ -85,6 +87,7 @@ namespace _2019_Level2_Dodge
             lblNametag.Text = frmMenu.SetValueFortxtNamebox;
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
+            lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
 
         }
 

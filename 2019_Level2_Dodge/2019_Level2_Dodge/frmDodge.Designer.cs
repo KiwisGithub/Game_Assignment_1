@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodge));
             this.tmrPlanet = new System.Windows.Forms.Timer(this.components);
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLogo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
@@ -64,15 +64,18 @@
             this.tmrShip.Interval = 1;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
-            // label1
+            // lblLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1417, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Planet Doge";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogo.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.ForeColor = System.Drawing.Color.White;
+            this.lblLogo.Location = new System.Drawing.Point(1376, 29);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(107, 17);
+            this.lblLogo.TabIndex = 1;
+            this.lblLogo.Text = "Planet Doge";
+            this.lblLogo.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -243,7 +246,7 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.mnuStart);
             this.DoubleBuffered = true;
@@ -271,7 +274,7 @@
         private System.Windows.Forms.Panel pnlGame;
         private System.Windows.Forms.Timer tmrPlanet;
         private System.Windows.Forms.Timer tmrShip;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblScore;
