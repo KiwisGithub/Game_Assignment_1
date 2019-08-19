@@ -67,13 +67,13 @@ namespace _2019_Level2_Dodge
                 picSpark.Hide();
                 lblSpark.Hide();
 
-                string[] quoteDoge = new string[] { "Such Die", "much F", "wow", "bro... you just posted cringe 😳😳😳", "ngl, kinda cringe", "u died", "F", "pay respecc", "I'm not Logan Paul, but I see a body 👀", playerName + " fell from a high place" };
+                string[] quoteDoge = new string[] { "Such Die", "much F", "wow", "bro... you just posted cringe 😳😳😳", "ngl, kinda cringe", "u died", "F", "pay respecc", "I'm not Logan Paul, but I see a body 👀", playerName + " fell from a high place", "label 1 :)" };
 
                 // init random generator 
                 Random rnd2 = new Random();
 
                 // get random value (0 <= n < 3) 
-                int r2 = rnd2.Next(10);
+                int r2 = rnd2.Next(11);
 
                 // pull out string from array 
                 string str2 = quoteDoge[r2];
