@@ -400,6 +400,62 @@ namespace _2019_Level2_Dodge
                 spaceship.moveSpaceship(move);
             }
 
+            foreach (Enemy n in planet)
+            {
+
+                foreach (Missile m1 in missiles)
+                {
+                    if (n.planetRec.IntersectsWith(m1.missileRec))
+                    {
+                        missiles.Remove(m1);
+                        score += 1;// add 1 to score when planet reaches bottom of panel
+                        n.y = 1495;
+                        break;
+
+                    }
+
+                }
+            }
+
+            foreach (Enemy2 n2 in planet2)
+            {
+
+                foreach (Missile2 m2 in missiles2)
+                {
+
+
+                    if (n2.planetRec.IntersectsWith(m2.missileRec))
+                    {
+                        missiles2.Remove(m2);
+                        score += 1;// add 1 to score when planet reaches bottom of panel
+                        n2.y = 1495;
+                        break;
+
+                    }
+
+                }
+            }
+
+            foreach (Enemy3 n3 in planet3)
+            {
+
+                foreach (Missile3 m3 in missiles3)
+                {
+
+
+                    if (n3.planetRec.IntersectsWith(m3.missileRec))
+                    {
+                        missiles3.Remove(m3);
+                        score += 1;// add 1 to score when planet reaches bottom of panel
+                        n3.y = 1495;
+                        break;
+
+                    }
+
+                }
+            }
+
+
             foreach (Missile2 m2 in missiles2) {
 
 
