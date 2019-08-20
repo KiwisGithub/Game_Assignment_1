@@ -47,7 +47,6 @@
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
             this.lblNametag = new System.Windows.Forms.Label();
             this.pnlGame = new System.Windows.Forms.Panel();
-            this.tmrMouse = new System.Windows.Forms.Timer(this.components);
             this.tmrCircle = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
@@ -221,12 +220,6 @@
             this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
             // 
-            // tmrMouse
-            // 
-            this.tmrMouse.Enabled = true;
-            this.tmrMouse.Interval = 2;
-            this.tmrMouse.Tick += new System.EventHandler(this.tmrMouse_Tick);
-            // 
             // tmrCircle
             // 
             this.tmrCircle.Enabled = true;
@@ -288,7 +281,6 @@
         private System.Windows.Forms.Timer tmrMissile3;
         private System.Windows.Forms.Label lblNametag;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Timer tmrMouse;
         private System.Windows.Forms.Timer tmrCircle;
     }
 }

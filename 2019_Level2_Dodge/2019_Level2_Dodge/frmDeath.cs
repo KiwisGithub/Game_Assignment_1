@@ -133,7 +133,7 @@ namespace _2019_Level2_Dodge
 
         private void frmDeath_Load(object sender, EventArgs e)
         {
-
+            Cursor.Show();
         }
 
         private void frmDeath_KeyDown(object sender, KeyEventArgs e)

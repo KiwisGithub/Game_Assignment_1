@@ -88,6 +88,7 @@ namespace _2019_Level2_Dodge
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
             lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
+            Cursor.Hide();
 
         }
 
@@ -252,7 +253,7 @@ namespace _2019_Level2_Dodge
                     missiles2.Remove(m2);
                     break;
                 }
-                if ((m2.x < 1495))
+                if ((m2.x > 1495))
                 {
                     missiles2.Remove(m2);
                     break;
@@ -284,7 +285,7 @@ namespace _2019_Level2_Dodge
                     break;
                 }
 
-                if ((m3.x < 1495))
+                if ((m3.x > 1495))
                 {
                     missiles3.Remove(m3);
                     break;
@@ -311,7 +312,7 @@ namespace _2019_Level2_Dodge
                     missiles4.Remove(m4);
                     break;
                 }
-                if ((m4.x < 1495))
+                if ((m4.x > 1495))
                 {
                     missiles4.Remove(m4);
                     break;
@@ -398,6 +399,9 @@ namespace _2019_Level2_Dodge
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
             }
 
+
+            Cursor.Hide();
+
         }
 
         private void tmrShip_Tick(object sender, EventArgs e)
@@ -423,6 +427,20 @@ namespace _2019_Level2_Dodge
                 spaceship.moveSpaceship(move);
             }
 
+            foreach (Missile m in missiles)
+            {
+                if ((m.x < 0))
+                {
+                    missiles.Remove(m);
+                    break;
+                }
+                if ((m.x > 1495))
+                {
+                    missiles.Remove(m);
+                    break;
+                }
+            }
+
             foreach (Enemy n in planet)
             {
 
@@ -443,15 +461,15 @@ namespace _2019_Level2_Dodge
             foreach (Enemy2 n2 in planet2)
             {
 
-                foreach (Missile2 m2 in missiles2)
+                foreach (Missile m1 in missiles)
                 {
 
 
-                    if (n2.planetRec.IntersectsWith(m2.missileRec))
+                    if (n2.planetRec.IntersectsWith(m1.missileRec))
                     {
-                        missiles2.Remove(m2);
+                        missiles.Remove(m1);
                         score += 1;// add 1 to score when planet reaches bottom of panel
-                        n2.y = 1495;
+                        n2.y = 2000;
                         break;
 
                     }
@@ -462,15 +480,15 @@ namespace _2019_Level2_Dodge
             foreach (Enemy3 n3 in planet3)
             {
 
-                foreach (Missile3 m3 in missiles3)
+                foreach (Missile m1 in missiles)
                 {
 
 
-                    if (n3.planetRec.IntersectsWith(m3.missileRec))
+                    if (n3.planetRec.IntersectsWith(m1.missileRec))
                     {
-                        missiles3.Remove(m3);
+                        missiles.Remove(m1);
                         score += 1;// add 1 to score when planet reaches bottom of panel
-                        n3.y = 1495;
+                        n3.y = 2500;
                         break;
 
                     }
@@ -479,7 +497,8 @@ namespace _2019_Level2_Dodge
             }
 
 
-            foreach (Missile2 m2 in missiles2) {
+            foreach (Missile2 m2 in missiles2)
+            {
 
 
                if (spaceship.spaceRec.IntersectsWith(m2.missileRec))                      
@@ -516,7 +535,7 @@ namespace _2019_Level2_Dodge
 
                 if (spaceship.spaceRec.IntersectsWith(m4.missileRec))
                 {
-                    missiles4.Remove(m4);
+                    //missiles4.Remove(m4);
 
                     lives -= 1;// lose a life
                     txtLives.Text = lives.ToString();// display number of lives
@@ -544,7 +563,6 @@ namespace _2019_Level2_Dodge
                 tmrMissile2.Enabled = false;
                 tmrMissile3.Enabled = false;
 
-                Cursor.Show();
 
                 DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
                  "Bruh?",
@@ -554,6 +572,8 @@ namespace _2019_Level2_Dodge
                 if (result1 == DialogResult.Yes)
                 {
                     frmMenu mnuForm = new frmMenu();
+
+                    Cursor.Show();
                     //Application.Exit();
                     this.Close();
                     mnuForm.Show();
