@@ -39,11 +39,11 @@ namespace _2019_Level2_Dodge
             this.Close();
             helpForm.Show();
 
-           // DialogResult result1 = MessageBox.Show("You are beyond help.",
-           // "Help",
-           // MessageBoxButtons.OK,
-          //  MessageBoxIcon.Question);
-            //MessageBox.Show("Use the left and right arrow keys to move the spaceship. \n Don't get hit by the planets! \n Every planet that gets past scores a point. \n If a planet hits a spaceship a life is lost! \n \n Enter your Name press tab and enter the number of lives \n Click Start to begin", "Game Instructions");
+           DialogResult result1 = MessageBox.Show("Use the W, A, S and D keys to move the spaceship and use Mouse1 to shoot. \n \nDon't get hit by the enemy bullets! \nEvery enemy that gets past scores a point, and each ship you shoot scores 5. \nIf a bullet hits a spaceship a life is lost! \n \nIn the main menu, Enter your Name, press tab and enter the number of lives \nPush esc to pause the game, and return to the main menu. \n \nClick start to begin!",
+           "How to Play:",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Question);
+           // MessageBox.Show(", "Game Instructions");
         }
 
         //frmDodge playForm = new frmDodge();
