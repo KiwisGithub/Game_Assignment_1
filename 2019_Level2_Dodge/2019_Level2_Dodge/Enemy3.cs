@@ -17,13 +17,13 @@ namespace _2019_Level2_Dodge
 
         {
 
-            int[] quoteDoge = new int[] {2000, 2500, 3000, 4000};
+            int[] quoteDoge = new int[] { 5000, 5500, 4500, 5800, 6000, 6200, 6500 };
 
             // init random generator 
             Random rnd2 = new Random();
 
             // get random value (0 <= n < 3) 
-            int r2 = rnd2.Next(4);
+            int r2 = rnd2.Next(7);
 
             // pull out string from array 
             int str2 = quoteDoge[r2];

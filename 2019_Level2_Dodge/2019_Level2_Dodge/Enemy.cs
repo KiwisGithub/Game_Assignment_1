@@ -14,13 +14,13 @@ namespace _2019_Level2_Dodge
         //Create a constructor (initialises the values of the fields)
         public Enemy(int spacing)
         {
-            int[] quoteDoge = new int[] { 1500, 1700, 1800, 1900 };
+            int[] quoteDoge = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
 
             // init random generator 
             Random rnd2 = new Random();
 
             // get random value (0 <= n < 3) 
-            int r2 = rnd2.Next(4);
+            int r2 = rnd2.Next(7);
 
             // pull out string from array 
             int str2 = quoteDoge[r2];
