@@ -52,8 +52,19 @@ namespace _2019_Level2_Dodge
 
             if (planetRec.Y < -10)
             {
+                int[] quoteDoge = new int[] { 3400, 3800, 4200, 4500, 4700, 5000, 5100 };
+
+                // init random generator 
+                Random rnd2 = new Random();
+
+                // get random value (0 <= n < 3) 
+                int r2 = rnd2.Next(7);
+
+                // pull out string from array 
+                int str2 = quoteDoge[r2];
+
                 score += 1;// add 1 to score when planet reaches bottom of panel
-                y = 1900;
+                y = str2;
                 planetRec.Location = new Point(y, x);
             }
 
