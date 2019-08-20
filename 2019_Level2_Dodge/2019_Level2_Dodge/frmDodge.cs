@@ -261,6 +261,7 @@ namespace _2019_Level2_Dodge
 
             }
 
+
         }
 
 
@@ -271,7 +272,7 @@ namespace _2019_Level2_Dodge
             {
                 if (p.planetRec.X < 1495)
                 {
-                    //  missiles.Add(new Missile(spaceship.spaceRec, 270));
+                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
                     missiles3.Add(new Missile3(p.planetRec, 270));
                     //System.Threading.Thread.Sleep(5000);
                 }
@@ -284,12 +285,12 @@ namespace _2019_Level2_Dodge
                     missiles3.Remove(m3);
                     break;
                 }
-
                 if ((m3.x > 1495))
                 {
                     missiles3.Remove(m3);
                     break;
                 }
+
             }
 
         }

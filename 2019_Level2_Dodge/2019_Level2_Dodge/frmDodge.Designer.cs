@@ -182,13 +182,13 @@
             // tmrMissile2
             // 
             this.tmrMissile2.Enabled = true;
-            this.tmrMissile2.Interval = 10000;
+            this.tmrMissile2.Interval = 400;
             this.tmrMissile2.Tick += new System.EventHandler(this.tmrMissile2_Tick);
             // 
             // tmrMissile3
             // 
             this.tmrMissile3.Enabled = true;
-            this.tmrMissile3.Interval = 3000;
+            this.tmrMissile3.Interval = 1000;
             this.tmrMissile3.Tick += new System.EventHandler(this.tmrMissile3_Tick);
             // 
             // lblNametag

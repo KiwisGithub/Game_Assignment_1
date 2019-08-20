@@ -1,4 +1,6 @@
 ﻿using System.Drawing;
+using System;
+using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
 {
@@ -12,9 +14,23 @@ namespace _2019_Level2_Dodge
         public int score;
         //Create a constructor (initialises the values of the fields)
         public Enemy3(int spacing)
+
         {
+
+            int[] quoteDoge = new int[] {2000, 2500, 3000, 4000};
+
+            // init random generator 
+            Random rnd2 = new Random();
+
+            // get random value (0 <= n < 3) 
+            int r2 = rnd2.Next(4);
+
+            // pull out string from array 
+            int str2 = quoteDoge[r2];
+
+
             x = spacing;
-            y = 4000;
+            y = str2;
             width = 100;
             height = 100;
             planetImage = Image.FromFile("spaceship3.png");

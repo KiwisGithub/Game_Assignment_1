@@ -29,6 +29,7 @@ namespace _2019_Level2_Dodge
             sp.PlayLooping();
 
             //sp.Play();
+            Cursor.Show();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
