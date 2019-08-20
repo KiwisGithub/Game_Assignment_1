@@ -67,11 +67,11 @@
             // 
             this.lblLogo.AutoSize = true;
             this.lblLogo.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogo.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.White;
             this.lblLogo.Location = new System.Drawing.Point(1376, 29);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(107, 17);
+            this.lblLogo.Size = new System.Drawing.Size(89, 18);
             this.lblLogo.TabIndex = 1;
             this.lblLogo.Text = "Planet Doge";
             this.lblLogo.Click += new System.EventHandler(this.label1_Click);
@@ -80,11 +80,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Location = new System.Drawing.Point(214, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -93,11 +93,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.Location = new System.Drawing.Point(83, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(58, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "Score:";
             // 
@@ -105,11 +105,11 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
-            this.lblScore.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblScore.Location = new System.Drawing.Point(152, 28);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(17, 17);
+            this.lblScore.Size = new System.Drawing.Size(16, 18);
             this.lblScore.TabIndex = 5;
             this.lblScore.Text = "0";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
@@ -118,11 +118,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.Location = new System.Drawing.Point(12, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 17);
+            this.label5.Size = new System.Drawing.Size(36, 18);
             this.label5.TabIndex = 6;
             this.label5.Text = "HP:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -131,11 +131,11 @@
             // 
             this.txtLives.AutoSize = true;
             this.txtLives.BackColor = System.Drawing.Color.Transparent;
-            this.txtLives.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLives.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtLives.Location = new System.Drawing.Point(43, 28);
             this.txtLives.Name = "txtLives";
-            this.txtLives.Size = new System.Drawing.Size(17, 17);
+            this.txtLives.Size = new System.Drawing.Size(16, 18);
             this.txtLives.TabIndex = 7;
             this.txtLives.Text = "5";
             // 
@@ -169,7 +169,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -195,11 +195,11 @@
             // 
             this.lblNametag.AutoSize = true;
             this.lblNametag.BackColor = System.Drawing.Color.Transparent;
-            this.lblNametag.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNametag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNametag.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblNametag.Location = new System.Drawing.Point(275, 29);
             this.lblNametag.Name = "lblNametag";
-            this.lblNametag.Size = new System.Drawing.Size(44, 17);
+            this.lblNametag.Size = new System.Drawing.Size(48, 18);
             this.lblNametag.TabIndex = 9;
             this.lblNametag.Text = "Name";
             this.lblNametag.Click += new System.EventHandler(this.lblNametag_Click);

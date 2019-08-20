@@ -88,7 +88,7 @@ namespace _2019_Level2_Dodge
                 }
                 else
                 {
-                    x += 7;
+                    x += 8;
                     spaceRec.Location = new Point(x, y);
                 }
             }
@@ -103,7 +103,7 @@ namespace _2019_Level2_Dodge
                 }
                 else
                 {
-                    x -= 7;
+                    x -= 8;
                     spaceRec.Location = new Point(x, y);
                 }
             }
@@ -117,7 +117,7 @@ namespace _2019_Level2_Dodge
                 }
                 else
                 {
-                    y -= 7;
+                    y -= 8;
                     spaceRec.Location = new Point(x, y);
                 }
             }
@@ -132,7 +132,7 @@ namespace _2019_Level2_Dodge
                 }
                 else
                 {
-                    y += 7;
+                    y += 8;
                     spaceRec.Location = new Point(x, y);
                 }
             }
