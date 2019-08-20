@@ -8,6 +8,8 @@ namespace _2019_Level2_Dodge
 {
     public partial class frmDodge : Form
     {
+
+
         Graphics g; //declare a graphics object called g
                     // declare space for an array of 7 objects called planet 
         Enemy[] planet = new Enemy[7];
@@ -22,8 +24,7 @@ namespace _2019_Level2_Dodge
         List<Missile3> missiles3 = new List<Missile3>();
         List<Missile4> missiles4 = new List<Missile4>();
 
-
-
+        Stars stars = new Stars();
 
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
@@ -80,15 +81,17 @@ namespace _2019_Level2_Dodge
         //frmMenu mnuForm = new frmMenu();
         private void frmDodge_Load(object sender, EventArgs e)
         {
-            // lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
-            //MessageBox.Show("Use the left and right arrow keys to move the spaceship. \n Don't get hit by the planets! \n Every planet that gets past scores a point. \n If a planet hits a spaceship a life is lost! \n \n Enter your Name press tab and enter the number of lives \n Click Start to begin", "Game Instructions");
-            //txtName.Focus();
-            // mnuForm.Show();
+
+
             lblNametag.Text = frmMenu.SetValueFortxtNamebox;
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
             lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
             Cursor.Hide();
+
+
+
+
 
         }
 
@@ -96,6 +99,7 @@ namespace _2019_Level2_Dodge
         {
             //get the graphics used to paint on the panel control
             g = e.Graphics;
+            stars.drawStars(g);
             //call the Planet class's DrawPlanet method to draw the image planet1 
             for (int i = 0; i < 7; i++)
             {
@@ -110,6 +114,7 @@ namespace _2019_Level2_Dodge
                 planet[i].drawPlanet(g);
                 planet2[i].drawPlanet(g);
                 planet3[i].drawPlanet(g);
+
 
 
 
@@ -142,6 +147,7 @@ namespace _2019_Level2_Dodge
             }
 
 
+
         }
 
 
@@ -158,15 +164,6 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 planet[i].movePlanet();
-                // planet2[i].movePlanet();
-                //if (spaceship.spaceRec.IntersectsWith(planet[i].planetRec))
-                //{
-                //reset planet[i] back to top of panel
-                //planet[i].y = 1495; // set  y value of planetRec
-                // lives -= 1;// lose a life
-                //  txtLives.Text = lives.ToString();// display number of lives
-                //   checkLives();
-                //  }
 
 
                 score += planet[i].score;// get score from Planet class (in movePlanet method)
@@ -381,6 +378,19 @@ namespace _2019_Level2_Dodge
         private void frmDodge_MouseLeave(object sender, EventArgs e)
         {
                            
+        }
+
+        private void TmrStars_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 7; i++)
+            {
+
+
+                //score += planet[i].score;// get score from Planet class (in movePlanet method)
+                //lblScore.Text = score.ToString();// display score
+
+            }
+            pnlGame.Invalidate();//makes the paint event fire to redraw the panel
         }
 
         private void tmrCircle_Tick(object sender, EventArgs e)
