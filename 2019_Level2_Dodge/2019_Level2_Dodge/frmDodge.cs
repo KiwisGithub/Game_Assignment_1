@@ -17,6 +17,8 @@ namespace _2019_Level2_Dodge
         Enemy3[] planet3 = new Enemy3[7];
         Random yspeed = new Random();
 
+        Stars[] stars = new Stars[7];
+
         //float timer = 0f;
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
@@ -24,7 +26,7 @@ namespace _2019_Level2_Dodge
         List<Missile3> missiles3 = new List<Missile3>();
         List<Missile4> missiles4 = new List<Missile4>();
 
-        Stars stars = new Stars();
+        //Stars stars = new Stars();
 
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
@@ -99,7 +101,7 @@ namespace _2019_Level2_Dodge
         {
             //get the graphics used to paint on the panel control
             g = e.Graphics;
-            stars.drawStars(g);
+            
             //call the Planet class's DrawPlanet method to draw the image planet1 
             for (int i = 0; i < 7; i++)
             {
@@ -382,14 +384,7 @@ namespace _2019_Level2_Dodge
 
         private void TmrStars_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < 7; i++)
-            {
-
-
-                //score += planet[i].score;// get score from Planet class (in movePlanet method)
-                //lblScore.Text = score.ToString();// display score
-
-            }
+            //stars.x -= 5;
             pnlGame.Invalidate();//makes the paint event fire to redraw the panel
         }
 
