@@ -11,7 +11,7 @@ namespace _2019_Level2_Dodge
     {
 
         public int x, y, width, height;//variables for the rectangle
-        Image[] images = new Image[5];
+        Image[] images = new Image[150];
         public Rectangle starRec;//variable for a rectangle to place our image in
         Animation animate; // create an animation object called animate
         //Create a constructor (initialises the values of the fields)
@@ -23,19 +23,19 @@ namespace _2019_Level2_Dodge
             width = 1495;
             height = 794;
             //load the images that will make up the animated character into the images array
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= 149; i++)
             {
-                images[i] = Image.FromFile(@"sprite_rug" + i.ToString() + ".png");
+                images[i] = Image.FromFile(@"stars (" + i.ToString() + ").jpg");
             }
             //pass the images array to the Animation class's constructor
-            animate = new Animation(images);
+            //animate = new Animation(images);
             // Methods for the Rug class
         }
         public void drawStars(Graphics g)
         {
             starRec = new Rectangle(x, y, width, height);
             //draw animated image
-            g.DrawImage(animate.GetNextImage(), starRec);
+           // g.DrawImage(animate.GetNextImage(), starRec);
         }
     }
 

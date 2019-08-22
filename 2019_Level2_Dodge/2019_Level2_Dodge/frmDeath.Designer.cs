@@ -166,11 +166,11 @@
             // 
             this.lblHighscore.AutoSize = true;
             this.lblHighscore.BackColor = System.Drawing.Color.Transparent;
-            this.lblHighscore.Font = new System.Drawing.Font("OCR A Std", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighscore.ForeColor = System.Drawing.Color.White;
             this.lblHighscore.Location = new System.Drawing.Point(789, 416);
             this.lblHighscore.Name = "lblHighscore";
-            this.lblHighscore.Size = new System.Drawing.Size(107, 34);
+            this.lblHighscore.Size = new System.Drawing.Size(89, 37);
             this.lblHighscore.TabIndex = 18;
             this.lblHighscore.Text = "0000";
             this.lblHighscore.Click += new System.EventHandler(this.label6_Click);
@@ -179,11 +179,11 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
-            this.lblScore.Font = new System.Drawing.Font("OCR A Std", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblScore.Location = new System.Drawing.Point(789, 510);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(107, 34);
+            this.lblScore.Size = new System.Drawing.Size(89, 37);
             this.lblScore.TabIndex = 19;
             this.lblScore.Text = "0000";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
@@ -263,6 +263,7 @@
             this.Text = "Planet Doge | Death";
             this.Load += new System.EventHandler(this.frmDeath_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDeath_KeyDown);
+            this.MouseHover += new System.EventHandler(this.FrmDeath_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

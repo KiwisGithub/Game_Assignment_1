@@ -22,6 +22,7 @@ namespace _2019_Level2_Dodge
 
         public frmDeath()
         {
+            Cursor.Show();
             InitializeComponent();
             lblHighscore.ForeColor = Color.FromArgb(90, 153, 171);
             lblScore.ForeColor = Color.FromArgb(90, 153, 171);
@@ -95,6 +96,7 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            Cursor.Show();
             DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
                  "Bruh?",
                   MessageBoxButtons.YesNo,
@@ -171,6 +173,11 @@ namespace _2019_Level2_Dodge
         private void lblDoge_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmDeath_MouseHover(object sender, EventArgs e)
+        {
+            Cursor.Show();
         }
     }
 }

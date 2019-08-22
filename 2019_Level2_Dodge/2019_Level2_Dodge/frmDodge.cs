@@ -87,7 +87,7 @@ namespace _2019_Level2_Dodge
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
             lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
-            Cursor.Hide();
+            //Cursor.Hide();
 
 
 
@@ -223,7 +223,7 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_MouseHover(object sender, EventArgs e)
         {
-            Cursor.Hide();
+           // Cursor.Hide();
         }
         private void pnlGame_MouseLeave(object sender, EventArgs e)
         {
@@ -362,7 +362,7 @@ namespace _2019_Level2_Dodge
 
         private void PnlGame_MouseClick(object sender, MouseEventArgs e)
         {
-            Cursor.Hide();
+            //Cursor.Hide();
         }
 
         private void lblScore_Click(object sender, EventArgs e)
@@ -411,7 +411,7 @@ namespace _2019_Level2_Dodge
             }
 
 
-            Cursor.Hide();
+           // Cursor.Hide();
 
         }
 
