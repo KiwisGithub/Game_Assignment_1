@@ -93,6 +93,28 @@ namespace _2019_Level2_Dodge
 
         private void txtname(object sender, EventArgs e)
         {
+            string context = txtNamebox.Text;
+            bool isletter = true;
+            //for loop checks for numbers as characters are entered
+            for (int i = 0; i < context.Length; i++)
+            {
+                if (!char.IsLetter(context[i]))//if current character not a letter
+                {
+                    isletter = false;//make isletter false
+                    break;//exit the for loop
+                }
+            }
+
+            //if not a number clear the textbox and focus on it to enter lives again
+            if (isletter == false)
+            {
+                txtNamebox.Clear();
+                txtNamebox.Focus();
+                DialogResult result1 = MessageBox.Show("Please only enter letters for your name.",
+            "Warning",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Error);
+            }
 
         }
 

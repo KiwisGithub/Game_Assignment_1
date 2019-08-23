@@ -48,20 +48,19 @@
             this.lblNametag = new System.Windows.Forms.Label();
             this.pnlGame = new System.Windows.Forms.Panel();
             this.tmrCircle = new System.Windows.Forms.Timer(this.components);
-            this.tmrStars = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             this.SuspendLayout();
             // 
             // tmrPlanet
             // 
             this.tmrPlanet.Enabled = true;
-            this.tmrPlanet.Interval = 60;
+            this.tmrPlanet.Interval = 70;
             this.tmrPlanet.Tick += new System.EventHandler(this.tmrPlanet_Tick);
             // 
             // tmrShip
             // 
             this.tmrShip.Enabled = true;
-            this.tmrShip.Interval = 1;
+            this.tmrShip.Interval = 10;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
             // lblLogo
@@ -226,12 +225,6 @@
             this.tmrCircle.Enabled = true;
             this.tmrCircle.Tick += new System.EventHandler(this.tmrCircle_Tick);
             // 
-            // tmrStars
-            // 
-            this.tmrStars.Enabled = true;
-            this.tmrStars.Interval = 10;
-            this.tmrStars.Tick += new System.EventHandler(this.TmrStars_Tick);
-            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,7 +282,6 @@
         private System.Windows.Forms.Label lblNametag;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Timer tmrCircle;
-        private System.Windows.Forms.Timer tmrStars;
     }
 }
 

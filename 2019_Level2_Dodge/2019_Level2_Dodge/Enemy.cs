@@ -44,7 +44,7 @@ namespace _2019_Level2_Dodge
 
         public void movePlanet()
         {
-            y -= 3;
+            y -= 1;
 
             planetRec.Location = new Point(x, y);
 
