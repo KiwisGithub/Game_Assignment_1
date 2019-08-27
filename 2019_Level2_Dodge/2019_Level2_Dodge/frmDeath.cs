@@ -17,8 +17,8 @@ namespace _2019_Level2_Dodge
         public static int yourScore = 0;
         public static string playerName = frmMenu.SetValueFortxtNamebox;
         public static string sparkname = "Sparkles";
-        public static string spadname = "Shadowvoid";
-
+        public static string spadname = "ShadowVoid";
+        //test
 
 
         public frmDeath()
