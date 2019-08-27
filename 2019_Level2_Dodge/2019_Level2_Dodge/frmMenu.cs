@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace _2019_Level2_Dodge
 {
@@ -24,11 +26,7 @@ namespace _2019_Level2_Dodge
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("minecraftmenu.wav");
-
-            sp.PlayLooping();
-
-            //sp.Play();
+            lblHelp.ForeColor = Color.FromArgb(90, 153, 171);
             Cursor.Show();
         }
 
@@ -189,6 +187,11 @@ namespace _2019_Level2_Dodge
 
         private void frmMenu_KeyPress(object sender, KeyPressEventArgs e)
         {
+        }
+
+        private void lblHelp_Click(object sender, EventArgs e)
+        {
+            lblHelp.Text = "← click on the button - not this text!";
         }
     }
 }

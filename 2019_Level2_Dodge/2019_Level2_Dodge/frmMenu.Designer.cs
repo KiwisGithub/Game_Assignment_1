@@ -40,6 +40,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.lblHelp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -189,6 +190,19 @@
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
+            // lblHelp
+            // 
+            this.lblHelp.AutoSize = true;
+            this.lblHelp.BackColor = System.Drawing.Color.Transparent;
+            this.lblHelp.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelp.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.lblHelp.Location = new System.Drawing.Point(809, 611);
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Size = new System.Drawing.Size(351, 13);
+            this.lblHelp.TabIndex = 20;
+            this.lblHelp.Text = "← click on the button for full instructions";
+            this.lblHelp.Click += new System.EventHandler(this.lblHelp_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +211,7 @@
             this.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
+            this.Controls.Add(this.lblHelp);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.numHP);
             this.Controls.Add(this.pictureBox6);
@@ -244,5 +259,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label lblHelp;
     }
 }

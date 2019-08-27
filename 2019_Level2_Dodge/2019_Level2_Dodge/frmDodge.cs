@@ -49,9 +49,9 @@ namespace _2019_Level2_Dodge
 
             InitializeComponent();
 
-            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("megala.wav");
+           // System.Media.SoundPlayer sp = new System.Media.SoundPlayer("megala.wav");
 
-            sp.PlayLooping();
+           // sp.PlayLooping();
 
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
 
