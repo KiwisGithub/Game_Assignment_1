@@ -44,6 +44,8 @@
             this.lblSpark = new System.Windows.Forms.Label();
             this.lblDoge = new System.Windows.Forms.Label();
             this.picDoge = new System.Windows.Forms.PictureBox();
+            this.lblSquibb = new System.Windows.Forms.Label();
+            this.pctSquibb = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -55,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDoge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctSquibb)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -236,12 +239,39 @@
             this.picDoge.TabIndex = 22;
             this.picDoge.TabStop = false;
             // 
+            // lblSquibb
+            // 
+            this.lblSquibb.AutoSize = true;
+            this.lblSquibb.BackColor = System.Drawing.Color.Transparent;
+            this.lblSquibb.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSquibb.ForeColor = System.Drawing.Color.White;
+            this.lblSquibb.Location = new System.Drawing.Point(220, 111);
+            this.lblSquibb.Name = "lblSquibb";
+            this.lblSquibb.Size = new System.Drawing.Size(72, 31);
+            this.lblSquibb.TabIndex = 25;
+            this.lblSquibb.Text = "label3";
+            this.lblSquibb.Click += new System.EventHandler(this.lblSquibb_Click);
+            // 
+            // pctSquibb
+            // 
+            this.pctSquibb.BackColor = System.Drawing.Color.Transparent;
+            this.pctSquibb.Image = global::_2019_Level2_Dodge.Properties.Resources.squibb;
+            this.pctSquibb.Location = new System.Drawing.Point(12, 12);
+            this.pctSquibb.Name = "pctSquibb";
+            this.pctSquibb.Size = new System.Drawing.Size(202, 196);
+            this.pctSquibb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctSquibb.TabIndex = 24;
+            this.pctSquibb.TabStop = false;
+            this.pctSquibb.Click += new System.EventHandler(this.pctSquibb_Click);
+            // 
             // frmDeath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.ClientSize = new System.Drawing.Size(1495, 843);
+            this.Controls.Add(this.lblSquibb);
+            this.Controls.Add(this.pctSquibb);
             this.Controls.Add(this.lblDoge);
             this.Controls.Add(this.picDoge);
             this.Controls.Add(this.lblSpark);
@@ -275,6 +305,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDoge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctSquibb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,5 +327,7 @@
         private System.Windows.Forms.Label lblSpark;
         private System.Windows.Forms.Label lblDoge;
         private System.Windows.Forms.PictureBox picDoge;
+        private System.Windows.Forms.Label lblSquibb;
+        private System.Windows.Forms.PictureBox pctSquibb;
     }
 }

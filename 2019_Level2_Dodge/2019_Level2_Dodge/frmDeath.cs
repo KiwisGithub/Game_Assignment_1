@@ -17,6 +17,7 @@ namespace _2019_Level2_Dodge
         public static int yourScore = 0;
         public static string playerName = frmMenu.SetValueFortxtNamebox;
         public static string sparkname = "Sparkles";
+        public static string spadname = "Shadowvoid";
 
 
 
@@ -62,26 +63,66 @@ namespace _2019_Level2_Dodge
 
                 picDoge.Hide();
                 lblDoge.Hide();
+
+                pctSquibb.Hide();
+                lblSquibb.Hide();
             }
             else
             {
-                picSpark.Hide();
-                lblSpark.Hide();
 
-                string[] quoteDoge = new string[] { "Such Die", "much F", "wow", "bro... you just posted cringe 😳😳😳", "ngl, kinda cringe", "u died", "F", "pay respecc", "I'm not Logan Paul, but I see a body 👀", playerName + " fell from a high place", "label 1 :)" };
+                if (playerName == spadname)
+                {
+                    string[] quoteSquibb = new string[] { "What is this? A crossover episode?", "i am a squid that litterally eats plants to fuel my genocide against innocent tutles", "This game's not as good as Planet Jamiro amight", "blub", "nothing happened in turtleaman square" };
 
-                // init random generator 
-                Random rnd2 = new Random();
 
-                // get random value (0 <= n < 3) 
-                int r2 = rnd2.Next(11);
+                    // init random generator 
+                    Random rnd = new Random();
 
-                // pull out string from array 
-                string str2 = quoteDoge[r2];
+                    // get random value (0 <= n < 3) 
+                    int r = rnd.Next(5);
 
-                lblDoge.Text = str2;
-                picDoge.Show();
-                lblDoge.Show();
+                    // pull out string from array 
+                    string strE = quoteSquibb[r];
+
+
+
+
+
+
+                    lblSquibb.Text = strE;
+
+                    pctSquibb.Show();
+                    lblSquibb.Show();
+
+                    picSpark.Hide();
+                    lblSpark.Hide();
+
+                    picDoge.Hide();
+                    lblDoge.Hide();
+                }
+                else
+                {
+
+                    picSpark.Hide();
+                    lblSpark.Hide();
+                    pctSquibb.Hide();
+                    lblSquibb.Hide();
+
+                    string[] quoteDoge = new string[] { "Such Die", "much F", "wow", "bro... you just posted cringe 😳😳😳", "ngl, kinda cringe", "u died", "F", "pay respecc", "I'm not Logan Paul, but I see a body 👀", playerName + " fell from a high place", "label 1 :)" };
+
+                    // init random generator 
+                    Random rnd2 = new Random();
+
+                    // get random value (0 <= n < 3) 
+                    int r2 = rnd2.Next(11);
+
+                    // pull out string from array 
+                    string str2 = quoteDoge[r2];
+
+                    lblDoge.Text = str2;
+                    picDoge.Show();
+                    lblDoge.Show();
+                }
 
 
             }
@@ -178,6 +219,16 @@ namespace _2019_Level2_Dodge
         private void FrmDeath_MouseHover(object sender, EventArgs e)
         {
             Cursor.Show();
+        }
+
+        private void pctSquibb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSquibb_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
