@@ -72,7 +72,7 @@ namespace _2019_Level2_Dodge
 
                 if (playerName == spadname)
                 {
-                    string[] quoteSquibb = new string[] { "What is this? A crossover episode?", "i am a squid that litterally eats plants to fuel my genocide against innocent tutles", "This game's not as good as Planet Jamiro amight", "blub", "nothing happened in turtleaman square" };
+                    string[] quoteSquibb = new string[] { "What is this? A crossover episode?", "i am a squid that litterally eats plants to fuel my genocide against innocent turtles", "This game's not as good as Planet Jamiro amight", "blub", "nothing happened in turtleaman square" };
 
 
                     // init random generator 
