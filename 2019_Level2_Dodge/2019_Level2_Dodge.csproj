@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC34E7F5-6B90-4DCA-8D8C-013B288976C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_2019_Level2_Dodge</RootNamespace>
+    <AssemblyName>2019_Level2_Dodge</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="Enemy2.cs" />
+    <Compile Include="Enemy3.cs" />
+    <Compile Include="frmDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeath.Designer.cs">
+      <DependentUpon>frmDeath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevel.Designer.cs">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Missile.cs" />
+    <Compile Include="Missile2.cs" />
+    <Compile Include="Missile3.cs" />
+    <Compile Include="Missile4.cs" />
+    <Compile Include="SpaceshipMouse.cs" />
+    <Compile Include="frmDodge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodge.Designer.cs">
+      <DependentUpon>frmDodge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spaceship.cs" />
+    <EmbeddedResource Include="frmDeath.resx">
+      <DependentUpon>frmDeath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodge.resx">
+      <DependentUpon>frmDodge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevel.resx">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bruh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bruh2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\name2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\name3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\name4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\halp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\alien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet3old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bullet4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\crosshair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\doge-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\exit hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HP-1.png %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Kiwi-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\missile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\missile_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\New Piskel-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\planet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyber-Dream-Loop.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\68747470733a2f2f692e696d6775722e636f6aad2f6630475762336e2e706e67_0aJ_icon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mainmenu.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mainmenu2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship2smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship3smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4smol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\spaceship4smoler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\equals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sparkles straight chillin clone-3.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\squibb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-1.png %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
