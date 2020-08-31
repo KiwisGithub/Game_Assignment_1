@@ -32,11 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodge));
             this.tmrPlanet = new System.Windows.Forms.Timer(this.components);
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
-            this.lblLogo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtLives = new System.Windows.Forms.Label();
             this.mnuStart = new System.Windows.Forms.MenuStrip();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +46,12 @@
             this.pnlGame = new System.Windows.Forms.Panel();
             this.tmrCircle = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrPlanet
@@ -65,79 +66,41 @@
             this.tmrShip.Interval = 10;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
-            // lblLogo
-            // 
-            this.lblLogo.AutoSize = true;
-            this.lblLogo.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(1376, 29);
-            this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(89, 18);
-            this.lblLogo.TabIndex = 1;
-            this.lblLogo.Text = "Planet Doge";
-            this.lblLogo.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(681, 41);
+            this.label2.Location = new System.Drawing.Point(544, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(550, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Score:";
-            // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
-            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblScore.Location = new System.Drawing.Point(619, 40);
+            this.lblScore.Font = new System.Drawing.Font("Orator Std", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
+            this.lblScore.Location = new System.Drawing.Point(425, 37);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(16, 18);
+            this.lblScore.Size = new System.Drawing.Size(35, 39);
             this.lblScore.TabIndex = 5;
             this.lblScore.Text = "0";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(410, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "HP:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtLives
             // 
             this.txtLives.AutoSize = true;
             this.txtLives.BackColor = System.Drawing.Color.Transparent;
-            this.txtLives.Font = new System.Drawing.Font("Orator Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLives.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtLives.Location = new System.Drawing.Point(29, 50);
+            this.txtLives.Font = new System.Drawing.Font("Orator Std", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLives.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
+            this.txtLives.Location = new System.Drawing.Point(102, 38);
             this.txtLives.Name = "txtLives";
-            this.txtLives.Size = new System.Drawing.Size(20, 21);
+            this.txtLives.Size = new System.Drawing.Size(35, 39);
             this.txtLives.TabIndex = 7;
             this.txtLives.Text = "5";
             this.txtLives.Click += new System.EventHandler(this.txtLives_Click);
@@ -200,7 +163,7 @@
             this.lblNametag.BackColor = System.Drawing.Color.Transparent;
             this.lblNametag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNametag.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblNametag.Location = new System.Drawing.Point(742, 41);
+            this.lblNametag.Location = new System.Drawing.Point(605, 53);
             this.lblNametag.Name = "lblNametag";
             this.lblNametag.Size = new System.Drawing.Size(48, 18);
             this.lblNametag.TabIndex = 9;
@@ -210,6 +173,7 @@
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
+            this.pnlGame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlGame.Location = new System.Drawing.Point(0, 94);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(1495, 749);
@@ -234,9 +198,31 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-53, 29);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(192, 61);
+            this.pictureBox2.Size = new System.Drawing.Size(232, 61);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(228, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(287, 61);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(64)))));
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(1305, 30);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(164, 60);
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
             // 
             // frmDodge
             // 
@@ -246,16 +232,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblNametag);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblScore);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.mnuStart);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -273,6 +258,8 @@
             this.mnuStart.ResumeLayout(false);
             this.mnuStart.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,11 +270,8 @@
         private System.Windows.Forms.Panel pnlGame;
         private System.Windows.Forms.Timer tmrPlanet;
         private System.Windows.Forms.Timer tmrShip;
-        private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblScore;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label txtLives;
         private System.Windows.Forms.MenuStrip mnuStart;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
@@ -299,6 +283,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Timer tmrCircle;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
