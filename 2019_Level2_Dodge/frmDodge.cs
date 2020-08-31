@@ -23,6 +23,7 @@ namespace _2019_Level2_Dodge
         List<Missile2> missiles2 = new List<Missile2>();
         List<Missile3> missiles3 = new List<Missile3>();
         List<Missile4> missiles4 = new List<Missile4>();
+        List<Exhaust1> exhaust1 = new List<Exhaust1>();
 
         //Stars stars = new Stars();
 
@@ -35,7 +36,7 @@ namespace _2019_Level2_Dodge
 
         int bulletScore = 0;
 
-        int planetScore = 0;
+        //int planetScore = 0;
 
         double x, y;
         double phi = 0;
@@ -125,6 +126,14 @@ namespace _2019_Level2_Dodge
             }
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
+
+            foreach (Exhaust1 m in exhaust1)
+            {
+                
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+
             foreach (Missile m in missiles)
             {
 
@@ -164,6 +173,10 @@ namespace _2019_Level2_Dodge
 
         private void tmrPlanet_Tick(object sender, EventArgs e)
         {
+            exhaust1.Add(new Exhaust1(spaceship.spaceRec, spaceship.rotationAngle));
+
+            exhaust1.RemoveRange(3, 2); //remove 2 objects from 3 on exhaust1 DOESN'T WORK BECAUSE DOING BEFORE THERE ARE 3
+
             score = 0 + bulletScore;
             for (int i = 0; i < 7; i++)
             {
@@ -218,6 +231,7 @@ namespace _2019_Level2_Dodge
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
             //Cursor.Hide();
+          
             Invalidate();
 
 
@@ -228,6 +242,7 @@ namespace _2019_Level2_Dodge
             if (e.Button == MouseButtons.Left)
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+                
                 //System.Threading.Thread.Sleep(50);
             }
 

@@ -48,6 +48,7 @@
     <Compile Include="Animation.cs" />
     <Compile Include="Enemy2.cs" />
     <Compile Include="Enemy3.cs" />
+    <Compile Include="Exhaust1.cs" />
     <Compile Include="frmDeath.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +278,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exhaustfume.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exhaustfume.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
