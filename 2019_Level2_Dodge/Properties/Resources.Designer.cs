@@ -283,6 +283,16 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap colon {
+            get {
+                object obj = ResourceManager.GetObject("colon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap crosshair1 {
             get {
                 object obj = ResourceManager.GetObject("crosshair1", resourceCulture);
@@ -316,16 +326,6 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap doge_1_png1 {
             get {
                 object obj = ResourceManager.GetObject("doge_1_png1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap equals {
-            get {
-                object obj = ResourceManager.GetObject("equals", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +376,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap exit2 {
             get {
                 object obj = ResourceManager.GetObject("exit2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fume1 {
+            get {
+                object obj = ResourceManager.GetObject("fume1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -496,6 +506,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap Kiwi {
             get {
                 object obj = ResourceManager.GetObject("Kiwi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kiwi_1_png {
+            get {
+                object obj = ResourceManager.GetObject("Kiwi_1_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

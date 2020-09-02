@@ -139,7 +139,7 @@
   <data name="bullet4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bullet4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="equals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="colon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\equals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bullet3old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -184,9 +184,7 @@
   <data name="spaceship1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\spaceship1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kiwi-1.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Kiwi-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="New_Piskel_1_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\New Piskel-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -402,5 +400,8 @@
   </data>
   <data name="exhaustfume.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exhaustfume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fume1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fume1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

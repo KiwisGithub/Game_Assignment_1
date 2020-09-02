@@ -173,9 +173,9 @@ namespace _2019_Level2_Dodge
 
         private void tmrPlanet_Tick(object sender, EventArgs e)
         {
-            exhaust1.Add(new Exhaust1(spaceship.spaceRec, spaceship.rotationAngle));
+            
 
-            exhaust1.RemoveRange(3, 2); //remove 2 objects from 3 on exhaust1 DOESN'T WORK BECAUSE DOING BEFORE THERE ARE 3
+           // exhaust1.RemoveRange(3, 2); //remove 2 objects from 3 on exhaust1 DOESN'T WORK BECAUSE DOING BEFORE THERE ARE 3
 
             score = 0 + bulletScore;
             for (int i = 0; i < 7; i++)
@@ -417,6 +417,11 @@ namespace _2019_Level2_Dodge
         private void txtLives_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tmrSmoke_Tick(object sender, EventArgs e)
+        {
+            exhaust1.Add(new Exhaust1(spaceship.spaceRec, spaceship.rotationAngle));
         }
 
         private void tmrCircle_Tick(object sender, EventArgs e)

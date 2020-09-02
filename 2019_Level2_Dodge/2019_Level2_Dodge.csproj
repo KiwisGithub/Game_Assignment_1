@@ -283,6 +283,9 @@
     <None Include="Resources\exhaustfume.png.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fume1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\exhaustfume.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
