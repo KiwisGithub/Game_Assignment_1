@@ -17,6 +17,7 @@ namespace _2019_Level2_Dodge
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
         List<Missile2> missiles2 = new List<Missile2>();
+        List<Exhaust1> exhaust1 = new List<Exhaust1>();
 
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
@@ -181,6 +182,16 @@ namespace _2019_Level2_Dodge
 
         }
 
+        private void tmrSmoke_Tick(object sender, EventArgs e)
+        {
+            exhaust1.Add(new Exhaust1(spaceship.spaceRec, spaceship.rotationAngle));
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             //get the graphics used to paint on the panel control
@@ -210,6 +221,12 @@ namespace _2019_Level2_Dodge
                 //m.drawMissile(g);
                 //m.moveMissile(g);
             }
+            foreach (Exhaust1 m in exhaust1)
+            {
+
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
         }
 
        // double phi = 0;
@@ -228,14 +245,14 @@ namespace _2019_Level2_Dodge
                 planet[i] = new Enemy(x);
             }
 
-            label8.ForeColor = Color.FromArgb(90, 153, 171);
-            label7.ForeColor = Color.FromArgb(90, 153, 171);
-            label6.ForeColor = Color.FromArgb(90, 153, 171);
-            label5.ForeColor = Color.FromArgb(90, 153, 171);
-            label4.ForeColor = Color.FromArgb(90, 153, 171);
-            label3.ForeColor = Color.FromArgb(90, 153, 171);
-            label2.ForeColor = Color.FromArgb(90, 153, 171);
-            label1.ForeColor = Color.FromArgb(90, 153, 171);//(R, G, B) (0, 0, 0 = black)
+          //  label8.ForeColor = Color.FromArgb(90, 153, 171);
+         //   label7.ForeColor = Color.FromArgb(90, 153, 171);
+          //  label6.ForeColor = Color.FromArgb(90, 153, 171);
+          //  label5.ForeColor = Color.FromArgb(90, 153, 171);
+          //  label4.ForeColor = Color.FromArgb(90, 153, 171);
+         //   label3.ForeColor = Color.FromArgb(90, 153, 171);
+         //   label2.ForeColor = Color.FromArgb(90, 153, 171);
+         //   label1.ForeColor = Color.FromArgb(90, 153, 171);//(R, G, B) (0, 0, 0 = black)
 
             //(62,108,123) darker main
             //(90, 153, 171) light main

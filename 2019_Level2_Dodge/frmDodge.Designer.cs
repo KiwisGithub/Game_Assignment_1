@@ -64,7 +64,7 @@
             // tmrShip
             // 
             this.tmrShip.Enabled = true;
-            this.tmrShip.Interval = 10;
+            this.tmrShip.Interval = 1;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
             // label2
@@ -175,6 +175,7 @@
             // 
             this.pnlGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
             this.pnlGame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlGame.Cursor = System.Windows.Forms.Cursors.NoMove2D;
             this.pnlGame.Location = new System.Drawing.Point(0, 94);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(1495, 749);
@@ -254,7 +255,7 @@
             this.KeyPreview = true;
             this.Name = "frmDodge";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Planet Doge | Game";
+            this.Text = "Planet Doge 2";
             this.Load += new System.EventHandler(this.frmDodge_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodge_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmDodge_KeyPress);

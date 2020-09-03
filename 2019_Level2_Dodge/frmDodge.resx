@@ -121,7 +121,7 @@
     <value>29, 11</value>
   </metadata>
   <metadata name="tmrShip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>172, 14</value>
+    <value>121, 12</value>
   </metadata>
   <metadata name="mnuStart.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>274, 11</value>

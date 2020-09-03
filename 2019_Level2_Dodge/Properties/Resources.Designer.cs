@@ -423,6 +423,16 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help {
+            get {
+                object obj = ResourceManager.GetObject("help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap high {
             get {
                 object obj = ResourceManager.GetObject("high", resourceCulture);
@@ -546,6 +556,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_1_png__1_ {
+            get {
+                object obj = ResourceManager.GetObject("logo-1.png (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -802,9 +822,49 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap play_1_png__13_ {
+            get {
+                object obj = ResourceManager.GetObject("play-1.png (13)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_1_png__2_ {
+            get {
+                object obj = ResourceManager.GetObject("play-1.png (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_1_png__4_ {
+            get {
+                object obj = ResourceManager.GetObject("play-1.png (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_1_png__5_ {
             get {
                 object obj = ResourceManager.GetObject("play-1.png (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_11 {
+            get {
+                object obj = ResourceManager.GetObject("play-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1005,6 +1065,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap woke {
             get {
                 object obj = ResourceManager.GetObject("woke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woke1 {
+            get {
+                object obj = ResourceManager.GetObject("woke1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -371,7 +371,7 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
-            spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
+            //spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
             var mouseCurrentX = e.X;
             var mouseCurrentY = e.Y;
 

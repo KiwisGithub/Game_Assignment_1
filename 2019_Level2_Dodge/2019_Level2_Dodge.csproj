@@ -288,5 +288,26 @@
   <ItemGroup>
     <None Include="Resources\exhaustfume.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-1.png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-1.png %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-1.png %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-1.png %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-1.png %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woke1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
