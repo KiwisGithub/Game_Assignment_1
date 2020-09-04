@@ -32,7 +32,7 @@ namespace _2019_Level2_Dodge
             missile = Image.FromFile("fume2.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
-            xSpeed = -10 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
+            xSpeed = -5 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
             ySpeed = -10 * (Math.Sin((missileRotate + 90) * Math.PI / 180));
             //calculate x,y to move missile to middle of spaceship in drawMissile method
             x = spaceRec.X + spaceRec.Width -100 / 2;
@@ -41,7 +41,7 @@ namespace _2019_Level2_Dodge
             missileRotated = missileRotate;
 
             //distance smoke trail should trail the ship
-            smokeTrail = spaceRec.X - 70;
+            smokeTrail = spaceRec.X - 100;
            
     }
 

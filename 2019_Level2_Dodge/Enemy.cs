@@ -1,5 +1,7 @@
 ﻿using System.Drawing;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _2019_Level2_Dodge
 {
@@ -7,6 +9,7 @@ namespace _2019_Level2_Dodge
     {
         // declare fields to use in the class
         public int x, y, width, height;//variables for the rectangle
+        public double y2;
         public Image planetImage;//variable for the planet's image
 
         public Rectangle planetRec;//variable for a rectangle to place our image in
@@ -44,10 +47,22 @@ namespace _2019_Level2_Dodge
 
         public void movePlanet()
         {
-            y -= 1;
+
+            //  var r = new Random();
+            //  var myValues = new int[] { -2, -1, 0, 1, 2 }; // Will work with array or list
+            //  IEnumerable<int> threeRandom = myValues.OrderBy(x => r.Next()).Take(3);
+
+            //  Random random = new Random();
+            //   int start2 = random.Next(0, myValues.Length);
+            //int xMove = myValues[start2];
+
+          //  y2 = y;
+            
+             y -= 1;
+           // x -= xMove;
 
             planetRec.Location = new Point(x, y);
-
+            
             if (planetRec.Y < -40)
             {
 

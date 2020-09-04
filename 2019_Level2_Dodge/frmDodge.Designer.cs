@@ -49,6 +49,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tmrSmoke = new System.Windows.Forms.Timer(this.components);
+            this.tmrPaint = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,11 +85,11 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
-            this.lblScore.Font = new System.Drawing.Font("Orator Std", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
             this.lblScore.Location = new System.Drawing.Point(425, 37);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(35, 39);
+            this.lblScore.Size = new System.Drawing.Size(32, 33);
             this.lblScore.TabIndex = 5;
             this.lblScore.Text = "0";
             this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
@@ -97,11 +98,11 @@
             // 
             this.txtLives.AutoSize = true;
             this.txtLives.BackColor = System.Drawing.Color.Transparent;
-            this.txtLives.Font = new System.Drawing.Font("Orator Std", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLives.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
             this.txtLives.Location = new System.Drawing.Point(102, 38);
             this.txtLives.Name = "txtLives";
-            this.txtLives.Size = new System.Drawing.Size(35, 39);
+            this.txtLives.Size = new System.Drawing.Size(32, 33);
             this.txtLives.TabIndex = 7;
             this.txtLives.Text = "5";
             this.txtLives.Click += new System.EventHandler(this.txtLives_Click);
@@ -118,6 +119,7 @@
             this.mnuStart.Size = new System.Drawing.Size(1495, 24);
             this.mnuStart.TabIndex = 8;
             this.mnuStart.Text = "menuStrip1";
+            this.mnuStart.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuStart_ItemClicked);
             // 
             // startToolStripMenuItem
             // 
@@ -136,20 +138,19 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // tmrMissile
             // 
             this.tmrMissile.Enabled = true;
-            this.tmrMissile.Interval = 1000;
+            this.tmrMissile.Interval = 3000;
             this.tmrMissile.Tick += new System.EventHandler(this.tmrMissile_Tick);
             // 
             // tmrMissile2
             // 
             this.tmrMissile2.Enabled = true;
-            this.tmrMissile2.Interval = 400;
             this.tmrMissile2.Tick += new System.EventHandler(this.tmrMissile2_Tick);
             // 
             // tmrMissile3
@@ -229,7 +230,14 @@
             // tmrSmoke
             // 
             this.tmrSmoke.Enabled = true;
+            this.tmrSmoke.Interval = 70;
             this.tmrSmoke.Tick += new System.EventHandler(this.tmrSmoke_Tick);
+            // 
+            // tmrPaint
+            // 
+            this.tmrPaint.Enabled = true;
+            this.tmrPaint.Interval = 20;
+            this.tmrPaint.Tick += new System.EventHandler(this.tmrPaint_Tick);
             // 
             // frmDodge
             // 
@@ -293,6 +301,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer tmrSmoke;
+        private System.Windows.Forms.Timer tmrPaint;
     }
 }
 

@@ -110,10 +110,13 @@ namespace _2019_Level2_Dodge
             {
 
                 // generate a random number from 5 to 20 and put it in rndmspeed
-                int rndmspeed = yspeed.Next(-20, -5);
+                int rndmspeed = yspeed.Next(-15, -10);
+                int rndmspeed2 = yspeed.Next(-7, -5);
+                int rndmspeed3 = yspeed.Next(-10, -7);
+
                 planet[i].y += rndmspeed;
-                planet2[i].y += rndmspeed;
-                planet3[i].y += rndmspeed;
+                planet2[i].y += rndmspeed2;
+                planet3[i].y += rndmspeed3;
 
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
@@ -139,6 +142,7 @@ namespace _2019_Level2_Dodge
 
                 m.drawMissile(g);
                 m.moveMissile(g);
+
             }
 
             foreach (Missile2 m in missiles2)
@@ -173,9 +177,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrPlanet_Tick(object sender, EventArgs e)
         {
-            
-
-           // exhaust1.RemoveRange(3, 2); //remove 2 objects from 3 on exhaust1 DOESN'T WORK BECAUSE DOING BEFORE THERE ARE 3
+            //paint here
 
             score = 0 + bulletScore;
             for (int i = 0; i < 7; i++)
@@ -195,7 +197,7 @@ namespace _2019_Level2_Dodge
 
 
             }
-            pnlGame.Invalidate();//makes the paint event fire to redraw the panel
+            
         }
 
 
@@ -424,6 +426,16 @@ namespace _2019_Level2_Dodge
             exhaust1.Add(new Exhaust1(spaceship.spaceRec, spaceship.rotationAngle));
         }
 
+        private void mnuStart_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void tmrPaint_Tick(object sender, EventArgs e)
+        {
+            pnlGame.Invalidate();//makes the paint event fire to redraw the panel
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -448,6 +460,10 @@ namespace _2019_Level2_Dodge
 
         private void tmrShip_Tick(object sender, EventArgs e)
         {
+
+           
+
+
             if (right) // if right arrow key pressed
             {
                 move = "right";

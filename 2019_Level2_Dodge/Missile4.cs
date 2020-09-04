@@ -28,8 +28,8 @@ namespace _2019_Level2_Dodge
             missileRec = new Rectangle(x, y, width, height);
             missileRec2 = new Rectangle(x, y+5, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
-            xSpeed = 30 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
-            ySpeed = 30 * (Math.Sin((missileRotate + 90) * Math.PI / 180));
+            xSpeed = 15 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
+            ySpeed = 15 * (Math.Sin((missileRotate + 90) * Math.PI / 180));
             //calculate x,y to move missile to middle of spaceship in drawMissile method
             x = spaceRec.X + spaceRec.Width / 2;
             y = spaceRec.Y + spaceRec.Height / 2;

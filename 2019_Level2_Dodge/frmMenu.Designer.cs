@@ -55,12 +55,12 @@
             // 
             // txtNamebox
             // 
-            this.txtNamebox.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNamebox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamebox.Location = new System.Drawing.Point(745, 434);
             this.txtNamebox.Name = "txtNamebox";
-            this.txtNamebox.Size = new System.Drawing.Size(147, 27);
+            this.txtNamebox.Size = new System.Drawing.Size(147, 29);
             this.txtNamebox.TabIndex = 0;
-            this.txtNamebox.Text = "Gerald";
+            this.txtNamebox.Text = "MooCat";
             this.txtNamebox.TextChanged += new System.EventHandler(this.txtname);
             // 
             // pictureBox2
@@ -90,7 +90,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(608, 658);
+            this.pictureBox4.Location = new System.Drawing.Point(613, 591);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(215, 58);
             this.pictureBox4.TabIndex = 6;
@@ -102,7 +102,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(608, 589);
+            this.pictureBox5.Location = new System.Drawing.Point(613, 655);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(210, 63);
             this.pictureBox5.TabIndex = 7;
@@ -125,7 +125,7 @@
             // 
             // numHP
             // 
-            this.numHP.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numHP.Location = new System.Drawing.Point(745, 505);
             this.numHP.Maximum = new decimal(new int[] {
             20,
@@ -138,7 +138,7 @@
             0,
             0});
             this.numHP.Name = "numHP";
-            this.numHP.Size = new System.Drawing.Size(147, 27);
+            this.numHP.Size = new System.Drawing.Size(147, 29);
             this.numHP.TabIndex = 9;
             this.numHP.Value = new decimal(new int[] {
             10,
@@ -163,11 +163,11 @@
             // 
             this.lblHelp.AutoSize = true;
             this.lblHelp.BackColor = System.Drawing.Color.Transparent;
-            this.lblHelp.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(176)))), ((int)(((byte)(214)))));
-            this.lblHelp.Location = new System.Drawing.Point(824, 613);
+            this.lblHelp.Location = new System.Drawing.Point(829, 679);
             this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(351, 13);
+            this.lblHelp.Size = new System.Drawing.Size(235, 16);
             this.lblHelp.TabIndex = 20;
             this.lblHelp.Text = "← click on the button for full instructions";
             this.lblHelp.Click += new System.EventHandler(this.lblHelp_Click);

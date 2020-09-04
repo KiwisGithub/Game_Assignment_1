@@ -24,8 +24,8 @@ namespace _2019_Level2_Dodge
             missile = Image.FromFile("bullet.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
-            xSpeed = 30 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
-            ySpeed = 30 * (Math.Sin((missileRotate + 90) * Math.PI / 180));
+            xSpeed = 25 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
+            ySpeed = 25 * (Math.Sin((missileRotate + 90) * Math.PI / 180));
             //calculate x,y to move missile to middle of spaceship in drawMissile method
             x = spaceRec.X + spaceRec.Width / 2;
             y = spaceRec.Y + spaceRec.Height / 2;
@@ -36,7 +36,7 @@ namespace _2019_Level2_Dodge
 
         public void drawMissile(Graphics g)
         {
-            if ((missileRec.Y > 0) && (missileRec.Y < 1400))
+            if ((missileRec.X > 0) && (missileRec.X < 1400))
             {
                 //centre missile 
                 centreMissile = new Point(x, y);
