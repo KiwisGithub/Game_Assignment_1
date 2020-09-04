@@ -101,7 +101,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.pictureBox1.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__13_;
             this.pictureBox1.Location = new System.Drawing.Point(624, 493);
             this.pictureBox1.Name = "pictureBox1";
@@ -112,7 +111,6 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.pictureBox3.Image = global::_2019_Level2_Dodge.Properties.Resources.score;
             this.pictureBox3.Location = new System.Drawing.Point(654, 403);
             this.pictureBox3.Name = "pictureBox3";
@@ -123,7 +121,6 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.pictureBox5.Image = global::_2019_Level2_Dodge.Properties.Resources.high;
             this.pictureBox5.Location = new System.Drawing.Point(526, 403);
             this.pictureBox5.Name = "pictureBox5";
@@ -134,7 +131,6 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.bruh2;
             this.pictureBox8.Image = global::_2019_Level2_Dodge.Properties.Resources.colon;
             this.pictureBox8.Location = new System.Drawing.Point(704, 403);
             this.pictureBox8.Name = "pictureBox8";

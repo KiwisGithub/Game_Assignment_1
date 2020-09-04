@@ -21,7 +21,7 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            lblHelp.Text = "now with 34% more planet";
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            lblHelp.Text = "hello patrick";
         }
 
         private void frmMenu_KeyDown(object sender, KeyEventArgs e)
@@ -193,6 +193,21 @@ namespace _2019_Level2_Dodge
         private void lblHelp_Click(object sender, EventArgs e)
         {
             lblHelp.Text = "← click on the button - not this text!";
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            lblHelp.Text = "i pissed on the moon!!!";
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            lblHelp.Text = "it's where Brit*n is D:";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            lblHelp.Text = "my name is luka tomic and i am from s*rbia";
         }
     }
 }
