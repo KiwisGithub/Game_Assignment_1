@@ -60,7 +60,7 @@
             this.txtNamebox.Name = "txtNamebox";
             this.txtNamebox.Size = new System.Drawing.Size(147, 29);
             this.txtNamebox.TabIndex = 0;
-            this.txtNamebox.Text = "MooCat";
+            this.txtNamebox.Text = "Doge";
             this.txtNamebox.TextChanged += new System.EventHandler(this.txtname);
             // 
             // pictureBox2
@@ -152,7 +152,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.Kiwi2;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(1368, 766);
+            this.pictureBox7.Location = new System.Drawing.Point(1418, 777);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(78, 65);
             this.pictureBox7.TabIndex = 10;

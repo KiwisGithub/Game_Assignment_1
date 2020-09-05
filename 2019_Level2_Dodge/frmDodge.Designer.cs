@@ -50,6 +50,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tmrSmoke = new System.Windows.Forms.Timer(this.components);
             this.tmrPaint = new System.Windows.Forms.Timer(this.components);
+            this.tmrPowerup = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,6 +152,7 @@
             // tmrMissile2
             // 
             this.tmrMissile2.Enabled = true;
+            this.tmrMissile2.Interval = 350;
             this.tmrMissile2.Tick += new System.EventHandler(this.tmrMissile2_Tick);
             // 
             // tmrMissile3
@@ -239,6 +241,12 @@
             this.tmrPaint.Interval = 20;
             this.tmrPaint.Tick += new System.EventHandler(this.tmrPaint_Tick);
             // 
+            // tmrPowerup
+            // 
+            this.tmrPowerup.Enabled = true;
+            this.tmrPowerup.Interval = 3000;
+            this.tmrPowerup.Tick += new System.EventHandler(this.tmrPowerup_Tick);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,6 +310,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer tmrSmoke;
         private System.Windows.Forms.Timer tmrPaint;
+        private System.Windows.Forms.Timer tmrPowerup;
     }
 }
 

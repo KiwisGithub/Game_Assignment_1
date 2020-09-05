@@ -58,7 +58,7 @@ namespace _2019_Level2_Dodge
 
           //  y2 = y;
             
-             y -= 1;
+/*             y -= 1;
            // x -= xMove;
 
             planetRec.Location = new Point(x, y);
@@ -81,7 +81,7 @@ namespace _2019_Level2_Dodge
                 score += 1;// add 1 to score when planet reaches bottom of panel
                 y = str2;
                 planetRec.Location = new Point(y, x);
-            }
+            }*/
 
         }
 

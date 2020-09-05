@@ -77,6 +77,8 @@
     <Compile Include="Missile2.cs" />
     <Compile Include="Missile3.cs" />
     <Compile Include="Missile4.cs" />
+    <Compile Include="PowerupShield.cs" />
+    <Compile Include="PowerupSpawner.cs" />
     <Compile Include="SpaceshipMouse.cs" />
     <Compile Include="frmDodge.cs">
       <SubType>Form</SubType>

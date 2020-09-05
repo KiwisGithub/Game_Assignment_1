@@ -15,6 +15,9 @@ namespace _2019_Level2_Dodge
         Enemy[] planet = new Enemy[7];
         Enemy2[] planet2 = new Enemy2[7];
         Enemy3[] planet3 = new Enemy3[7];
+
+        PowerupSpawner[] powerupSpawner = new PowerupSpawner[1];
+
         Random yspeed = new Random();
 
         //float timer = 0f;
@@ -23,7 +26,10 @@ namespace _2019_Level2_Dodge
         List<Missile2> missiles2 = new List<Missile2>();
         List<Missile3> missiles3 = new List<Missile3>();
         List<Missile4> missiles4 = new List<Missile4>();
+
         List<Exhaust1> exhaust1 = new List<Exhaust1>();
+
+        List<PowerupShield> powerupshield = new List<PowerupShield>();
 
         //Stars stars = new Stars();
 
@@ -62,6 +68,11 @@ namespace _2019_Level2_Dodge
                 planet[i] = new Enemy(x);
                 planet2[i] = new Enemy2(x);
                 planet3[i] = new Enemy3(x);
+            }
+            for (int i = 0; i < 1; i++)
+            {
+                int x = 10 + (i * 140);
+                powerupSpawner[i] = new PowerupSpawner(x);
             }
 
 
@@ -127,6 +138,21 @@ namespace _2019_Level2_Dodge
 
 
             }
+
+            for (int i = 0; i < 1; i++)
+            {
+                int rndmspeedPowerup = yspeed.Next(-10, -10);
+
+                powerupSpawner[i].x += rndmspeedPowerup;
+                powerupSpawner[i].drawPlanet(g);
+
+/*                if (powerupSpawner[i].y < 749)
+                {
+                    powerupSpawner[i].y = 749;
+                }*/
+
+            }
+
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
 
@@ -163,6 +189,11 @@ namespace _2019_Level2_Dodge
                 m.moveMissile(g);
             }
 
+            foreach (PowerupShield m in powerupshield)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
 
 
         }
@@ -357,7 +388,7 @@ namespace _2019_Level2_Dodge
         {
             Cursor.Show();
             DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?",
-     "Bruh?",
+     "Do you want to exit?",
      MessageBoxButtons.YesNo,
      MessageBoxIcon.Warning,
      MessageBoxDefaultButton.Button2);
@@ -434,6 +465,26 @@ namespace _2019_Level2_Dodge
         private void tmrPaint_Tick(object sender, EventArgs e)
         {
             pnlGame.Invalidate();//makes the paint event fire to redraw the panel
+        }
+
+        private void tmrPowerup_Tick(object sender, EventArgs e)
+        {
+            //powerupShield.Add(new PowerupShield(270, 270));
+            // powerupshield.Add(new PowerupShield(spaceship.spaceRec, 90));
+
+            foreach (PowerupSpawner ps in powerupSpawner)
+            {
+                if (ps.planetRec.X < 1495)
+                {
+                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                    powerupshield.Add(new PowerupShield(ps.planetRec, 270));
+                    //System.Threading.Thread.Sleep(5000);
+                }
+
+
+            }
+
+
         }
 
         private void tmrCircle_Tick(object sender, EventArgs e)
@@ -601,6 +652,24 @@ namespace _2019_Level2_Dodge
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
+
+                }
+
+            }
+
+
+            foreach (PowerupShield p1 in powerupshield)
+            {
+
+
+                if (spaceship.spaceRec.IntersectsWith(p1.missileRec))
+                {
+                    //missiles4.Remove(m4);
+
+                    //lives -= 1;// lose a life
+                    //txtLives.Text = lives.ToString();// display number of lives
+                   // checkLives();
+                   // break;
 
                 }
 
