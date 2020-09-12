@@ -106,10 +106,6 @@ namespace _2019_Level2_Dodge
             //lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
             //Cursor.Hide();
 
-
-
-
-
         }
 
         private void pnlGame_Paint(object sender, PaintEventArgs e)
@@ -696,6 +692,23 @@ namespace _2019_Level2_Dodge
                     //txtLives.Text = lives.ToString();// display number of lives
                    // checkLives();
                    // break;
+
+                }
+
+            }
+
+            foreach (PowerupHealth p2 in poweruphealth)
+            {
+
+
+                if (spaceship.spaceRec.IntersectsWith(p2.missileRec))
+                {
+                    poweruphealth.Remove(p2);
+
+                    lives += 5;// gain 5 lives
+                    txtLives.Text = lives.ToString();// display number of lives
+                     checkLives();
+                     break;
 
                 }
 

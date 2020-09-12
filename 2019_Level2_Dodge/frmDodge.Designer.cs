@@ -245,13 +245,13 @@
             // tmrPowerup
             // 
             this.tmrPowerup.Enabled = true;
-            this.tmrPowerup.Interval = 14000;
+            this.tmrPowerup.Interval = 14022;
             this.tmrPowerup.Tick += new System.EventHandler(this.tmrPowerup_Tick);
             // 
             // tmrPowerup2
             // 
             this.tmrPowerup2.Enabled = true;
-            this.tmrPowerup2.Interval = 8000;
+            this.tmrPowerup2.Interval = 8049;
             this.tmrPowerup2.Tick += new System.EventHandler(this.tmrPowerup2_Tick);
             // 
             // frmDodge
