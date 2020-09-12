@@ -5,7 +5,7 @@ using System.Drawing.Drawing2D;
 
 namespace _2019_Level2_Dodge
 {
-    class PowerupShield
+    class PowerupHealth
     {
         public int x, y, width, height;
         public int missileRotated;
@@ -17,11 +17,11 @@ namespace _2019_Level2_Dodge
         // in the following constructor we pass in the values of spaceRec and the rotation angle of the spaceship
         // this gives us the position of the spaceship which we can then use to place the
         // missile where the spaceship is located and at the correct angle
-        public PowerupShield(Rectangle spaceRec, int missileRotate)
+        public PowerupHealth(Rectangle spaceRec, int missileRotate)
         {
             width = 90;
             height = 90;
-            missile = Image.FromFile("shield.png");
+            missile = Image.FromFile("healthpack.png");
             missileRec = new Rectangle(x, y, width, height);
             //this code works out the speed of the missile to be used in the moveMissile method
             xSpeed = 5 * (Math.Cos((missileRotate - 90) * Math.PI / 180));
@@ -36,19 +36,19 @@ namespace _2019_Level2_Dodge
 
         public void drawMissile(Graphics g)
         {
-           // if ((missileRec.X > 0) && (missileRec.X < 1400))
+            // if ((missileRec.X > 0) && (missileRec.X < 1400))
             //{
-                //centre missile 
-                centreMissile = new Point(x, y);
-                //instantiate a Matrix object called matrixMissile
-                matrixMissile = new Matrix();
-                //rotate the matrix (in this case missileRec) about its centre
-                matrixMissile.RotateAt(missileRotated, centreMissile);
-                //Set the current draw location to the rotated matrix point i.e. where missileRec is now
-                g.Transform = matrixMissile;
-                //Draw the missile
-                g.DrawImage(missile, missileRec);
-          //  }
+            //centre missile 
+            centreMissile = new Point(x, y);
+            //instantiate a Matrix object called matrixMissile
+            matrixMissile = new Matrix();
+            //rotate the matrix (in this case missileRec) about its centre
+            matrixMissile.RotateAt(missileRotated, centreMissile);
+            //Set the current draw location to the rotated matrix point i.e. where missileRec is now
+            g.Transform = matrixMissile;
+            //Draw the missile
+            g.DrawImage(missile, missileRec);
+            //  }
 
 
         }

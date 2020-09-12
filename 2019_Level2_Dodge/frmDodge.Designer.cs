@@ -51,6 +51,7 @@
             this.tmrSmoke = new System.Windows.Forms.Timer(this.components);
             this.tmrPaint = new System.Windows.Forms.Timer(this.components);
             this.tmrPowerup = new System.Windows.Forms.Timer(this.components);
+            this.tmrPowerup2 = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -244,8 +245,14 @@
             // tmrPowerup
             // 
             this.tmrPowerup.Enabled = true;
-            this.tmrPowerup.Interval = 3000;
+            this.tmrPowerup.Interval = 14000;
             this.tmrPowerup.Tick += new System.EventHandler(this.tmrPowerup_Tick);
+            // 
+            // tmrPowerup2
+            // 
+            this.tmrPowerup2.Enabled = true;
+            this.tmrPowerup2.Interval = 8000;
+            this.tmrPowerup2.Tick += new System.EventHandler(this.tmrPowerup2_Tick);
             // 
             // frmDodge
             // 
@@ -311,6 +318,7 @@
         private System.Windows.Forms.Timer tmrSmoke;
         private System.Windows.Forms.Timer tmrPaint;
         private System.Windows.Forms.Timer tmrPowerup;
+        private System.Windows.Forms.Timer tmrPowerup2;
     }
 }
 

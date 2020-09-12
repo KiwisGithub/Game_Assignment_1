@@ -77,6 +77,7 @@
     <Compile Include="Missile2.cs" />
     <Compile Include="Missile3.cs" />
     <Compile Include="Missile4.cs" />
+    <Compile Include="PowerupHealth.cs" />
     <Compile Include="PowerupShield.cs" />
     <Compile Include="PowerupSpawner.cs" />
     <Compile Include="SpaceshipMouse.cs" />
@@ -310,6 +311,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\woke1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

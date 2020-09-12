@@ -15,8 +15,8 @@ namespace _2019_Level2_Dodge
         public PowerupSpawner(int spacing)
         {
             
-            x = 749;
-            y = 1000;
+            x = 749;//749
+            y = 1000; //1000
             width = 80;
             height = 80;
             planetImage = Image.FromFile("missile.png");

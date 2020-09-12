@@ -30,6 +30,7 @@ namespace _2019_Level2_Dodge
         List<Exhaust1> exhaust1 = new List<Exhaust1>();
 
         List<PowerupShield> powerupshield = new List<PowerupShield>();
+        List<PowerupHealth> poweruphealth = new List<PowerupHealth>();
 
         //Stars stars = new Stars();
 
@@ -143,6 +144,11 @@ namespace _2019_Level2_Dodge
             {
                 int rndmspeedPowerup = yspeed.Next(-10, -10);
 
+                if (powerupSpawner[i].x < 0)
+                {
+                    rndmspeedPowerup = 749;
+                }
+
                 powerupSpawner[i].x += rndmspeedPowerup;
                 powerupSpawner[i].drawPlanet(g);
 
@@ -190,6 +196,11 @@ namespace _2019_Level2_Dodge
             }
 
             foreach (PowerupShield m in powerupshield)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+            foreach (PowerupHealth m in poweruphealth)
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
@@ -474,17 +485,32 @@ namespace _2019_Level2_Dodge
 
             foreach (PowerupSpawner ps in powerupSpawner)
             {
-                if (ps.planetRec.X < 1495)
-                {
+               // if (ps.planetRec.X < 1495)
+                //{
                     // missiles.Add(new Missile(spaceship.spaceRec, 270));
                     powerupshield.Add(new PowerupShield(ps.planetRec, 270));
                     //System.Threading.Thread.Sleep(5000);
-                }
+               // }
 
 
             }
 
 
+        }
+
+        private void tmrPowerup2_Tick(object sender, EventArgs e)
+        {
+            foreach (PowerupSpawner ps in powerupSpawner)
+            {
+                // if (ps.planetRec.X < 1495)
+                //{
+                // missiles.Add(new Missile(spaceship.spaceRec, 270));
+                poweruphealth.Add(new PowerupHealth(ps.planetRec, 270));
+                //System.Threading.Thread.Sleep(5000);
+                // }
+
+
+            }
         }
 
         private void tmrCircle_Tick(object sender, EventArgs e)
