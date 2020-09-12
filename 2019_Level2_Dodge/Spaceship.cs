@@ -17,11 +17,14 @@ namespace _2019_Level2_Dodge
         public int x, y, width, height;//variables for the rectangle
         //public Image spaceship;//variable for the planet's image
         Image[] images = new Image[7];//set space for an array called images of 7 images
+        Image[] imagesShield = new Image[7];//set space for an array called images of 7 images
         public int rotationAngle;
         public Matrix matrix;
+        //public bool ShieldHas;
         Point centre;
 
         Animation animate;//create an object called animate
+        Animation animateShield;
 
         public Image spaceshipMouse;//variable for the planet's image
         public Rectangle spaceMouseRec;//variable for a rectangle to place our image in
@@ -39,10 +42,12 @@ namespace _2019_Level2_Dodge
 
             for (int i = 1; i <= 6; i++)
             {
-                images[i] = Image.FromFile(Application.StartupPath + @"\Ship" + i.ToString() + ".gif");
+                    images[i] = Image.FromFile(Application.StartupPath + @"\ShipGreen" + i.ToString() + ".gif");
+                    imagesShield[i] = Image.FromFile(Application.StartupPath + @"\ShipNew" + i.ToString() + ".gif");
             }
             //pass the images array to the Animation class's constructor
             animate = new Animation(images);
+            animateShield = new Animation(imagesShield);
             // planetImage = Image.FromFile("planet1.png");
 
             spaceRec = new Rectangle(x, y, width, height);
@@ -66,7 +71,14 @@ namespace _2019_Level2_Dodge
             g.Transform = matrix;
             //draw the spaceship
 
-            g.DrawImage(animate.GetNextImage(), spaceRec);
+            if (frmDodge.shieldHas == false)
+            {
+                g.DrawImage(animate.GetNextImage(), spaceRec);
+            }
+            else
+            {
+                g.DrawImage(animateShield.GetNextImage(), spaceRec);
+            }
 
         }
 

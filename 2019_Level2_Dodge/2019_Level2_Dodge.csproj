@@ -79,6 +79,7 @@
     <Compile Include="Missile4.cs" />
     <Compile Include="PowerupHealth.cs" />
     <Compile Include="PowerupShield.cs" />
+    <Compile Include="PowerupShieldActive.cs" />
     <Compile Include="PowerupSpawner.cs" />
     <Compile Include="SpaceshipMouse.cs" />
     <Compile Include="frmDodge.cs">

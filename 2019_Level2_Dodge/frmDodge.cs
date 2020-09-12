@@ -6,9 +6,11 @@ using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
 {
+
+
     public partial class frmDodge : Form
     {
-
+        public static bool shieldHas = false;
 
         Graphics g; //declare a graphics object called g
                     // declare space for an array of 7 objects called planet 
@@ -638,7 +640,10 @@ namespace _2019_Level2_Dodge
                 {
                     missiles2.Remove(m2);
 
-                    lives -= 1;// lose a life
+                    if (shieldHas == false)
+                    {
+                        lives -= 1;// lose a life
+                    };
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
@@ -654,7 +659,10 @@ namespace _2019_Level2_Dodge
                 {
                     missiles3.Remove(m3);
 
-                    lives -= 1;// lose a life
+                    if (shieldHas == false)
+                    {
+                        lives -= 1;// lose a life
+                    };
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
@@ -670,7 +678,10 @@ namespace _2019_Level2_Dodge
                 {
                     //missiles4.Remove(m4);
 
-                    lives -= 1;// lose a life
+                    if (shieldHas == false)
+                    {
+                        lives -= 1;// lose a life
+                    };
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
@@ -680,18 +691,21 @@ namespace _2019_Level2_Dodge
             }
 
 
-            foreach (PowerupShield p1 in powerupshield)
+            foreach (PowerupShield p3 in powerupshield)
             {
 
 
-                if (spaceship.spaceRec.IntersectsWith(p1.missileRec))
+                if (spaceship.spaceRec.IntersectsWith(p3.missileRec))
                 {
-                    //missiles4.Remove(m4);
+                    shieldHas = true;
+                    //powerupshield.Remove(p3); crashes game for some reason
+                    
+
 
                     //lives -= 1;// lose a life
                     //txtLives.Text = lives.ToString();// display number of lives
-                   // checkLives();
-                   // break;
+                    // checkLives();
+                    // break;
 
                 }
 
@@ -704,6 +718,7 @@ namespace _2019_Level2_Dodge
                 if (spaceship.spaceRec.IntersectsWith(p2.missileRec))
                 {
                     poweruphealth.Remove(p2);
+                    //shieldHas = true;
 
                     lives += 5;// gain 5 lives
                     txtLives.Text = lives.ToString();// display number of lives
