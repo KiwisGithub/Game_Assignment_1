@@ -114,7 +114,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__5_;
-            this.pictureBox6.Location = new System.Drawing.Point(597, 722);
+            this.pictureBox6.Location = new System.Drawing.Point(602, 724);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(237, 60);
             this.pictureBox6.TabIndex = 8;
