@@ -141,7 +141,7 @@ namespace _2019_Level2_Dodge
 
             for (int i = 0; i < 1; i++)
             {
-                int rndmspeedPowerup = yspeed.Next(-10, -10);
+                int rndmspeedPowerup = yspeed.Next(-69, -0);
 
                 if (powerupSpawner[i].x < 0)
                 {
@@ -151,10 +151,6 @@ namespace _2019_Level2_Dodge
                 powerupSpawner[i].x += rndmspeedPowerup;
                 powerupSpawner[i].drawPlanet(g);
 
-/*                if (powerupSpawner[i].y < 749)
-                {
-                    powerupSpawner[i].y = 749;
-                }*/
 
             }
 

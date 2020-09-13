@@ -248,13 +248,13 @@
             // tmrPowerup
             // 
             this.tmrPowerup.Enabled = true;
-            this.tmrPowerup.Interval = 14022;
+            this.tmrPowerup.Interval = 3222;
             this.tmrPowerup.Tick += new System.EventHandler(this.tmrPowerup_Tick);
             // 
             // tmrPowerup2
             // 
             this.tmrPowerup2.Enabled = true;
-            this.tmrPowerup2.Interval = 8049;
+            this.tmrPowerup2.Interval = 16049;
             this.tmrPowerup2.Tick += new System.EventHandler(this.tmrPowerup2_Tick);
             // 
             // tmrShield
@@ -267,7 +267,7 @@
             this.imgShield.BackColor = System.Drawing.Color.Transparent;
             this.imgShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imgShield.Cursor = System.Windows.Forms.Cursors.Default;
-            this.imgShield.Image = global::_2019_Level2_Dodge.Properties.Resources.alien11;
+            this.imgShield.Image = ((System.Drawing.Image)(resources.GetObject("imgShield.Image")));
             this.imgShield.Location = new System.Drawing.Point(784, 32);
             this.imgShield.Name = "imgShield";
             this.imgShield.Size = new System.Drawing.Size(56, 56);
