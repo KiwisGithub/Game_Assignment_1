@@ -38,7 +38,7 @@ namespace _2019_Level2_Dodge
             this.Close();
             helpForm.Show();
 
-           DialogResult result1 = MessageBox.Show("Use the W, A, S and D keys to move the spaceship and use Mouse1 to shoot. \n \nDon't get hit by the enemy bullets! \nEvery enemy that gets past scores a point, and each ship you shoot scores 5. \nIf a bullet hits a spaceship a life is lost! \n \nIn the main menu, Enter your Name, press tab and enter the number of lives \nPush esc to pause the game, and return to the main menu. \n \nClick start to begin!",
+           DialogResult result1 = MessageBox.Show("Use the W, A, S and D keys to move the spaceship and use Mouse1 to shoot. \n \nDon't get hit by the enemy bullets! \nEvery enemy that gets past scores a point, and each ship you shoot scores 5. \nIf a bullet hits a spaceship a life is lost! \n \nIn the main menu, Enter your Name, press tab and enter the number of lives \nPush esc to pause the game, and return to the main menu. \n \n Healthpacks give you +5hp and Shields give you 5s of immunity from bullets. \n \nClick start to begin!",
            "How to Play:",
             MessageBoxButtons.OK,
             MessageBoxIcon.Question);
