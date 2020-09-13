@@ -44,33 +44,5 @@ namespace _2019_Level2_Dodge
             planetRec = new Rectangle(y, x, width, height);
             g.DrawImage(planetImage, planetRec);
         }
-
-
-
-        public void movePlanet()
-        {
-            y -= 1;
-
-            planetRec.Location = new Point(x, y);
-
-            if (planetRec.Y < -10)
-            {
-                int[] quoteDoge = new int[] { 5000, 5500, 4500, 5800, 6000, 6200, 6500 };
-
-                // init random generator 
-                Random rnd2 = new Random();
-
-                // get random value (0 <= n < 3) 
-                int r2 = rnd2.Next(7);
-
-                // pull out string from array 
-                int str2 = quoteDoge[r2];
-
-                score += 1;// add 1 to score when planet reaches bottom of panel
-                y = str2;
-                planetRec.Location = new Point(y, x);
-            }
-
-        }
     }
 }

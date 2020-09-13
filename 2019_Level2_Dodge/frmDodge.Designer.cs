@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodge));
-            this.tmrPlanet = new System.Windows.Forms.Timer(this.components);
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
@@ -61,12 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgShield)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tmrPlanet
-            // 
-            this.tmrPlanet.Enabled = true;
-            this.tmrPlanet.Interval = 70;
-            this.tmrPlanet.Tick += new System.EventHandler(this.tmrPlanet_Tick);
             // 
             // tmrShip
             // 
@@ -191,11 +184,11 @@
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             this.pnlGame.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PnlGame_MouseClick);
             this.pnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseDown);
-            this.pnlGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseUp);
             this.pnlGame.MouseEnter += new System.EventHandler(this.pnlGame_MouseEnter);
             this.pnlGame.MouseLeave += new System.EventHandler(this.pnlGame_MouseLeave);
             this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
+            this.pnlGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseUp);
             // 
             // tmrCircle
             // 
@@ -328,7 +321,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlGame;
-        private System.Windows.Forms.Timer tmrPlanet;
         private System.Windows.Forms.Timer tmrShip;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblScore;

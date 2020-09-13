@@ -87,7 +87,6 @@ namespace _2019_Level2_Dodge
             if (lives == 0)
             {
                 finalScore = (int)score;
-                tmrPlanet.Enabled = false;
                 tmrShip.Enabled = false;
                 //MessageBox.Show("Game Over");
                 Cursor.Show();
@@ -212,30 +211,6 @@ namespace _2019_Level2_Dodge
 
 
 
-        private void tmrPlanet_Tick(object sender, EventArgs e)
-        {
-            //paint here
-
-            score = 0 + bulletScore;
-            for (int i = 0; i < 7; i++)
-            {
-                planet[i].movePlanet();
-
-
-                score += planet[i].score;// get score from Planet class (in movePlanet method)
-
-
-//
-               // if (planet[i].planetRec.Y < -40)
-                //{
-                 //   score += 1;// add 1 to score when planet reaches bottom of panel
-                    lblScore.Text = score.ToString();// display score
-               // }
-
-
-            }
-            
-        }
 
 
 
@@ -255,7 +230,6 @@ namespace _2019_Level2_Dodge
             score = 0;
             lblScore.Text = score.ToString();
             lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
-            tmrPlanet.Enabled = true;
             tmrShip.Enabled = true;
 
         }
@@ -263,7 +237,6 @@ namespace _2019_Level2_Dodge
         private void stopToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tmrShip.Enabled = false;
-            tmrPlanet.Enabled = false;
             //test2
         }
 
@@ -281,12 +254,9 @@ namespace _2019_Level2_Dodge
             if (e.Button == MouseButtons.Left)
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
-
                 tmrAutoshoot.Enabled = true;
                 tmrAutoshoot.Start();
-
             }
-
         }
 
 
@@ -774,7 +744,6 @@ namespace _2019_Level2_Dodge
             {
                 Cursor.Show();
                 tmrShip.Enabled = false;
-                tmrPlanet.Enabled = false;
                 tmrMissile.Enabled = false;
                 tmrMissile2.Enabled = false;
                 tmrMissile3.Enabled = false;
@@ -798,7 +767,6 @@ namespace _2019_Level2_Dodge
                 else
                 {
                     tmrShip.Enabled = true;
-                    tmrPlanet.Enabled = true;
                     tmrMissile.Enabled = true;
                     tmrMissile2.Enabled = true;
                     tmrMissile3.Enabled = true;
