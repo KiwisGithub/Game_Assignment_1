@@ -54,6 +54,7 @@
             this.tmrPowerup2 = new System.Windows.Forms.Timer(this.components);
             this.tmrShield = new System.Windows.Forms.Timer(this.components);
             this.imgShield = new System.Windows.Forms.PictureBox();
+            this.tmrAutoshoot = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -190,6 +191,7 @@
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             this.pnlGame.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PnlGame_MouseClick);
             this.pnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseDown);
+            this.pnlGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseUp);
             this.pnlGame.MouseEnter += new System.EventHandler(this.pnlGame_MouseEnter);
             this.pnlGame.MouseLeave += new System.EventHandler(this.pnlGame_MouseLeave);
             this.pnlGame.MouseHover += new System.EventHandler(this.pnlGame_MouseHover);
@@ -276,6 +278,10 @@
             this.imgShield.TabStop = false;
             this.imgShield.Visible = false;
             // 
+            // tmrAutoshoot
+            // 
+            this.tmrAutoshoot.Tick += new System.EventHandler(this.tmrAutoshoot_Tick_1);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +351,7 @@
         private System.Windows.Forms.Timer tmrPowerup2;
         private System.Windows.Forms.Timer tmrShield;
         private System.Windows.Forms.PictureBox imgShield;
+        private System.Windows.Forms.Timer tmrAutoshoot;
     }
 }
 

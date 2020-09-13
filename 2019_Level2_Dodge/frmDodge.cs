@@ -281,11 +281,25 @@ namespace _2019_Level2_Dodge
             if (e.Button == MouseButtons.Left)
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
-                
-                //System.Threading.Thread.Sleep(50);
+
+                tmrAutoshoot.Enabled = true;
+                tmrAutoshoot.Start();
+
             }
 
         }
+
+
+        private void pnlGame_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                tmrAutoshoot.Stop();
+                tmrAutoshoot.Enabled = false;
+            }
+        }
+
+
 
         private void pnlGame_MouseHover(object sender, EventArgs e)
         {
@@ -524,6 +538,12 @@ namespace _2019_Level2_Dodge
             } 
         }
 
+        private void tmrAutoshoot_Tick_1(object sender, EventArgs e)
+        {
+            //score += 1;
+            missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -540,11 +560,11 @@ namespace _2019_Level2_Dodge
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
             }
-
-
            // Cursor.Hide();
 
         }
+
+
 
         private void tmrShip_Tick(object sender, EventArgs e)
         {
