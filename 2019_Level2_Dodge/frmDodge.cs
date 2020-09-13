@@ -52,6 +52,7 @@ namespace _2019_Level2_Dodge
         int radius = 200;
 
         public static int finalScore = 420;
+        public int count = 0;
 
         public frmDodge()
         {
@@ -511,6 +512,22 @@ namespace _2019_Level2_Dodge
             }
         }
 
+        private void tmrShield_Tick(object sender, EventArgs e)
+        {
+           imgShield.Show();
+           count++;
+           imgShield.Image = Image.FromFile("tmrShield" + count.ToString() + ".png");
+           //label2.Text = count.ToString();
+
+           if(count > 4)
+            {
+                tmrShield.Enabled = false;
+                shieldHas = false;
+                imgShield.Hide();
+                count = 0;
+            } 
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -699,7 +716,7 @@ namespace _2019_Level2_Dodge
                 {
                     shieldHas = true;
                     //powerupshield.Remove(p3); crashes game for some reason
-                    
+                    tmrShield.Enabled = true;
 
 
                     //lives -= 1;// lose a life

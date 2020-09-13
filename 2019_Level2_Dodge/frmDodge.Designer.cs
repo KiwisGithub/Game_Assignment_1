@@ -52,10 +52,13 @@
             this.tmrPaint = new System.Windows.Forms.Timer(this.components);
             this.tmrPowerup = new System.Windows.Forms.Timer(this.components);
             this.tmrPowerup2 = new System.Windows.Forms.Timer(this.components);
+            this.tmrShield = new System.Windows.Forms.Timer(this.components);
+            this.imgShield = new System.Windows.Forms.PictureBox();
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgShield)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrPlanet
@@ -254,6 +257,25 @@
             this.tmrPowerup2.Interval = 8049;
             this.tmrPowerup2.Tick += new System.EventHandler(this.tmrPowerup2_Tick);
             // 
+            // tmrShield
+            // 
+            this.tmrShield.Interval = 1000;
+            this.tmrShield.Tick += new System.EventHandler(this.tmrShield_Tick);
+            // 
+            // imgShield
+            // 
+            this.imgShield.BackColor = System.Drawing.Color.Transparent;
+            this.imgShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imgShield.Cursor = System.Windows.Forms.Cursors.Default;
+            this.imgShield.Image = global::_2019_Level2_Dodge.Properties.Resources.alien11;
+            this.imgShield.Location = new System.Drawing.Point(784, 32);
+            this.imgShield.Name = "imgShield";
+            this.imgShield.Size = new System.Drawing.Size(56, 56);
+            this.imgShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgShield.TabIndex = 26;
+            this.imgShield.TabStop = false;
+            this.imgShield.Visible = false;
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,6 +284,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1495, 843);
             this.ControlBox = false;
+            this.Controls.Add(this.imgShield);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.pictureBox2);
@@ -290,6 +313,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgShield)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +343,8 @@
         private System.Windows.Forms.Timer tmrPaint;
         private System.Windows.Forms.Timer tmrPowerup;
         private System.Windows.Forms.Timer tmrPowerup2;
+        private System.Windows.Forms.Timer tmrShield;
+        private System.Windows.Forms.PictureBox imgShield;
     }
 }
 

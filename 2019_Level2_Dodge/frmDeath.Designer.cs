@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDeath));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -47,6 +48,7 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -216,11 +218,11 @@
             // 
             this.lblSquibb.AutoSize = true;
             this.lblSquibb.BackColor = System.Drawing.Color.Transparent;
-            this.lblSquibb.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSquibb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSquibb.ForeColor = System.Drawing.Color.White;
             this.lblSquibb.Location = new System.Drawing.Point(220, 111);
             this.lblSquibb.Name = "lblSquibb";
-            this.lblSquibb.Size = new System.Drawing.Size(72, 31);
+            this.lblSquibb.Size = new System.Drawing.Size(86, 31);
             this.lblSquibb.TabIndex = 25;
             this.lblSquibb.Text = "label3";
             this.lblSquibb.Click += new System.EventHandler(this.lblSquibb_Click);
@@ -338,5 +340,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Timer timer1;
     }
 }

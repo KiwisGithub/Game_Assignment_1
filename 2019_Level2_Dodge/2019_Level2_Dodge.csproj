@@ -319,5 +319,20 @@
   <ItemGroup>
     <None Include="Resources\shield.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmrShield4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmrShield0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmrShield1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmrShield2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmrShield3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
