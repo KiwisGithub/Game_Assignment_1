@@ -334,5 +334,29 @@
   <ItemGroup>
     <None Include="Resources\tmrShield3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-1.png%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-1.png%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-1.png%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

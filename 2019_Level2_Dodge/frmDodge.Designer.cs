@@ -248,7 +248,7 @@
             // tmrPowerup
             // 
             this.tmrPowerup.Enabled = true;
-            this.tmrPowerup.Interval = 3222;
+            this.tmrPowerup.Interval = 32222;
             this.tmrPowerup.Tick += new System.EventHandler(this.tmrPowerup_Tick);
             // 
             // tmrPowerup2

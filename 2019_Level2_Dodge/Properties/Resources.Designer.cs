@@ -283,6 +283,86 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_1 {
+            get {
+                object obj = ResourceManager.GetObject("Button_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_1_png {
+            get {
+                object obj = ResourceManager.GetObject("Button_1_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_1_png_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Button_1_png_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_1_png_2_ {
+            get {
+                object obj = ResourceManager.GetObject("Button_1_png_2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_1_png_3_ {
+            get {
+                object obj = ResourceManager.GetObject("Button_1_png_3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_2 {
+            get {
+                object obj = ResourceManager.GetObject("Button_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_3 {
+            get {
+                object obj = ResourceManager.GetObject("Button_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_4 {
+            get {
+                object obj = ResourceManager.GetObject("Button_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colon {
             get {
                 object obj = ResourceManager.GetObject("colon", resourceCulture);
@@ -875,6 +955,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap play_11 {
             get {
                 object obj = ResourceManager.GetObject("play-11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_12 {
+            get {
+                object obj = ResourceManager.GetObject("play-12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

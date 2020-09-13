@@ -19,7 +19,11 @@ namespace _2019_Level2_Dodge
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            frmDodge playForm = new frmDodge();
 
+            //Application.Exit();
+            this.Close();
+            playForm.Show();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
