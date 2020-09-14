@@ -176,7 +176,7 @@
             // 
             this.pnlGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
             this.pnlGame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlGame.Cursor = System.Windows.Forms.Cursors.NoMove2D;
+            this.pnlGame.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pnlGame.Location = new System.Drawing.Point(0, 94);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(1495, 749);

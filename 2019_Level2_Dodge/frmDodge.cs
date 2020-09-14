@@ -13,11 +13,10 @@ namespace _2019_Level2_Dodge
         public static bool shieldHas = false;
 
         Graphics g; //declare a graphics object called g
-                    // declare space for an array of 7 objects called planet 
+       // declare space for arrays of 7 objects called planetX
         Enemy[] planet = new Enemy[7];
         Enemy2[] planet2 = new Enemy2[7];
         Enemy3[] planet3 = new Enemy3[7];
-
         PowerupSpawner[] powerupSpawner = new PowerupSpawner[1];
 
         Random yspeed = new Random();
@@ -42,11 +41,8 @@ namespace _2019_Level2_Dodge
         bool left, right, up, down;
         int score, lives;
         string move;
-
         int bulletScore = 0;
-
         //int planetScore = 0;
-
         double x, y;
         double phi = 0;
         int radius = 200;
@@ -56,12 +52,9 @@ namespace _2019_Level2_Dodge
 
         public frmDodge()
         {
-
-
             InitializeComponent();
 
            // System.Media.SoundPlayer sp = new System.Media.SoundPlayer("megala.wav");
-
            // sp.PlayLooping();
 
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
@@ -78,8 +71,6 @@ namespace _2019_Level2_Dodge
                 int x = 10 + (i * 140);
                 powerupSpawner[i] = new PowerupSpawner(x);
             }
-
-
         }
 
         private void checkLives()
@@ -88,26 +79,18 @@ namespace _2019_Level2_Dodge
             {
                 finalScore = (int)score;
                 tmrShip.Enabled = false;
-                //MessageBox.Show("Game Over");
                 Cursor.Show();
                 frmDeath deathForm = new frmDeath();
-                //Application.Exit();
                 this.Close();
                 deathForm.Show();
             }
         }
 
-        //frmMenu mnuForm = new frmMenu();
         private void frmDodge_Load(object sender, EventArgs e)
         {
-
-
             lblNametag.Text = frmMenu.SetValueFortxtNamebox;
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
-            //lblLogo.ForeColor = Color.FromArgb(90, 153, 171);
-            //Cursor.Hide();
-
         }
 
         private void pnlGame_Paint(object sender, PaintEventArgs e)
@@ -118,7 +101,6 @@ namespace _2019_Level2_Dodge
             //call the Planet class's DrawPlanet method to draw the image planet1 
             for (int i = 0; i < 7; i++)
             {
-
                 // generate a random number from 5 to 20 and put it in rndmspeed
                 int rndmspeed = yspeed.Next(-15, -10);
                 int rndmspeed2 = yspeed.Next(-7, -5);
@@ -132,10 +114,6 @@ namespace _2019_Level2_Dodge
                 planet[i].drawPlanet(g);
                 planet2[i].drawPlanet(g);
                 planet3[i].drawPlanet(g);
-
-
-
-
             }
 
             for (int i = 0; i < 1; i++)
@@ -149,26 +127,21 @@ namespace _2019_Level2_Dodge
 
                 powerupSpawner[i].x += rndmspeedPowerup;
                 powerupSpawner[i].drawPlanet(g);
-
-
             }
 
             spaceship.drawSpaceship(g);
             spaceshipMouse.drawSpaceshipMouse(g);
 
             foreach (Exhaust1 m in exhaust1)
-            {
-                
+            {             
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
 
             foreach (Missile m in missiles)
             {
-
                 m.drawMissile(g);
                 m.moveMissile(g);
-
             }
 
             foreach (Missile2 m in missiles2)
@@ -194,36 +167,26 @@ namespace _2019_Level2_Dodge
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
+
             foreach (PowerupHealth m in poweruphealth)
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
-
-
         }
-
 
         private void pnlGame_MouseMove(object sender, MouseEventArgs e)
         {
             spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
         }
 
-
-
-
-
-
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
-
 
         private void startToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -231,22 +194,17 @@ namespace _2019_Level2_Dodge
             lblScore.Text = score.ToString();
             lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
             tmrShip.Enabled = true;
-
         }
 
         private void stopToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tmrShip.Enabled = false;
-            //test2
         }
 
         private void tmrSpaceshipMouse_Tick(object sender, EventArgs e)
         {
             //Cursor.Hide();
-          
             Invalidate();
-
-
         }
 
         private void pnlGame_MouseDown(object sender, MouseEventArgs e)
@@ -259,7 +217,6 @@ namespace _2019_Level2_Dodge
             }
         }
 
-
         private void pnlGame_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -269,15 +226,11 @@ namespace _2019_Level2_Dodge
             }
         }
 
-
-
         private void pnlGame_MouseHover(object sender, EventArgs e)
         {
-           // Cursor.Hide();
         }
         private void pnlGame_MouseLeave(object sender, EventArgs e)
         {
-            Cursor.Show();
         }
 
         private void tmrMissile_Tick(object sender, EventArgs e)
@@ -287,9 +240,7 @@ namespace _2019_Level2_Dodge
             {
                 if (p.planetRec.X < 1495)
                 {
-                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
                     missiles2.Add(new Missile2(p.planetRec, 270));
-                    //System.Threading.Thread.Sleep(5000);
                 }
             }
 
@@ -298,7 +249,6 @@ namespace _2019_Level2_Dodge
                 if ((m2.x < 0))
                 {
                     missiles2.Remove(m2);
-
                     break;
                 }
                 if ((m2.x > 1495))
@@ -306,10 +256,7 @@ namespace _2019_Level2_Dodge
                     missiles2.Remove(m2);
                     break;
                 }
-
             }
-
-
         }
 
 
@@ -338,9 +285,7 @@ namespace _2019_Level2_Dodge
                     missiles3.Remove(m3);
                     break;
                 }
-
             }
-
         }
 
         private void tmrMissile3_Tick(object sender, EventArgs e)
@@ -371,17 +316,15 @@ namespace _2019_Level2_Dodge
 
         private void label5_Click(object sender, EventArgs e)
         {
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cursor.Show();
-            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?",
-     "Do you want to exit?",
-     MessageBoxButtons.YesNo,
-     MessageBoxIcon.Warning,
-     MessageBoxDefaultButton.Button2);
+            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit the game?","Do you want to exit?",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning,
+            MessageBoxDefaultButton.Button2);
             if (result1 == DialogResult.Yes)
             {
                 Application.Exit();
@@ -394,16 +337,13 @@ namespace _2019_Level2_Dodge
 
         private void pnlGame_MouseMove_1(object sender, MouseEventArgs e)
         {
-            //spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
+            spaceshipMouse.moveSpaceshipMouse(e.X, e.Y);
             var mouseCurrentX = e.X;
             var mouseCurrentY = e.Y;
-
-
         }
 
         private void lblNametag_Click(object sender, EventArgs e)
         {
-
         }
 
         private void tmrMouse_Tick(object sender, EventArgs e)
@@ -413,22 +353,19 @@ namespace _2019_Level2_Dodge
 
         private void PnlGame_MouseClick(object sender, MouseEventArgs e)
         {
-            //Cursor.Hide();
         }
 
         private void lblScore_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pnlGame_MouseEnter(object sender, EventArgs e)
         {
-            //Cursor.Hide();
         }
 
         private void frmDodge_MouseLeave(object sender, EventArgs e)
         {
-                           
+            //Cursor.Show();
         }
 
         private void TmrStars_Tick(object sender, EventArgs e)
@@ -439,7 +376,6 @@ namespace _2019_Level2_Dodge
 
         private void txtLives_Click(object sender, EventArgs e)
         {
-
         }
 
         private void tmrSmoke_Tick(object sender, EventArgs e)
@@ -449,7 +385,6 @@ namespace _2019_Level2_Dodge
 
         private void mnuStart_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
         }
 
         private void tmrPaint_Tick(object sender, EventArgs e)
@@ -459,36 +394,17 @@ namespace _2019_Level2_Dodge
 
         private void tmrPowerup_Tick(object sender, EventArgs e)
         {
-            //powerupShield.Add(new PowerupShield(270, 270));
-            // powerupshield.Add(new PowerupShield(spaceship.spaceRec, 90));
-
             foreach (PowerupSpawner ps in powerupSpawner)
             {
-               // if (ps.planetRec.X < 1495)
-                //{
-                    // missiles.Add(new Missile(spaceship.spaceRec, 270));
-                    powerupshield.Add(new PowerupShield(ps.planetRec, 270));
-                    //System.Threading.Thread.Sleep(5000);
-               // }
-
-
+                powerupshield.Add(new PowerupShield(ps.planetRec, 270));
             }
-
-
         }
 
         private void tmrPowerup2_Tick(object sender, EventArgs e)
         {
             foreach (PowerupSpawner ps in powerupSpawner)
             {
-                // if (ps.planetRec.X < 1495)
-                //{
-                // missiles.Add(new Missile(spaceship.spaceRec, 270));
                 poweruphealth.Add(new PowerupHealth(ps.planetRec, 270));
-                //System.Threading.Thread.Sleep(5000);
-                // }
-
-
             }
         }
 
@@ -497,7 +413,6 @@ namespace _2019_Level2_Dodge
            imgShield.Show();
            count++;
            imgShield.Image = Image.FromFile("tmrShield" + count.ToString() + ".png");
-           //label2.Text = count.ToString();
 
            if(count > 4)
             {
@@ -510,7 +425,6 @@ namespace _2019_Level2_Dodge
 
         private void tmrAutoshoot_Tick_1(object sender, EventArgs e)
         {
-            //score += 1;
             missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
         }
 
@@ -518,7 +432,6 @@ namespace _2019_Level2_Dodge
         {
             int centre_x = 200, centre_y = 200;
             phi += 0.01;
-
             x = radius * Math.Cos(phi) + centre_x;
             y = radius * Math.Sin(phi) + centre_y;
             Invalidate();
@@ -530,18 +443,10 @@ namespace _2019_Level2_Dodge
             {
                 missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
             }
-           // Cursor.Hide();
-
         }
-
-
 
         private void tmrShip_Tick(object sender, EventArgs e)
         {
-
-           
-
-
             if (right) // if right arrow key pressed
             {
                 move = "right";
@@ -579,39 +484,29 @@ namespace _2019_Level2_Dodge
 
             foreach (Enemy n in planet)
             {
-
                 foreach (Missile m1 in missiles)
                 {
                     if (n.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
                         bulletScore += 5;// add 1 to score when planet reaches bottom of panel
-                        //lblScore.Text = score.ToString();// display score
                         n.y = 1495;
-                        
                         break;
-
                     }
-
                 }
             }
 
             foreach (Enemy2 n2 in planet2)
             {
-
                 foreach (Missile m1 in missiles)
                 {
-
-
                     if (n2.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
                         bulletScore += 5;// add 1 to score when planet reaches bottom of panel
                         n2.y = 2400;
                         break;
-
                     }
-
                 }
             }
 
@@ -620,8 +515,6 @@ namespace _2019_Level2_Dodge
 
                 foreach (Missile m1 in missiles)
                 {
-
-
                     if (n3.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
@@ -630,15 +523,11 @@ namespace _2019_Level2_Dodge
                         break;
 
                     }
-
                 }
             }
 
-
             foreach (Missile2 m2 in missiles2)
             {
-
-
                if (spaceship.spaceRec.IntersectsWith(m2.missileRec))                      
                 {
                     missiles2.Remove(m2);
@@ -650,14 +539,10 @@ namespace _2019_Level2_Dodge
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
-
                 }
-
             }
             foreach (Missile3 m3 in missiles3)
             {
-
-
                 if (spaceship.spaceRec.IntersectsWith(m3.missileRec))
                 {
                     missiles3.Remove(m3);
@@ -666,72 +551,54 @@ namespace _2019_Level2_Dodge
                     {
                         lives -= 1;// lose a life
                     };
+
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
-
                 }
-
             }
             foreach (Missile4 m4 in missiles4)
             {
-
-
                 if (spaceship.spaceRec.IntersectsWith(m4.missileRec))
                 {
-                    //missiles4.Remove(m4);
+                    missiles4.Remove(m4);
 
                     if (shieldHas == false)
                     {
                         lives -= 1;// lose a life
                     };
+
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
-
                 }
-
             }
-
 
             foreach (PowerupShield p3 in powerupshield)
             {
-
-
                 if (spaceship.spaceRec.IntersectsWith(p3.missileRec))
                 {
                     shieldHas = true;
                     //powerupshield.Remove(p3); crashes game for some reason
                     tmrShield.Enabled = true;
-
-
                     //lives -= 1;// lose a life
                     //txtLives.Text = lives.ToString();// display number of lives
                     // checkLives();
                     // break;
-
                 }
-
             }
 
             foreach (PowerupHealth p2 in poweruphealth)
             {
-
-
                 if (spaceship.spaceRec.IntersectsWith(p2.missileRec))
                 {
                     poweruphealth.Remove(p2);
-                    //shieldHas = true;
-
                     lives += 5;// gain 5 lives
                     txtLives.Text = lives.ToString();// display number of lives
-                     checkLives();
-                     break;
-
+                    checkLives();
+                    break;
                 }
-
             }
-
         }
 
         private void frmDodge_KeyDown(object sender, KeyEventArgs e)
@@ -748,22 +615,19 @@ namespace _2019_Level2_Dodge
                 tmrMissile2.Enabled = false;
                 tmrMissile3.Enabled = false;
 
+                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?","Bruh?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2);
 
-                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?",
-                 "Bruh?",
-                  MessageBoxButtons.YesNo,
-                 MessageBoxIcon.Warning,
-                 MessageBoxDefaultButton.Button2);
                 if (result1 == DialogResult.Yes)
                 {
                     frmMenu mnuForm = new frmMenu();
-
                     Cursor.Show();
                     //Application.Exit();
                     this.Close();
                     mnuForm.Show();
                 }
-
                 else
                 {
                     tmrShip.Enabled = true;
@@ -772,10 +636,7 @@ namespace _2019_Level2_Dodge
                     tmrMissile3.Enabled = true;
                 }
             }
-
-
         }
-
         private void frmDodge_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.A) { left = false; }
@@ -783,7 +644,7 @@ namespace _2019_Level2_Dodge
             if (e.KeyData == Keys.W) { up = false; }
             if (e.KeyData == Keys.S) { down = false; }
             // if (e.KeyData == Keys.Escape) { escape = false; }
-
         }
     }
 }
+// Must have been the wind.

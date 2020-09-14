@@ -30,13 +30,5 @@ namespace _2019_Level2_Dodge
             planetRec = new Rectangle(y, x, width, height);
             g.DrawImage(planetImage, planetRec);
         }
-
-
-
-        public void movePlanet()
-        {
-            
-
-        }
     }
 }
