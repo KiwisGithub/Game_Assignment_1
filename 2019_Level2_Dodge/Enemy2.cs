@@ -8,9 +8,7 @@ namespace _2019_Level2_Dodge
         // declare fields to use in the class
         public int x, y, width, height;//variables for the rectangle
         public Image planetImage;//variable for the planet's image
-
         public Rectangle planetRec;//variable for a rectangle to place our image in
-        public int score;
         //Create a constructor (initialises the values of the fields)
         public Enemy2(int spacing)
         {

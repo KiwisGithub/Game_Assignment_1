@@ -6,8 +6,6 @@ using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
 {
-
-
     public partial class frmDodge : Form
     {
         public static bool shieldHas = false;
@@ -21,7 +19,6 @@ namespace _2019_Level2_Dodge
 
         Random yspeed = new Random();
 
-        //float timer = 0f;
         //declare a list  missiles from the Missile class
         List<Missile> missiles = new List<Missile>();
         List<Missile2> missiles2 = new List<Missile2>();
