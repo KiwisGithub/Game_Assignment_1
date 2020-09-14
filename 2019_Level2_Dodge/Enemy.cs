@@ -1,7 +1,11 @@
 ﻿using System.Drawing;
+using System.Drawing.Drawing2D;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
 {
@@ -12,6 +16,11 @@ namespace _2019_Level2_Dodge
         public Image planetImage;//variable for the planet's image
         public Rectangle planetRec;//variable for a rectangle to place our image in
         //Create a constructor (initialises the values of the fields)
+
+        public int rotationAngle;
+        public Matrix matrix;
+        //public bool ShieldHas;
+        Point centre;
         public Enemy(int spacing)
         {
             int[] quoteDoge = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
@@ -30,6 +39,11 @@ namespace _2019_Level2_Dodge
             y = str2;
             width = 70;
             height = 70;
+
+
+            rotationAngle = 90;
+
+
             planetImage = Image.FromFile("spaceship4.png");
 
         }
@@ -39,6 +53,18 @@ namespace _2019_Level2_Dodge
         public void drawPlanet(Graphics g)
         {
             planetRec = new Rectangle(y, x, width, height);
+
+            //find the centre point of spaceRec
+            centre = new Point(planetRec.X + width / 2, planetRec.Y + width / 2);
+            //instantiate a Matrix object called matrix
+            matrix = new Matrix();
+            //rotate the matrix (spaceRec) about its centre
+            matrix.RotateAt(rotationAngle, centre);
+            //Set the current draw location to the rotated matrix point
+            g.Transform = matrix;
+            //draw the spaceship
+
+
             g.DrawImage(planetImage, planetRec);
         }
     }
