@@ -14,7 +14,7 @@ namespace _2019_Level2_Dodge
         // declare fields to use in the class
         public int x, y, width, height;//variables for the rectangle
         public Image planetImage;//variable for the planet's image
-        public Rectangle planetRec;//variable for a rectangle to place our image in
+        public Rectangle planetRec2;//variable for a rectangle to place our image in
         //Create a constructor (initialises the values of the fields)
 
         public int rotationAngle;
@@ -41,7 +41,7 @@ namespace _2019_Level2_Dodge
             height = 70;
 
 
-            rotationAngle = 90;
+            rotationAngle = 30;
 
 
             planetImage = Image.FromFile("spaceship4.png");
@@ -52,20 +52,20 @@ namespace _2019_Level2_Dodge
         // Methods for the Planet class
         public void drawPlanet(Graphics g)
         {
-            planetRec = new Rectangle(y, x, width, height);
+            planetRec2 = new Rectangle(y, x, width, height);
 
             //find the centre point of spaceRec
-            centre = new Point(planetRec.X + width / 2, planetRec.Y + width / 2);
+            centre = new Point(planetRec2.X + width / 2, planetRec2.Y + width / 2);
             //instantiate a Matrix object called matrix
             matrix = new Matrix();
             //rotate the matrix (spaceRec) about its centre
-            matrix.RotateAt(rotationAngle, centre);
+            matrix.RotateAt(frmDodge.angleToChange, centre);
             //Set the current draw location to the rotated matrix point
             g.Transform = matrix;
             //draw the spaceship
 
 
-            g.DrawImage(planetImage, planetRec);
+            g.DrawImage(planetImage, planetRec2);
         }
     }
 }

@@ -46,6 +46,8 @@ namespace _2019_Level2_Dodge
 
         public static int finalScore = 420;
         public int count = 0;
+        public static int angleToChange = 0;
+        public int angleTracker = 0;
 
         public frmDodge()
         {
@@ -235,9 +237,9 @@ namespace _2019_Level2_Dodge
 
             foreach (Enemy p in planet)
             {
-                if (p.planetRec.X < 1495)
+                if (p.planetRec2.X < 1495)
                 {
-                    missiles2.Add(new Missile2(p.planetRec, 270));
+                    missiles2.Add(new Missile2(p.planetRec2, 270));
                 }
             }
 
@@ -425,6 +427,25 @@ namespace _2019_Level2_Dodge
             missiles.Add(new Missile(spaceship.spaceRec, spaceship.rotationAngle));
         }
 
+        private void tmrRotation_Tick(object sender, EventArgs e)
+        {
+            angleTracker++;
+            //label2.Text = angleToChange.ToString();
+
+            if (angleTracker <= 20)
+            {
+                angleToChange = angleToChange + 1;
+            }
+            if(angleTracker >= 20)
+            {
+                angleToChange = angleToChange - 1;
+            }
+            if(angleTracker >= 40)
+            {
+                angleTracker = 0;
+            }
+        }
+
         private void tmrCircle_Tick(object sender, EventArgs e)
         {
             int centre_x = 200, centre_y = 200;
@@ -483,7 +504,7 @@ namespace _2019_Level2_Dodge
             {
                 foreach (Missile m1 in missiles)
                 {
-                    if (n.planetRec.IntersectsWith(m1.missileRec))
+                    if (n.planetRec2.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
                         bulletScore += 5;// add 1 to score when planet reaches bottom of panel

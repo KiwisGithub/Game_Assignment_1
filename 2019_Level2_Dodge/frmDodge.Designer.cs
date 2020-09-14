@@ -54,6 +54,7 @@
             this.tmrShield = new System.Windows.Forms.Timer(this.components);
             this.imgShield = new System.Windows.Forms.PictureBox();
             this.tmrAutoshoot = new System.Windows.Forms.Timer(this.components);
+            this.tmrRotation = new System.Windows.Forms.Timer(this.components);
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -275,6 +276,11 @@
             // 
             this.tmrAutoshoot.Tick += new System.EventHandler(this.tmrAutoshoot_Tick_1);
             // 
+            // tmrRotation
+            // 
+            this.tmrRotation.Enabled = true;
+            this.tmrRotation.Tick += new System.EventHandler(this.tmrRotation_Tick);
+            // 
             // frmDodge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,6 +350,7 @@
         private System.Windows.Forms.Timer tmrShield;
         private System.Windows.Forms.PictureBox imgShield;
         private System.Windows.Forms.Timer tmrAutoshoot;
+        private System.Windows.Forms.Timer tmrRotation;
     }
 }
 

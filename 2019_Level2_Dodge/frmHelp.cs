@@ -51,7 +51,7 @@ namespace _2019_Level2_Dodge
             {
 
                 // missiles.Add(new Missile(spaceship.spaceRec, 270));
-                missiles2.Add(new Missile2(p.planetRec, 270));
+                missiles2.Add(new Missile2(p.planetRec2, 270));
                 //System.Threading.Thread.Sleep(5000);
             }
 
