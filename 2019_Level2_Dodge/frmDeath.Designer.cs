@@ -128,11 +128,12 @@
             this.lblHighscore.BackColor = System.Drawing.Color.Transparent;
             this.lblHighscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighscore.ForeColor = System.Drawing.Color.Navy;
-            this.lblHighscore.Location = new System.Drawing.Point(178, 385);
+            this.lblHighscore.Location = new System.Drawing.Point(143, 359);
             this.lblHighscore.Name = "lblHighscore";
             this.lblHighscore.Size = new System.Drawing.Size(89, 37);
             this.lblHighscore.TabIndex = 18;
             this.lblHighscore.Text = "0000";
+            this.lblHighscore.Visible = false;
             this.lblHighscore.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblScore

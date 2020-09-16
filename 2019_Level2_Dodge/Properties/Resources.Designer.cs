@@ -123,6 +123,46 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundJupiter {
+            get {
+                object obj = ResourceManager.GetObject("backgroundJupiter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgroundJupiter2 {
+            get {
+                object obj = ResourceManager.GetObject("backgroundJupiter2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgroundjupiter3 {
+            get {
+                object obj = ResourceManager.GetObject("backgroundjupiter3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgroundJupiter5 {
+            get {
+                object obj = ResourceManager.GetObject("backgroundJupiter5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bruh {
             get {
                 object obj = ResourceManager.GetObject("bruh", resourceCulture);
@@ -606,6 +646,16 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap hp22 {
             get {
                 object obj = ResourceManager.GetObject("hp22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap juptierPNG {
+            get {
+                object obj = ResourceManager.GetObject("juptierPNG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

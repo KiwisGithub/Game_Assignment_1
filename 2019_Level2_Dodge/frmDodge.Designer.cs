@@ -178,6 +178,8 @@
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(64)))));
+            this.pnlGame.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.backgroundJupiter5;
+            this.pnlGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnlGame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlGame.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pnlGame.Location = new System.Drawing.Point(0, 94);

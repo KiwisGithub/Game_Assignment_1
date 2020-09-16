@@ -395,5 +395,20 @@
   <ItemGroup>
     <None Include="Resources\Text_Buttons-1.png%286%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juptierPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundJupiter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundJupiter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundjupiter3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundJupiter5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

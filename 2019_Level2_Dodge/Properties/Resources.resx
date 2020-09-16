@@ -499,4 +499,19 @@
   <data name="Text_Buttons_1_png_6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text_Buttons-1.png(6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backgroundJupiter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundJupiter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundJupiter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundJupiter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundjupiter3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundjupiter3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundJupiter5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundJupiter5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="juptierPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\juptierPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
