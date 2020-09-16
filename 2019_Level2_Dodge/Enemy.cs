@@ -59,7 +59,7 @@ namespace _2019_Level2_Dodge
             //instantiate a Matrix object called matrix
             matrix = new Matrix();
             //rotate the matrix (spaceRec) about its centre
-            matrix.RotateAt(frmDodge.angleToChange, centre);
+            matrix.RotateAt(0, centre); //frmDodge.angleToChange
             //Set the current draw location to the rotated matrix point
             g.Transform = matrix;
             //draw the spaceship

@@ -268,6 +268,7 @@ namespace _2019_Level2_Dodge
                 {
                     // missiles.Add(new Missile(spaceship.spaceRec, 270));
                     missiles3.Add(new Missile3(p.planetRec, 270));
+
                     //System.Threading.Thread.Sleep(5000);
                 }
             }
@@ -409,6 +410,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrShield_Tick(object sender, EventArgs e)
         {
+           lblScore.Text = score.ToString();
            imgShield.Show();
            count++;
            imgShield.Image = Image.FromFile("tmrShield" + count.ToString() + ".png");
@@ -432,15 +434,15 @@ namespace _2019_Level2_Dodge
             angleTracker++;
             //label2.Text = angleToChange.ToString();
 
-            if (angleTracker <= 20)
+            if (angleTracker < 20)
             {
                 angleToChange = angleToChange + 1;
             }
-            if(angleTracker >= 20)
+            if(angleTracker > 20)
             {
                 angleToChange = angleToChange - 1;
             }
-            if(angleTracker >= 40)
+            if(angleTracker > 60)
             {
                 angleTracker = 0;
             }
@@ -507,7 +509,7 @@ namespace _2019_Level2_Dodge
                     if (n.planetRec2.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        bulletScore += 5;// add 1 to score when planet reaches bottom of panel
+                        score += 5;// add 1 to score when planet reaches bottom of panel
                         n.y = 1495;
                         break;
                     }
@@ -521,7 +523,7 @@ namespace _2019_Level2_Dodge
                     if (n2.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        bulletScore += 5;// add 1 to score when planet reaches bottom of panel
+                        score += 5;// add 1 to score when planet reaches bottom of panel
                         n2.y = 2400;
                         break;
                     }
@@ -536,7 +538,7 @@ namespace _2019_Level2_Dodge
                     if (n3.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        bulletScore += 5;// add 1 to score when planet reaches bottom of panel
+                        score += 5;// add 1 to score when planet reaches bottom of panel
                         n3.y = 3500;
                         break;
 

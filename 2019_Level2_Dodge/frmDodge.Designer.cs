@@ -138,7 +138,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -279,6 +279,7 @@
             // tmrRotation
             // 
             this.tmrRotation.Enabled = true;
+            this.tmrRotation.Interval = 50;
             this.tmrRotation.Tick += new System.EventHandler(this.tmrRotation_Tick);
             // 
             // frmDodge
