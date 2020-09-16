@@ -61,6 +61,7 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 int x = 10 + (i * 140);
+                label2.Text = x.ToString();
                 planet[i] = new Enemy(x);
                 planet2[i] = new Enemy2(x);
                 planet3[i] = new Enemy3(x);
@@ -104,6 +105,34 @@ namespace _2019_Level2_Dodge
                 int rndmspeed = yspeed.Next(-15, -10);
                 int rndmspeed2 = yspeed.Next(-7, -5);
                 int rndmspeed3 = yspeed.Next(-10, -7);
+
+                if (planet[i].y < -30)
+                {
+                    int[] planetNewRdm = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    Random pNR = new Random();
+                    int pNREpic = pNR.Next(7);
+                    int str2 = planetNewRdm[pNREpic];
+                    planet[i].y = str2;
+                    score += 1;
+                }
+                if (planet2[i].y < -30)
+                {
+                    int[] planetNewRdm2 = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    Random pNR2 = new Random();
+                    int pNREpic2 = pNR2.Next(7);
+                    int str3 = planetNewRdm2[pNREpic2];
+                    planet2[i].y = str3;
+                    score += 2;
+                }
+                if (planet3[i].y < -30)
+                {
+                    int[] planetNewRdm3 = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    Random pNR3 = new Random();
+                    int pNREpic3 = pNR3.Next(7);
+                    int str4 = planetNewRdm3[pNREpic3];
+                    planet3[i].y = str4;
+                    score += 3;
+                }
 
                 planet[i].y += rndmspeed;
                 planet2[i].y += rndmspeed2;
@@ -410,7 +439,7 @@ namespace _2019_Level2_Dodge
 
         private void tmrShield_Tick(object sender, EventArgs e)
         {
-           lblScore.Text = score.ToString();
+           
            imgShield.Show();
            count++;
            imgShield.Image = Image.FromFile("tmrShield" + count.ToString() + ".png");
@@ -509,7 +538,8 @@ namespace _2019_Level2_Dodge
                     if (n.planetRec2.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        score += 5;// add 1 to score when planet reaches bottom of panel
+                        score += 2;// add 1 to score when planet reaches bottom of panel
+                        lblScore.Text = score.ToString();
                         n.y = 1495;
                         break;
                     }
@@ -524,6 +554,7 @@ namespace _2019_Level2_Dodge
                     {
                         missiles.Remove(m1);
                         score += 5;// add 1 to score when planet reaches bottom of panel
+                        lblScore.Text = score.ToString();
                         n2.y = 2400;
                         break;
                     }
@@ -538,7 +569,8 @@ namespace _2019_Level2_Dodge
                     if (n3.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        score += 5;// add 1 to score when planet reaches bottom of panel
+                        score += 4;// add 1 to score when planet reaches bottom of panel
+                        lblScore.Text = score.ToString();
                         n3.y = 3500;
                         break;
 
