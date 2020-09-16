@@ -36,7 +36,7 @@ namespace _2019_Level2_Dodge
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
 
         bool left, right, up, down;
-        int score, lives;
+        public static int score, lives;
         string move;
         //int bulletScore = 0;
         //int planetScore = 0;

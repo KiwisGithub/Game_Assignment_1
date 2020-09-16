@@ -61,6 +61,12 @@
     <Compile Include="frmHelp.Designer.cs">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHighScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHighScores.Designer.cs">
+      <DependentUpon>frmHighScores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,7 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="HighScores.cs" />
     <Compile Include="Missile.cs" />
     <Compile Include="Missile2.cs" />
     <Compile Include="Missile3.cs" />
@@ -100,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHighScores.resx">
+      <DependentUpon>frmHighScores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLevel.resx">
       <DependentUpon>frmLevel.cs</DependentUpon>
@@ -366,6 +376,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kwii1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text_Buttons-1.png%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text_Buttons-1.png%284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text_Buttons-1.png%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text_Buttons-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text_Buttons-1.png%286%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

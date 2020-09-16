@@ -231,5 +231,13 @@ namespace _2019_Level2_Dodge
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            frmHighScores highScores = new frmHighScores();
+            //Application.Exit();
+            //this.Close();
+            highScores.Show();
+        }
     }
 }

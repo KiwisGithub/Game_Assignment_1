@@ -363,6 +363,16 @@ namespace _2019_Level2_Dodge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonBack {
+            get {
+                object obj = ResourceManager.GetObject("buttonBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colon {
             get {
                 object obj = ResourceManager.GetObject("colon", resourceCulture);
@@ -1195,6 +1205,56 @@ namespace _2019_Level2_Dodge.Properties {
         internal static System.Drawing.Bitmap start2 {
             get {
                 object obj = ResourceManager.GetObject("start2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Buttons_1_png {
+            get {
+                object obj = ResourceManager.GetObject("Text_Buttons_1_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Buttons_1_png_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Text_Buttons_1_png_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Buttons_1_png_3_ {
+            get {
+                object obj = ResourceManager.GetObject("Text_Buttons_1_png_3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Buttons_1_png_4_ {
+            get {
+                object obj = ResourceManager.GetObject("Text_Buttons_1_png_4_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Buttons_1_png_6_ {
+            get {
+                object obj = ResourceManager.GetObject("Text_Buttons_1_png_6_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

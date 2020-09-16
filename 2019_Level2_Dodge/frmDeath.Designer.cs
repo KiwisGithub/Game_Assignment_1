@@ -34,9 +34,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblHighscore = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.picSpark = new System.Windows.Forms.PictureBox();
@@ -53,9 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDoge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSquibb)).BeginInit();
@@ -68,10 +64,11 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::_2019_Level2_Dodge.Properties.Resources.play_11;
-            this.pictureBox2.Location = new System.Drawing.Point(800, 731);
+            this.pictureBox2.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__5_;
+            this.pictureBox2.Location = new System.Drawing.Point(886, 729);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(236, 60);
+            this.pictureBox2.Size = new System.Drawing.Size(279, 60);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -81,9 +78,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__2_;
-            this.pictureBox4.Location = new System.Drawing.Point(380, 734);
+            this.pictureBox4.Location = new System.Drawing.Point(398, 732);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(211, 57);
+            this.pictureBox4.Size = new System.Drawing.Size(261, 57);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
@@ -93,9 +91,10 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__4_;
-            this.pictureBox6.Location = new System.Drawing.Point(588, 731);
+            this.pictureBox6.Location = new System.Drawing.Point(630, 729);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(215, 60);
+            this.pictureBox6.Size = new System.Drawing.Size(285, 60);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -104,49 +103,32 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::_2019_Level2_Dodge.Properties.Resources.play_1_png__13_;
-            this.pictureBox1.Location = new System.Drawing.Point(624, 493);
+            this.pictureBox1.Location = new System.Drawing.Point(622, 466);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 57);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::_2019_Level2_Dodge.Properties.Resources.score;
-            this.pictureBox3.Location = new System.Drawing.Point(654, 403);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(145, 57);
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::_2019_Level2_Dodge.Properties.Resources.high;
-            this.pictureBox5.Location = new System.Drawing.Point(526, 403);
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::_2019_Level2_Dodge.Properties.Resources.Text_Buttons_1_png;
+            this.pictureBox5.Location = new System.Drawing.Point(542, 529);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(145, 57);
+            this.pictureBox5.Size = new System.Drawing.Size(526, 57);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::_2019_Level2_Dodge.Properties.Resources.colon;
-            this.pictureBox8.Location = new System.Drawing.Point(704, 403);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(145, 57);
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // lblHighscore
             // 
             this.lblHighscore.AutoSize = true;
             this.lblHighscore.BackColor = System.Drawing.Color.Transparent;
             this.lblHighscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHighscore.ForeColor = System.Drawing.Color.White;
-            this.lblHighscore.Location = new System.Drawing.Point(855, 414);
+            this.lblHighscore.ForeColor = System.Drawing.Color.Navy;
+            this.lblHighscore.Location = new System.Drawing.Point(178, 385);
             this.lblHighscore.Name = "lblHighscore";
             this.lblHighscore.Size = new System.Drawing.Size(89, 37);
             this.lblHighscore.TabIndex = 18;
@@ -159,7 +141,7 @@
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblScore.Location = new System.Drawing.Point(818, 506);
+            this.lblScore.Location = new System.Drawing.Point(816, 479);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(89, 37);
             this.lblScore.TabIndex = 19;
@@ -278,6 +260,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.woke1;
             this.ClientSize = new System.Drawing.Size(1495, 843);
+            this.Controls.Add(this.picSpark);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblSquibb);
             this.Controls.Add(this.pctSquibb);
             this.Controls.Add(this.lblDoge);
@@ -285,17 +269,14 @@
             this.Controls.Add(this.lblSpark);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblHighscore);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.picSpark);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox10);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDeath";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -307,9 +288,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDoge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSquibb)).EndInit();
@@ -326,9 +305,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblHighscore;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.PictureBox picSpark;
