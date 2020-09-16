@@ -67,8 +67,7 @@ namespace _2019_Level2_Dodge
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             //Application.Exit();
-            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit?",
-    "Bruh?",
+            DialogResult result1 = MessageBox.Show("Are you sure you want to Exit?","Exit",
     MessageBoxButtons.YesNo,
     MessageBoxIcon.Warning,
     MessageBoxDefaultButton.Button2);

@@ -665,7 +665,7 @@ namespace _2019_Level2_Dodge
                 tmrMissile2.Enabled = false;
                 tmrMissile3.Enabled = false;
 
-                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?","Bruh?",
+                DialogResult result1 = MessageBox.Show("Are you sure you want to Exit to the main menu?","Exit",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning,
                 MessageBoxDefaultButton.Button2);
