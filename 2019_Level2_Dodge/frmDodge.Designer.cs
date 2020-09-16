@@ -55,11 +55,13 @@
             this.imgShield = new System.Windows.Forms.PictureBox();
             this.tmrAutoshoot = new System.Windows.Forms.Timer(this.components);
             this.tmrRotation = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.mnuStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgShield)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrShip
@@ -74,11 +76,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(544, 53);
+            this.label2.Location = new System.Drawing.Point(1246, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 18);
+            this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Name:";
+            this.label2.Text = "v1.7.2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblScore
@@ -138,7 +140,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -164,11 +166,11 @@
             // 
             this.lblNametag.AutoSize = true;
             this.lblNametag.BackColor = System.Drawing.Color.Transparent;
-            this.lblNametag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNametag.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblNametag.Location = new System.Drawing.Point(605, 53);
+            this.lblNametag.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNametag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
+            this.lblNametag.Location = new System.Drawing.Point(716, 41);
             this.lblNametag.Name = "lblNametag";
-            this.lblNametag.Size = new System.Drawing.Size(48, 18);
+            this.lblNametag.Size = new System.Drawing.Size(90, 32);
             this.lblNametag.TabIndex = 9;
             this.lblNametag.Text = "Name";
             this.lblNametag.Click += new System.EventHandler(this.lblNametag_Click);
@@ -264,7 +266,7 @@
             this.imgShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imgShield.Cursor = System.Windows.Forms.Cursors.Default;
             this.imgShield.Image = ((System.Drawing.Image)(resources.GetObject("imgShield.Image")));
-            this.imgShield.Location = new System.Drawing.Point(784, 32);
+            this.imgShield.Location = new System.Drawing.Point(1062, 30);
             this.imgShield.Name = "imgShield";
             this.imgShield.Size = new System.Drawing.Size(56, 56);
             this.imgShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -281,6 +283,17 @@
             this.tmrRotation.Enabled = true;
             this.tmrRotation.Interval = 50;
             this.tmrRotation.Tick += new System.EventHandler(this.tmrRotation_Tick);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.name;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(560, 29);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(402, 61);
+            this.pictureBox4.TabIndex = 27;
+            this.pictureBox4.TabStop = false;
             // 
             // frmDodge
             // 
@@ -300,6 +313,7 @@
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.mnuStart);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox4);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -320,6 +334,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgShield)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,6 +367,7 @@
         private System.Windows.Forms.PictureBox imgShield;
         private System.Windows.Forms.Timer tmrAutoshoot;
         private System.Windows.Forms.Timer tmrRotation;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

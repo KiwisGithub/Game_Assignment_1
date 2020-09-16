@@ -38,7 +38,7 @@ namespace _2019_Level2_Dodge
         bool left, right, up, down;
         int score, lives;
         string move;
-        int bulletScore = 0;
+        //int bulletScore = 0;
         //int planetScore = 0;
         double x, y;
         double phi = 0;
@@ -61,7 +61,6 @@ namespace _2019_Level2_Dodge
             for (int i = 0; i < 7; i++)
             {
                 int x = 10 + (i * 140);
-                label2.Text = x.ToString();
                 planet[i] = new Enemy(x);
                 planet2[i] = new Enemy2(x);
                 planet3[i] = new Enemy3(x);
@@ -461,7 +460,6 @@ namespace _2019_Level2_Dodge
         private void tmrRotation_Tick(object sender, EventArgs e)
         {
             angleTracker++;
-            //label2.Text = angleToChange.ToString();
 
             if (angleTracker < 20)
             {
