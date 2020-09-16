@@ -150,11 +150,13 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.Kiwi2;
+            this.pictureBox7.BackgroundImage = global::_2019_Level2_Dodge.Properties.Resources.Kwii1;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(1418, 777);
+            this.pictureBox7.Image = global::_2019_Level2_Dodge.Properties.Resources.Kwii1;
+            this.pictureBox7.Location = new System.Drawing.Point(1358, 765);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(78, 65);
+            this.pictureBox7.Size = new System.Drawing.Size(144, 95);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);

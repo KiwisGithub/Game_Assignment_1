@@ -472,6 +472,12 @@
   <data name="Button_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kwii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kwii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kwii1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kwii1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="name6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
