@@ -16,10 +16,10 @@ namespace _2019_Level2_Dodge
         {
             
             x = 749;//749
-            y = 2000; //1000
-            width = 80;
-            height = 80;
-            planetImage = Image.FromFile("missile.png");
+            y = 1500; //1000
+            width = 10;
+            height = 10;
+            planetImage = Image.FromFile("star1.png");
 
         }
 

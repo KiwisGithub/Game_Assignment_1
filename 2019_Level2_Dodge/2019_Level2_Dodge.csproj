@@ -99,6 +99,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spaceship.cs" />
+    <Compile Include="Stars.cs" />
+    <Compile Include="Stars2.cs" />
+    <Compile Include="Stars3.cs" />
     <EmbeddedResource Include="frmDeath.resx">
       <DependentUpon>frmDeath.cs</DependentUpon>
     </EmbeddedResource>

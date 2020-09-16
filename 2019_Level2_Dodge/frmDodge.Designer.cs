@@ -43,7 +43,7 @@
             this.tmrMissile3 = new System.Windows.Forms.Timer(this.components);
             this.lblNametag = new System.Windows.Forms.Label();
             this.pnlGame = new System.Windows.Forms.Panel();
-            this.tmrCircle = new System.Windows.Forms.Timer(this.components);
+            this.tmrStars = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -195,10 +195,11 @@
             this.pnlGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseMove_1);
             this.pnlGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGame_MouseUp);
             // 
-            // tmrCircle
+            // tmrStars
             // 
-            this.tmrCircle.Enabled = true;
-            this.tmrCircle.Tick += new System.EventHandler(this.tmrCircle_Tick);
+            this.tmrStars.Enabled = true;
+            this.tmrStars.Interval = 150;
+            this.tmrStars.Tick += new System.EventHandler(this.tmrCircle_Tick);
             // 
             // pictureBox2
             // 
@@ -282,7 +283,6 @@
             // 
             // tmrRotation
             // 
-            this.tmrRotation.Enabled = true;
             this.tmrRotation.Interval = 50;
             this.tmrRotation.Tick += new System.EventHandler(this.tmrRotation_Tick);
             // 
@@ -357,7 +357,7 @@
         private System.Windows.Forms.Timer tmrMissile3;
         private System.Windows.Forms.Label lblNametag;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Timer tmrCircle;
+        private System.Windows.Forms.Timer tmrStars;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;

@@ -29,8 +29,9 @@ namespace _2019_Level2_Dodge
 
         List<PowerupShield> powerupshield = new List<PowerupShield>();
         List<PowerupHealth> poweruphealth = new List<PowerupHealth>();
-
-        //Stars stars = new Stars();
+        List<Stars> star = new List<Stars>();
+        List<Stars2> star2 = new List<Stars2>();
+        List<Stars3> star3 = new List<Stars3>();
 
         Spaceship spaceship = new Spaceship();
         SpaceshipMouse spaceshipMouse = new SpaceshipMouse(); //create an instance of the Spaceship Class called spaceship
@@ -200,6 +201,21 @@ namespace _2019_Level2_Dodge
                 m.drawMissile(g);
                 m.moveMissile(g);
             }
+            foreach (Stars m in star)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+            foreach (Stars2 m in star2)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
+            foreach (Stars3 m in star3)
+            {
+                m.drawMissile(g);
+                m.moveMissile(g);
+            }
         }
 
         private void pnlGame_MouseMove(object sender, MouseEventArgs e)
@@ -301,6 +317,11 @@ namespace _2019_Level2_Dodge
                 }
             }
 
+            foreach (PowerupSpawner ps in powerupSpawner)
+            {
+                star.Add(new Stars(ps.planetRec, 270));
+            }
+
             foreach (Missile3 m3 in missiles3)
             {
                 if ((m3.x < 0))
@@ -398,7 +419,6 @@ namespace _2019_Level2_Dodge
 
         private void TmrStars_Tick(object sender, EventArgs e)
         {
-            //stars.x -= 5;
             pnlGame.Invalidate();//makes the paint event fire to redraw the panel
         }
 
@@ -433,6 +453,14 @@ namespace _2019_Level2_Dodge
             foreach (PowerupSpawner ps in powerupSpawner)
             {
                 poweruphealth.Add(new PowerupHealth(ps.planetRec, 270));
+            }
+        }
+        private void tmrCircle_Tick(object sender, EventArgs e)
+        {
+            foreach (PowerupSpawner ps in powerupSpawner)
+            {
+                star2.Add(new Stars2(ps.planetRec, 270));
+                star3.Add(new Stars3(ps.planetRec, 270));
             }
         }
 
@@ -474,15 +502,8 @@ namespace _2019_Level2_Dodge
                 angleTracker = 0;
             }
         }
-
-        private void tmrCircle_Tick(object sender, EventArgs e)
-        {
-            int centre_x = 200, centre_y = 200;
-            phi += 0.01;
-            x = radius * Math.Cos(phi) + centre_x;
-            y = radius * Math.Sin(phi) + centre_y;
-            Invalidate();
-        }
+        
+  
 
         private void frmDodge_MouseDown(object sender, MouseEventArgs e)
         {
@@ -649,6 +670,7 @@ namespace _2019_Level2_Dodge
                     break;
                 }
             }
+
         }
 
         private void frmDodge_KeyDown(object sender, KeyEventArgs e)
