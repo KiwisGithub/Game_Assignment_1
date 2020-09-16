@@ -514,4 +514,10 @@
   <data name="juptierPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\juptierPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Button_clone_1_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button clone-1.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_clone_1_png__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button clone-1.png (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

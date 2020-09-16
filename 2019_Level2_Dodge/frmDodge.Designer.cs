@@ -80,7 +80,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "v1.7.2";
+            this.label2.Text = "v1.8.3";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblScore
@@ -140,7 +140,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -279,6 +279,7 @@
             // 
             // tmrAutoshoot
             // 
+            this.tmrAutoshoot.Interval = 200;
             this.tmrAutoshoot.Tick += new System.EventHandler(this.tmrAutoshoot_Tick_1);
             // 
             // tmrRotation

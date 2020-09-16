@@ -138,6 +138,7 @@ namespace _2019_Level2_Dodge
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/KiwisGithub/Game_Assignment_1/wiki");
+            lblHelp.Text = "it's real kwii hours";
         }
 
         private void numHP_ValueChanged(object sender, EventArgs e)

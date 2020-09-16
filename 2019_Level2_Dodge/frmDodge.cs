@@ -210,6 +210,11 @@ namespace _2019_Level2_Dodge
             {
                 m.drawMissile(g);
                 m.moveMissile(g);
+/*                if ((m.x < 20))
+                {
+                    star2.Remove(m);
+                    break;
+                }*/
             }
             foreach (Stars3 m in star3)
             {
@@ -462,6 +467,8 @@ namespace _2019_Level2_Dodge
                 star2.Add(new Stars2(ps.planetRec, 270));
                 star3.Add(new Stars3(ps.planetRec, 270));
             }
+
+
         }
 
         private void tmrShield_Tick(object sender, EventArgs e)

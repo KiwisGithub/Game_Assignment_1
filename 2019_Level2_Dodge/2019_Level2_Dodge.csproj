@@ -413,5 +413,11 @@
   <ItemGroup>
     <None Include="Resources\backgroundJupiter5.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button clone-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button clone-1.png %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
