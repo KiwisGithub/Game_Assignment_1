@@ -94,6 +94,10 @@ namespace _2019_Level2_Dodge
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
             lblLevel.Text = "Level " + frmLevel.gameLevel.ToString();
 
+            if (OurEpicLevel == 1)
+            {
+                powerupScale = 8;
+            }
             if (OurEpicLevel == 2)
             {
                 powerupScale = 6;
@@ -106,7 +110,8 @@ namespace _2019_Level2_Dodge
             {
                 powerupScale = 2;
             }
-
+            tmrMissile.Interval = (powerupScale / 5)*1000;
+            tmrMissile3.Interval = (powerupScale / 2) * 500;
             tmrShield.Interval = (powerupScale / 4) * 1000;
         }
 

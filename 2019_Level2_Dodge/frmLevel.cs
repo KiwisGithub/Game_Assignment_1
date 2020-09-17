@@ -13,7 +13,7 @@ namespace _2019_Level2_Dodge
     
     public partial class frmLevel : Form
     {
-        public static int gameLevel;
+        public static int gameLevel = 1;
         public frmLevel()
         {
             InitializeComponent();
