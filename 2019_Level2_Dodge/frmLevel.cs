@@ -63,5 +63,13 @@ namespace _2019_Level2_Dodge
             this.Close();
             playForm.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmMenu menuForm = new frmMenu();
+            //Application.Exit();
+            this.Close();
+            menuForm.Show();
+        }
     }
 }
