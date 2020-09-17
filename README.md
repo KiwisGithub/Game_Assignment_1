@@ -1,6 +1,6 @@
 ![Logo temp](https://i.imgur.com/bwsXCV3.png)
 
-**Planet Doge 2** is a pixel themed Bullet Hell game set in space.
+**Planet Doge 2** is a pixel themed Bullet Hell/Strand Type game set in space.
 
 Based upon the original game "Planet Doge", it expands upon old gameplay with new enemies, movement, powerups, as well as featuring a full UX redesign and quality of life improvements.
 

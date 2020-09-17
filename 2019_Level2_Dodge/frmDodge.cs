@@ -41,9 +41,6 @@ namespace _2019_Level2_Dodge
         string move;
         //int bulletScore = 0;
         //int planetScore = 0;
-        double x, y;
-        double phi = 0;
-        int radius = 200;
 
         public static int finalScore = 420;
         public int count = 0;
@@ -108,7 +105,7 @@ namespace _2019_Level2_Dodge
 
                 if (planet[i].y < -30)
                 {
-                    int[] planetNewRdm = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    int[] planetNewRdm = new int[] { 2500, 2500, 2500, 2200, 2500, 3000, 3500 };
                     Random pNR = new Random();
                     int pNREpic = pNR.Next(7);
                     int str2 = planetNewRdm[pNREpic];
@@ -117,7 +114,7 @@ namespace _2019_Level2_Dodge
                 }
                 if (planet2[i].y < -30)
                 {
-                    int[] planetNewRdm2 = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    int[] planetNewRdm2 = new int[] { 3000, 3000, 3000, 2500, 2500, 3000, 3500 };
                     Random pNR2 = new Random();
                     int pNREpic2 = pNR2.Next(7);
                     int str3 = planetNewRdm2[pNREpic2];
@@ -126,7 +123,7 @@ namespace _2019_Level2_Dodge
                 }
                 if (planet3[i].y < -30)
                 {
-                    int[] planetNewRdm3 = new int[] { 1500, 1700, 2000, 2200, 2500, 3000, 3500 };
+                    int[] planetNewRdm3 = new int[] { 3500, 3500, 3500, 3000, 3000, 3000, 4000 };
                     Random pNR3 = new Random();
                     int pNREpic3 = pNR3.Next(7);
                     int str4 = planetNewRdm3[pNREpic3];

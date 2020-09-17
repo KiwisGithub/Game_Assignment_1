@@ -17,7 +17,7 @@ namespace _2019_Level2_Dodge
         public Rectangle planetRec;//variable for a rectangle to place our image in
                                    //Create a constructor (initialises the values of the fields)
 
-        public int rotationAngle;
+        public int rotationAngle = 0;
         public Matrix matrix;
         //public bool ShieldHas;
         Point centre;
