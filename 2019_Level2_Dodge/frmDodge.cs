@@ -563,7 +563,11 @@ namespace _2019_Level2_Dodge
                         missiles.Remove(m1);
                         score += 2;// add 1 to score when planet reaches bottom of panel
                         lblScore.Text = score.ToString();
-                        n.y = 1495;
+                        int[] planetNewRdm = new int[] { 2500, 2500, 2500, 2200, 2500, 3000, 3500 };
+                        Random pNR = new Random();
+                        int pNREpic = pNR.Next(7);
+                        int str2 = planetNewRdm[pNREpic];
+                        n.y = str2;
                         break;
                     }
                 }
@@ -578,7 +582,11 @@ namespace _2019_Level2_Dodge
                         missiles.Remove(m1);
                         score += 5;// add 1 to score when planet reaches bottom of panel
                         lblScore.Text = score.ToString();
-                        n2.y = 2400;
+                        int[] planetNewRdm2 = new int[] { 3000, 3000, 3000, 2500, 2500, 3000, 3500 };
+                        Random pNR2 = new Random();
+                        int pNREpic2 = pNR2.Next(7);
+                        int str3 = planetNewRdm2[pNREpic2];
+                        n2.y = str3;
                         break;
                     }
                 }
@@ -594,7 +602,11 @@ namespace _2019_Level2_Dodge
                         missiles.Remove(m1);
                         score += 4;// add 1 to score when planet reaches bottom of panel
                         lblScore.Text = score.ToString();
-                        n3.y = 3500;
+                        int[] planetNewRdm3 = new int[] { 3500, 3500, 3500, 3000, 3000, 3000, 4000 };
+                        Random pNR3 = new Random();
+                        int pNREpic3 = pNR3.Next(7);
+                        int str4 = planetNewRdm3[pNREpic3];
+                        n3.y = str4;
                         break;
 
                     }
