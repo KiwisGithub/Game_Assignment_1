@@ -59,7 +59,7 @@
             this.lblPlayerName.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayerName.Font = new System.Drawing.Font("Orator Std", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
-            this.lblPlayerName.Location = new System.Drawing.Point(111, 120);
+            this.lblPlayerName.Location = new System.Drawing.Point(116, 120);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(70, 15);
             this.lblPlayerName.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.lblPlayerScore.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayerScore.Font = new System.Drawing.Font("Orator Std", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(175)))), ((int)(((byte)(214)))));
-            this.lblPlayerScore.Location = new System.Drawing.Point(241, 120);
+            this.lblPlayerScore.Location = new System.Drawing.Point(242, 120);
             this.lblPlayerScore.Name = "lblPlayerScore";
             this.lblPlayerScore.Size = new System.Drawing.Size(70, 15);
             this.lblPlayerScore.TabIndex = 2;

@@ -46,7 +46,7 @@ namespace _2019_Level2_Dodge
             }
             else
             {
-                lblMessage.Text = "You didn't make the top 10:( \r\nBetter luck text time!";
+                lblMessage.Text = "You didn't make the top 10:(\r\nBetter luck text time!";
             }
 
             SortHighScores();
