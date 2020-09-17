@@ -75,6 +75,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(279, 406);
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox11
             // 
@@ -86,6 +87,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(287, 406);
             this.pictureBox11.TabIndex = 23;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox3
             // 
@@ -97,6 +99,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(282, 406);
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // frmLevel
             // 

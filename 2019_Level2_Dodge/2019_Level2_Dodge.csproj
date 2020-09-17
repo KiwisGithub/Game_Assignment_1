@@ -237,6 +237,7 @@
     <None Include="bin\Debug\spaceship4.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\backgroundPlanets.psd" />
     <None Include="Resources\Kiwi.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -418,6 +419,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Button clone-1.png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

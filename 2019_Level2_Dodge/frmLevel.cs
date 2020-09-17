@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace _2019_Level2_Dodge
 {
+    
     public partial class frmLevel : Form
     {
+        public static int gameLevel;
         public frmLevel()
         {
             InitializeComponent();
@@ -20,7 +22,7 @@ namespace _2019_Level2_Dodge
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             frmDodge playForm = new frmDodge();
-
+            gameLevel = 1;
             //Application.Exit();
             this.Close();
             playForm.Show();
@@ -30,6 +32,33 @@ namespace _2019_Level2_Dodge
         {
             frmDodge playForm = new frmDodge();
             
+            //Application.Exit();
+            this.Close();
+            playForm.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmDodge playForm = new frmDodge();
+            gameLevel = 2;
+            //Application.Exit();
+            this.Close();
+            playForm.Show();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            frmDodge playForm = new frmDodge();
+            gameLevel = 3;
+            //Application.Exit();
+            this.Close();
+            playForm.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmDodge playForm = new frmDodge();
+            gameLevel = 4;
             //Application.Exit();
             this.Close();
             playForm.Show();

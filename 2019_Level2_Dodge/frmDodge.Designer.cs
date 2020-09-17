@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodge));
             this.tmrShip = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.txtLives = new System.Windows.Forms.Label();
             this.mnuStart = new System.Windows.Forms.MenuStrip();
@@ -70,18 +70,18 @@
             this.tmrShip.Interval = 1;
             this.tmrShip.Tick += new System.EventHandler(this.tmrShip_Tick);
             // 
-            // label2
+            // lblLevel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(1227, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Level 1";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.BackColor = System.Drawing.Color.Transparent;
+            this.lblLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLevel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblLevel.Location = new System.Drawing.Point(1227, 49);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(63, 18);
+            this.lblLevel.TabIndex = 2;
+            this.lblLevel.Text = "Level X";
+            this.lblLevel.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblScore
             // 
@@ -311,7 +311,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblNametag);
             this.Controls.Add(this.lblScore);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.mnuStart);
             this.Controls.Add(this.pictureBox1);
@@ -346,7 +346,7 @@
 
         private System.Windows.Forms.Panel pnlGame;
         private System.Windows.Forms.Timer tmrShip;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label txtLives;
         private System.Windows.Forms.MenuStrip mnuStart;

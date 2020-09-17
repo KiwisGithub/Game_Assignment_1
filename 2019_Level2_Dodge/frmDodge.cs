@@ -47,6 +47,9 @@ namespace _2019_Level2_Dodge
         public static int angleToChange = 0;
         public int angleTracker = 0;
 
+        public int OurEpicLevel = frmLevel.gameLevel;
+        public int powerupScale = 8;
+
         public frmDodge()
         {
             InitializeComponent();
@@ -86,8 +89,25 @@ namespace _2019_Level2_Dodge
         private void frmDodge_Load(object sender, EventArgs e)
         {
             lblNametag.Text = frmMenu.SetValueFortxtNamebox;
+            pnlGame.BackgroundImage = Image.FromFile("bg" + frmLevel.gameLevel.ToString() + ".png");
             lives = frmMenu.SetValueFornumHP;
             txtLives.Text = frmMenu.SetValueFornumHP.ToString();
+            lblLevel.Text = "Level " + frmLevel.gameLevel.ToString();
+
+            if (OurEpicLevel == 2)
+            {
+                powerupScale = 6;
+            }
+            if (OurEpicLevel == 3)
+            {
+                powerupScale = 4;
+            }
+            if (OurEpicLevel == 4)
+            {
+                powerupScale = 2;
+            }
+
+            tmrShield.Interval = (powerupScale / 4) * 1000;
         }
 
         private void pnlGame_Paint(object sender, PaintEventArgs e)
@@ -473,6 +493,7 @@ namespace _2019_Level2_Dodge
            
            imgShield.Show();
            count++;
+
            imgShield.Image = Image.FromFile("tmrShield" + count.ToString() + ".png");
 
            if(count > 4)
@@ -680,7 +701,10 @@ namespace _2019_Level2_Dodge
                 if (spaceship.spaceRec.IntersectsWith(p2.missileRec))
                 {
                     poweruphealth.Remove(p2);
-                    lives += 5;// gain 5 lives
+
+                    
+                    lives += powerupScale;// gain 5 lives
+
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                     break;
