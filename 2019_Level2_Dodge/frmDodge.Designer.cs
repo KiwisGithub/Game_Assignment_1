@@ -279,7 +279,6 @@
             // 
             // tmrAutoshoot
             // 
-            this.tmrAutoshoot.Interval = 200;
             this.tmrAutoshoot.Tick += new System.EventHandler(this.tmrAutoshoot_Tick_1);
             // 
             // tmrRotation

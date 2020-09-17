@@ -40,13 +40,13 @@ namespace _2019_Level2_Dodge
             int lowest_score = highScores[(highScores.Count - 1)].Score;
             if (int.Parse(lblPlayerScore.Text) > lowest_score)
             {
-                lblMessage.Text = "You have made the Top Ten - congratulations, " + lblPlayerName.Text;
+                lblMessage.Text = "You have made the Top \r\n Ten - congratulations, " + lblPlayerName.Text;
                 highScores.Add(new HighScores(lblPlayerName.Text, int.Parse(lblPlayerScore.Text)));
 
             }
             else
             {
-                lblMessage.Text = "You didn't make the top 10 - better luck text time!";
+                lblMessage.Text = "You didn't make the top \r\n 10 - better luck text time!";
             }
 
             SortHighScores();

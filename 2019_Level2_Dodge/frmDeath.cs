@@ -25,8 +25,8 @@ namespace _2019_Level2_Dodge
         {
             Cursor.Show();
             InitializeComponent();
-            lblHighscore.ForeColor = Color.FromArgb(90, 153, 171);
-            lblScore.ForeColor = Color.FromArgb(90, 153, 171);
+           // lblHighscore.ForeColor = Color.FromArgb(90, 153, 171);
+           // lblScore.ForeColor = Color.FromArgb(90, 153, 171);
             lblScore.Text = frmDodge.finalScore.ToString();
             yourScore = frmDodge.finalScore;
             if (yourScore > highScore)

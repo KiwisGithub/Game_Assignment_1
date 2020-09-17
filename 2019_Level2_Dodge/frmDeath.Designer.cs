@@ -141,7 +141,7 @@
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(174)))), ((int)(((byte)(213)))));
             this.lblScore.Location = new System.Drawing.Point(816, 479);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(89, 37);
