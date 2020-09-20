@@ -587,7 +587,7 @@ namespace _2019_Level2_Dodge
                     if (n.planetRec2.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        score += 2;// add 1 to score when planet reaches bottom of panel
+                        score += 2;// add 2 to score when enemy shot
                         lblScore.Text = score.ToString();
                         int[] planetNewRdm = new int[] { 2500, 2500, 2500, 2200, 2500, 3000, 3500 };
                         Random pNR = new Random();
@@ -626,7 +626,7 @@ namespace _2019_Level2_Dodge
                     if (n3.planetRec.IntersectsWith(m1.missileRec))
                     {
                         missiles.Remove(m1);
-                        score += 4;// add 1 to score when planet reaches bottom of panel
+                        score += 4;// add 4 to score after enemy3 shot
                         lblScore.Text = score.ToString();
                         int[] planetNewRdm3 = new int[] { 3500, 3500, 3500, 3000, 3000, 3000, 4000 };
                         Random pNR3 = new Random();

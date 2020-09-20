@@ -39,7 +39,7 @@ namespace _2019_Level2_Dodge
 
             if (playerName == sparkname)
             {
-                string[] quote = new string[] { "Get fucked from luka", "Bruh... that's kinda cringe...", "Wow this game is bad go play Mice in the Hice amiright?", "Gamer Word", "lol u died" };
+                string[] quote = new string[] { "Get fricked from luka", "Bruh... that's kinda cringe...", "Wow this game is bad go play Mice in the Hice amiright?", "Gamer Word", "lol u died" };
                 
 
                 // init random generator 
